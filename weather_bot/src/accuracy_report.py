@@ -210,6 +210,11 @@ class AccuracyReportBuilder:
         self.report_dir = config.paths.report_dir
         self.report_filename = config.paths.report_filename
         self.default_slot_key = config.accuracy_report.default_slot_key
+        # Порог |ошибки| для столбцов ГИСТОГРАММЫ «Распределение точности прогноза»: столбцы дальше порога
+        # не рисуются (редкий выброс растягивал бы ось). Рейтинги, панель галочек/крестиков и бэктест
+        # считаются по ВСЕМ данным. None/0 -- без ограничения. См. accuracy_report.hist_max_abs_error.
+        _lim = getattr(config.accuracy_report, "hist_max_abs_error", None)
+        self.hist_max_abs_error = int(_lim) if _lim else None
         self.bucket_width = {"F": config.accuracy_report.bucket_width.F, "C": config.accuracy_report.bucket_width.C}
         self.data_era_cutoff_date = config.accuracy_report.data_era_cutoff_date
         # Журнал РЕАЛЬНОЙ авто-торговли (см. TradingEngine/PositionStore в
@@ -563,7 +568,7 @@ class AccuracyReportBuilder:
         так этот df совместим с общим пайплайном отчёта/watched-механизмом
         (build_html_report/_build_corrected_df ожидают source
         "wunderground"/"windy"). Используется для отчёта
-        accuracy_report_max_bet.html и сигналов PriceMonitor по городам из
+        accuracy_report_max_bet_bot.html и сигналов PriceMonitor по городам из
         watched_icaos_max_bet.yaml.
 
         era — тот же принцип, что в build_dataframe: "old" для дат <=
@@ -745,6 +750,33 @@ class AccuracyReportBuilder:
             f.write(page)
         return out_path
 
+    def build_market_target_all_report(self, target_slot):
+        """
+        Как build_market_target_report (таргет = бакет самой дорогой ставки, без прогноза погоды), но по ВСЕМ
+        городам (без фильтра watched_icaos_max_bet.yaml) и в ПОЛНОМ интерактивном виде основного отчёта
+        (бегунки поправки/цены, фильтры городов) -- аналог accuracy_report_forecast.html для стратегии max.
+        Возвращает HTML-строку; None, если нет данных.
+        """
+        df_market = self.build_market_target_dataframe(target_slot)
+        if df_market.empty:
+            return None
+        return self.build_html_report(
+            {"raw": df_market, "effective": df_market}, show_effective_max=False,
+            live_strategy_set="max_bet",
+        )
+
+    def save_market_target_all_report(self, target_slot, out_path=None):
+        """Как save_market_target_report, но для build_market_target_all_report -- см.
+        config.paths.max_report_filename. Возвращает путь к файлу или None, если отчёт не построен."""
+        page = self.build_market_target_all_report(target_slot)
+        if page is None:
+            return None
+        out_path = out_path or os.path.join(self.report_dir, self.config.paths.max_report_filename)
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(page)
+        return out_path
+
     def print_skip_details(self, skip_info):
         """Печатает детализацию пропущенных записей — сколько и по каким
         городам/датам (не только итоговое число)."""
@@ -823,7 +855,15 @@ class AccuracyReportBuilder:
         # границы бегунка поправки) годились для любого выбранного режима.
         err_min = min(int(df["error"].min()) for df in dfs.values())
         err_max = max(int(df["error"].max()) for df in dfs.values())
-        error_values = list(range(err_min, err_max + 1))
+        # Столбцы гистограммы -- только в пределах ±hist_max_abs_error (если задан); бегунок поправки
+        # (err_min/err_max в build_html_report) по-прежнему охватывает ВЕСЬ диапазон данных.
+        hist_min, hist_max = err_min, err_max
+        if self.hist_max_abs_error:
+            hist_min = max(err_min, -self.hist_max_abs_error)
+            hist_max = min(err_max, self.hist_max_abs_error)
+            if hist_min > hist_max:
+                hist_min, hist_max = -self.hist_max_abs_error, self.hist_max_abs_error
+        error_values = list(range(hist_min, hist_max + 1))
 
         prepared = {}
         for mode, df in dfs.items():
@@ -2328,6 +2368,15 @@ class AccuracyReportBuilder:
         is_watched = bool(watched)
 
         chart_html = fig.to_html(full_html=False, include_plotlyjs="cdn", div_id="chart")
+        hist_note_html = ""
+        if self.hist_max_abs_error:
+            hidden_snapshots = int((dfs["raw"]["error"].abs() > self.hist_max_abs_error).sum())
+            if hidden_snapshots:
+                hist_note_html = (
+                    f'<p id="histNote">На графике скрыты столбцы с |ошибкой| &gt; {self.hist_max_abs_error} '
+                    f'(выбросов за всё время: {hidden_snapshots}); в рейтингах, панели ✓/✗ и бэктесте '
+                    f'они учитываются.</p>'
+                )
         rating_html = self.build_rating_html(
             dfs, watched=watched, bucket_price_map=bucket_price_map, show_effective_max=show_effective_max,
             embed_maxbet_backtest=embed_maxbet_backtest, live_strategy_set=live_strategy_set,
@@ -2388,6 +2437,7 @@ class AccuracyReportBuilder:
   .rank-table-col h4 {{ margin-bottom: 4px; }}
   #priceDist {{ margin: 4px 0 20px; }}
   #priceDistHint {{ color: #888; font-size: 13px; margin: 4px 0 20px; }}
+  #histNote {{ color: #888; font-size: 12px; margin: 0 0 8px; }}
   .chart-controls-row {{ margin: 4px 0 12px; display: flex; gap: 8px; align-items: center; }}
   .chart-btn {{ font-size: 12px; padding: 3px 10px; border: 1px solid #ccc; border-radius: 4px;
     background: #fff; color: #333; cursor: pointer; }}
@@ -2445,6 +2495,7 @@ class AccuracyReportBuilder:
   <input type="number" id="priceMaxInput" class="price-input" step="0.1" value="{price_max_str}">¢</span>
 </div>'''}
 {chart_html}
+{hist_note_html}
 <p id="priceDistHint">Кликните по столбцу графика, чтобы увидеть распределение цен ставок Yes в нём. Удерживайте Ctrl, чтобы добавить столбцы или Shift, чтобы выбрать диапазон.</p>
 <div class="chart-controls-row">
   <button id="selectAllBtn" type="button" class="chart-btn">Выбрать все столбцы</button>
@@ -2639,10 +2690,15 @@ function computeCombinedSource(source, correction, priceActive, priceMin, priceM
 
 function applyCorrectionAndPriceFilter() {{
   const {{ correction, priceActive, priceMin, priceMax }} = getActiveFilter();
+  // Ноль по центру: симметричный диапазон оси X по самому дальнему
+  // столбцу с ненулевой высотой (минимум ±1).
+  let half = 1;
   ["wunderground", "windy"].forEach((source, i) => {{
     const {{ x, y, customdata }} = computeCombinedSource(source, correction, priceActive, priceMin, priceMax);
+    x.forEach((v, k) => {{ if (y[k] > 0) half = Math.max(half, Math.abs(v)); }});
     Plotly.restyle(chartDiv, {{ x: [x], y: [y], customdata: [customdata] }}, [DISPLAY_IDXS[i]]);
   }});
+  Plotly.relayout(chartDiv, {{ "xaxis.range": [-half - 0.5, half + 0.5], "xaxis.dtick": 1 }});
 }}
 
 let selectedErrors = new Set();

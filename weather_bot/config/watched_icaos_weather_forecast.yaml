@@ -2,7 +2,7 @@
 #
 # Список городов, за которыми следит PriceMonitor (src/price_monitor.py), и
 # отдельный "скорректированный" отчёт (AccuracyReportBuilder.build_watched_report,
-# см. reports/accuracy_report_watched.html).
+# см. reports/accuracy_report_forecast_bot.html).
 #
 # defaults — общие параметры по умолчанию для ВСЕХ городов ниже. Любое поле
 # конкретного города, оставленное пустым, наследует значение отсюда; заданное

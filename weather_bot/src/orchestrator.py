@@ -396,6 +396,20 @@ class Orchestrator:
             self.logger.error(f"⚠️ Ошибка построения отчёта по самой дорогой ставке: {e}")
             self._notify_error_telegram("Ошибка построения отчёта по самой дорогой ставке", e)
 
+        # --- Отчёт по самой дорогой ставке по ВСЕМ городам (полный интерактивный
+        # вид, без фильтра watched_icaos_max_bet.yaml) -- тоже независимо ---
+        try:
+            max_all_out_path = self.report_builder.save_market_target_all_report(
+                self.config.price_monitor.monitor_slot,
+            )
+            if max_all_out_path:
+                self.logger.info(f"📊 Отчёт по самой дорогой ставке (все города) сохранён: {max_all_out_path}")
+            else:
+                self.logger.warning("⚠️ Отчёт по самой дорогой ставке (все города) не построен — нет данных.")
+        except Exception as e:
+            self.logger.error(f"⚠️ Ошибка построения отчёта по самой дорогой ставке (все города): {e}")
+            self._notify_error_telegram("Ошибка построения отчёта по самой дорогой ставке (все города)", e)
+
         # --- 6. Возобновление майнера исторических данных ---
         # self._last_pipeline_date выставляется ДО отправки сообщения ниже --
         # см. комментарий в начале метода: если именно этот send_message

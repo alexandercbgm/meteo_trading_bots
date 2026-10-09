@@ -2,7 +2,7 @@
 #
 # Список городов, за которыми следит PriceMonitor (src/price_monitor.py), и
 # отдельный отчёт по самой дорогой ставке (AccuracyReportBuilder.build_market_target_report,
-# см. reports/accuracy_report_max_bet.html) — таргет тут НЕ прогноз погоды, а
+# см. reports/accuracy_report_max_bet_bot.html) — таргет тут НЕ прогноз погоды, а
 # бакет самой дорогой ставки Polymarket (см. build_market_target_dataframe) —
 # поэтому у этого файла, в отличие от watched_icaos_weather_forecast.yaml, нет
 # полей weather_source/weather_corr — им неоткуда взяться.

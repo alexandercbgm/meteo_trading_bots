@@ -46,17 +46,21 @@ paths:
   trading_dir: "data_mining/trading"
   # Отчёт — ОДИН файл, перезаписывается каждый день (весит много, история не нужна).
   report_dir: "data_mining/reports"
-  report_filename: "accuracy_report.html"
+  report_filename: "accuracy_report_forecast.html"
   # Второй отчёт — только по городам из watched_icaos.yaml, с уже применённой
   # (из того же файла) поправкой и порогом цены на город, без интерактивных
   # бегунков (см. AccuracyReportBuilder.build_watched_report). Тоже один файл,
   # перезаписывается каждый день.
-  watched_report_filename: "accuracy_report_watched.html"
+  watched_report_filename: "accuracy_report_forecast_bot.html"
   # Третий отчёт — только по городам из watched_icaos_max_bet.yaml, БЕЗ
   # прогноза погоды вообще: таргет = бакет самой дорогой ставки Polymarket
   # (см. AccuracyReportBuilder.build_market_target_report). Тоже один файл,
   # перезаписывается каждый день.
-  max_bet_report_filename: "accuracy_report_max_bet.html"
+  max_bet_report_filename: "accuracy_report_max_bet_bot.html"
+  # Четвёртый отчёт — то же, что третий (таргет = самая дорогая ставка), но по ВСЕМ
+  # городам и в полном интерактивном виде, как основной (см.
+  # AccuracyReportBuilder.build_market_target_all_report). Тоже один файл.
+  max_report_filename: "accuracy_report_max.html"
   # Список городов по критериям — сохраняется отдельным JSONL-файлом на каждый день.
   qualifying_cities_dir: "data_mining/reports"
 
@@ -227,6 +231,11 @@ accuracy_report:
   # Слот по умолчанию — используется и на главном графике, и в блоке рейтингов,
   # и при отборе городов по критериям (Orchestrator/criteria.py).
   default_slot_key: "12:00"
+  # Порог |ошибки| (в ставках) для столбцов гистограммы «Распределение точности
+  # прогноза»: столбцы дальше порога не рисуются, на странице пишется, сколько
+  # снапшотов скрыто. Рейтинги, панель ✓/✗ и бэктест считаются по ВСЕМ данным.
+  # 0 / null — без ограничения.
+  hist_max_abs_error: 5
   # Ширина бакета ставки Polymarket в градусах шкалы (см. МЕТРИКА в accuracy_report.py).
   bucket_width:
     F: 2
