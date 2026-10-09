@@ -137,8 +137,8 @@ environment variables (see "Auto-trading").
 
 ## Example reports
 
-`report_examples/` holds copies of the three reports from a real run
-(October 8, 2026): `accuracy_report.html`, `accuracy_report_watched.html` and
+`report_examples/` holds copies of the three reports from real runs
+(October 2026): `accuracy_report.html`, `accuracy_report_watched.html` and
 `accuracy_report_max_bet.html`. GitHub shows HTML files as source code, so
 download a file (the "Download raw file" button) and open it in a browser. These
 are static samples: the bot writes its live reports to `data_mining/reports/`,
