@@ -1,0 +1,8 @@
+# Runtime output of weather_bot: keep only the .gitkeep placeholders
+logs/*
+!logs/.gitkeep
+data_mining/*
+!data_mining/.gitkeep
+!data_mining/reports/
+data_mining/reports/*
+!data_mining/reports/.gitkeep

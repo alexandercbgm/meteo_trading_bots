@@ -38,12 +38,9 @@ else
 fi
 cp "$HERE/start_bot.py" /home/bot/weather_bot/start_bot.py
 
-REQ=/home/bot/weather_bot/requirements.txt
-[ -f "$REQ" ] || REQ="$REPO/requirements.txt"
-
 sudo -u bot python3 -m venv /home/bot/venv
 sudo -u bot /home/bot/venv/bin/pip install --upgrade pip
-/home/bot/venv/bin/pip install -r "$REQ"
+sudo -u bot /home/bot/venv/bin/pip install -r /home/bot/weather_bot/requirements.txt
 
 if [ ! -f /home/bot/.weather_bot_env ]; then
   cat > /home/bot/.weather_bot_env <<'EOT'

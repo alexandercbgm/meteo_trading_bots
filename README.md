@@ -69,13 +69,14 @@ detail in the sections below.
 
 ```
 README.md
-requirements.txt
 vps_setup/                 — VPS deployment (see "Deploying to a VPS" below)
   setup_vps.sh               — one-shot server setup (venv, systemd service, swap)
   start_bot.py               — launcher: working dir, sys.path, env vars from ~/.weather_bot_env
   weather-bot.service        — systemd unit
   check_geoblock.sh          — checks whether Polymarket allows trading from this IP
 weather_bot/
+  .gitignore               — keeps logs/ and data_mining/ out of git (except .gitkeep)
+  requirements.txt
   config/
     config.yaml                          — all project settings, by section
     watched_icaos_weather_forecast.yaml  — set 1: city -> forecast source,
@@ -624,9 +625,9 @@ pyramid streaks are not reset.
 
 ## Running locally
 
-Install dependencies with `pip install -r requirements.txt` from the repository
-root; run everything below from the `weather_bot/` folder (paths such as
-`config/config.yaml` are relative to it).
+Run everything below from the `weather_bot/` folder (paths such as
+`config/config.yaml` are relative to it); install dependencies with
+`pip install -r requirements.txt`.
 
 1. Start Chrome with remote debugging (as before):
    ```
