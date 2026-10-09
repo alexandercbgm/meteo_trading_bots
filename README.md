@@ -69,6 +69,7 @@ detail in the sections below.
 
 ```
 README.md
+report_examples/           — sample copies of the three HTML reports (see "Example reports")
 vps_setup/                 — VPS deployment (see "Deploying to a VPS" below)
   setup_vps.sh               — one-shot server setup (venv, systemd service, swap)
   start_bot.py               — launcher: working dir, sys.path, env vars from ~/.weather_bot_env
@@ -107,7 +108,6 @@ weather_bot/
     orchestrator.py             — Orchestrator: wires everything together, main loop with daily pause
     trader.py                   — TradingEngine: auto-trading (see "Auto-trading" below)
     pyramid.py                  — pyramid lot formula (shared by the bot and the report backtest)
-  report_examples/         — sample copies of the three HTML reports (see "Example reports")
   data_mining/             — not tracked in git (only .gitkeep)
     wunderground_forcast/    — Wunderground forecast, one file per day
     windy_forcast/           — Windy forecast, one file per day
@@ -119,7 +119,8 @@ weather_bot/
     polymarket_clob/         — REAL bid/ask for every Yes/No bucket (CLOB API), one file per day
     wunderground_history/    — actuals (Wunderground), one file per MONTH
     trading/                 — trade journal and trading state (see "Auto-trading")
-    reports/                 — three HTML reports + qualifying_cities_<date>.jsonl (see below)
+    reports/                 — three HTML reports + qualifying_cities_<date>.jsonl (see below),
+                               created by the bot on the first daily pipeline
   logs/                    — not tracked in git (only .gitkeep); one subfolder per component
                                (actuals_miner/ orchestrator/ price_monitor/ weather_miner/
                                polymarket_clob_miner/ polymarket_actuals_miner/ trader/), rotated at midnight
@@ -136,7 +137,7 @@ environment variables (see "Auto-trading").
 
 ## Example reports
 
-`weather_bot/report_examples/` holds copies of the three reports from a real run
+`report_examples/` holds copies of the three reports from a real run
 (October 8, 2026): `accuracy_report.html`, `accuracy_report_watched.html` and
 `accuracy_report_max_bet.html`. GitHub shows HTML files as source code, so
 download a file (the "Download raw file" button) and open it in a browser. These
