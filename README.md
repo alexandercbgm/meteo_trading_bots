@@ -7,7 +7,7 @@
 
 A modular rebuild of three earlier scripts (`weather_miner.py`, `actuals_miner.py`,
 `accuracy_analysis.py`), plus city selection by criteria with Telegram delivery,
-live bet monitoring across TWO independent city sets and THREE HTML reports, all
+live bet monitoring across TWO independent city sets and FOUR HTML reports, all
 combined into one project with classes and an orchestrator.
 
 ## Architecture
@@ -69,7 +69,7 @@ detail in the sections below.
 
 ```
 README.md
-report_examples/           — sample copies of the three HTML reports (see "Example reports")
+report_examples/           — sample copies of the HTML reports (see "Example reports")
 vps_setup/                 — VPS deployment (see "Deploying to a VPS" below)
   setup_vps.sh               — one-shot server setup (venv, systemd service, swap)
   start_bot.py               — launcher: working dir, sys.path, env vars from ~/.weather_bot_env
@@ -101,7 +101,7 @@ weather_bot/
     polymarket_actuals_miner.py — PolymarketActualsMiner: Polymarket's own event resolution (no Selenium), see below
     actuals_miner.py         — ActualsMiner: actuals miner, incremental, target_date is a parameter
     city_metrics.py           — shared metric functions (hits, miss streaks, bet price)
-    accuracy_report.py        — AccuracyReportBuilder: DataFrame + THREE HTML reports (see below)
+    accuracy_report.py        — AccuracyReportBuilder: DataFrame + FOUR HTML reports (see below)
     criteria.py                — CityCriteriaSelector: selects cities by criteria
     notifier.py                 — QualifyingCitiesNotifier: Telegram message + dated JSONL
     price_monitor.py            — PriceMonitor: live notifications for BOTH sets + phone calls
@@ -119,7 +119,7 @@ weather_bot/
     polymarket_clob/         — REAL bid/ask for every Yes/No bucket (CLOB API), one file per day
     wunderground_history/    — actuals (Wunderground), one file per MONTH
     trading/                 — trade journal and trading state (see "Auto-trading")
-    reports/                 — three HTML reports + qualifying_cities_<date>.jsonl (see below),
+    reports/                 — four HTML reports + qualifying_cities_<date>.jsonl (see below),
                                created by the bot on the first daily pipeline
   logs/                    — not tracked in git (only .gitkeep); one subfolder per component
                                (actuals_miner/ orchestrator/ price_monitor/ weather_miner/
@@ -137,9 +137,10 @@ environment variables (see "Auto-trading").
 
 ## Example reports
 
-`report_examples/` holds copies of the three reports from real runs
-(October 2026): `accuracy_report.html`, `accuracy_report_watched.html` and
-`accuracy_report_max_bet.html`. GitHub shows HTML files as source code, so
+`report_examples/` holds copies of reports from real runs (October 2026):
+`accuracy_report_forecast.html`, `accuracy_report_forecast_bot.html` and
+`accuracy_report_max_bet_bot.html` (there is no sample of the fourth report,
+`accuracy_report_max.html`, yet). GitHub shows HTML files as source code, so
 download a file (the "Download raw file" button) and open it in a browser. These
 are static samples: the bot writes its live reports to `data_mining/reports/`,
 which is not tracked in git.
@@ -182,18 +183,18 @@ which case there is no limit on that side.
 
 ## Backtest in the reports
 
-Above the "Longest miss streak" chart (in the rating block of each of the three
-reports) there is an interactive backtest: a simulation of trades on historical
+Above the "Longest miss streak" chart (in the rating block of each
+report) there is an interactive backtest: a simulation of trades on historical
 data with configurable parameters. It recalculates live whenever the
 period/slot/mode/era/price filter/city selection changes (click a bar, just like
 the hit/miss panel, which is now shown ABOVE the backtest rather than directly
 above the rating chart) or when the backtest parameters themselves change.
 
-- **Main report** (`accuracy_report.html`) — the full set of settings:
+- **Main report** (`accuracy_report_forecast.html`) — the full set of settings:
   Strategy (Forecast/Maximum — which dataset counts as the target), Type
   (Flat/Pyramid), Number of steps (Pyramid only), Lot size (≥5.0), Fee per
   contract (0.012 USD by default), Balance (100 USD by default).
-- **`accuracy_report_watched.html`/`accuracy_report_max_bet.html`** — the same
+- **`accuracy_report_forecast_bot.html`/`accuracy_report_max_bet_bot.html`** — the same
   Lot size/Fee/Balance, but WITHOUT Strategy/Type/Number of steps: these are
   taken from the config of EACH city (`strategy` in `watched_icaos_*.yaml`;
   `loss_limit` is shared per strategy in `config.yaml:
@@ -252,7 +253,7 @@ project has switched from parsing Polymarket via Gamma (label + price) and
 Wunderground actuals to REAL CLOB bid/ask (price = `ask_yes`, the BUY price of
 Yes) and Polymarket's OWN event resolution (which bucket actually won), in all
 reports built via `build_dataframe()`/`build_market_target_dataframe()`
-(`accuracy_report.html`, `accuracy_report_watched.html`, `accuracy_report_max_bet.html`).
+(`accuracy_report_forecast.html`, `accuracy_report_forecast_bot.html`, `accuracy_report_max_bet_bot.html`, `accuracy_report_max.html`).
 
 Each data row is tagged with `era`: `"old"` for dates <= cutoff (source as
 before: `load_poly_bets`/`load_actuals`), `"new"` for dates after the cutoff
@@ -275,23 +276,32 @@ the daily pipeline:
 
 1. `ActualsMiner.run(target_date=...)` — appends actuals for the current month
    up to and including `target_date`, mining ONLY the missing days.
-2. `AccuracyReportBuilder` builds the DataFrame and saves THREE reports, each a
+2. `AccuracyReportBuilder` builds the DataFrame and saves FOUR reports, each a
    SINGLE file overwritten every day:
-   - `data_mining/reports/accuracy_report.html` — full report for all cities,
+   - `data_mining/reports/accuracy_report_forecast.html` — full report for all cities,
      with interactive sliders for correction/price range and a
      "ignore 1 hour with the maximum" checkbox;
-   - `data_mining/reports/accuracy_report_watched.html` — only cities from
+   - `data_mining/reports/accuracy_report_forecast_bot.html` — only cities from
      `watched_icaos_weather_forecast.yaml`, with their configured forecast
      source, correction and price range already applied FROM THE CONFIG (no
      sliders; the values are shown in the chart title when a city is selected
      and in the "Correction"/"Min. price" columns of the rating tables);
-   - `data_mining/reports/accuracy_report_max_bet.html` — only cities from
+   - `data_mining/reports/accuracy_report_max_bet_bot.html` — only cities from
      `watched_icaos_max_bet.yaml`, with NO weather forecast at all: each day's
      target is the bucket of Polymarket's MOST EXPENSIVE bet in that slot, i.e.
      it checks how accurately the market itself (its own top bucket) predicts
      the actual. Both the correction slider and the "1 hour with the maximum"
      checkbox are hidden here (`show_effective_max=False`) since both relate to
-     a forecast that does not exist.
+     a forecast that does not exist;
+   - `data_mining/reports/accuracy_report_max.html` — the same (target = the
+     most expensive bet), but for ALL cities and in the full interactive view,
+     like `accuracy_report_forecast.html`.
+
+   On the "Forecast accuracy distribution" chart, bars with |error| >
+   `accuracy_report.hist_max_abs_error` (default 5) are not drawn, since a rare
+   outlier would stretch the axis; the number of hidden snapshots is shown
+   below the chart. Ratings, the ✓/✗ panel and the backtest are computed on ALL
+   data. Zero on the X axis is always centered.
 3. `CityCriteriaSelector.select(df)` selects cities by three criteria
    (thresholds are in the `criteria` section of `config/config.yaml`), always
    based on the raw weather forecast, unrelated to the max_bet set.
