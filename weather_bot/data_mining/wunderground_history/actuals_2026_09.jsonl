@@ -1,0 +1,1470 @@
+{"date": "2026-09-01", "icao": "KLGA", "city": "NYC", "max_temp_f": 80}
+{"date": "2026-09-02", "icao": "KLGA", "city": "NYC", "max_temp_f": 74}
+{"date": "2026-09-03", "icao": "KLGA", "city": "NYC", "max_temp_f": 87}
+{"date": "2026-09-04", "icao": "KLGA", "city": "NYC", "max_temp_f": 84}
+{"date": "2026-09-05", "icao": "KLGA", "city": "NYC", "max_temp_f": 79}
+{"date": "2026-09-01", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 75}
+{"date": "2026-09-02", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 76}
+{"date": "2026-09-03", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 77}
+{"date": "2026-09-04", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 77}
+{"date": "2026-09-05", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 80}
+{"date": "2026-09-01", "icao": "KORD", "city": "Chicago", "max_temp_f": 94}
+{"date": "2026-09-02", "icao": "KORD", "city": "Chicago", "max_temp_f": 95}
+{"date": "2026-09-03", "icao": "KORD", "city": "Chicago", "max_temp_f": 90}
+{"date": "2026-09-04", "icao": "KORD", "city": "Chicago", "max_temp_f": 93}
+{"date": "2026-09-05", "icao": "KORD", "city": "Chicago", "max_temp_f": 80}
+{"date": "2026-09-01", "icao": "KDAL", "city": "Dallas", "max_temp_f": 99}
+{"date": "2026-09-02", "icao": "KDAL", "city": "Dallas", "max_temp_f": 100}
+{"date": "2026-09-03", "icao": "KDAL", "city": "Dallas", "max_temp_f": 91}
+{"date": "2026-09-04", "icao": "KDAL", "city": "Dallas", "max_temp_f": 99}
+{"date": "2026-09-05", "icao": "KDAL", "city": "Dallas", "max_temp_f": 99}
+{"date": "2026-09-01", "icao": "KMIA", "city": "Miami", "max_temp_f": 89}
+{"date": "2026-09-02", "icao": "KMIA", "city": "Miami", "max_temp_f": 89}
+{"date": "2026-09-03", "icao": "KMIA", "city": "Miami", "max_temp_f": 93}
+{"date": "2026-09-04", "icao": "KMIA", "city": "Miami", "max_temp_f": 90}
+{"date": "2026-09-05", "icao": "KMIA", "city": "Miami", "max_temp_f": 91}
+{"date": "2026-09-01", "icao": "KHOU", "city": "Houston", "max_temp_f": 87}
+{"date": "2026-09-02", "icao": "KHOU", "city": "Houston", "max_temp_f": 95}
+{"date": "2026-09-03", "icao": "KHOU", "city": "Houston", "max_temp_f": 92}
+{"date": "2026-09-04", "icao": "KHOU", "city": "Houston", "max_temp_f": 91}
+{"date": "2026-09-05", "icao": "KHOU", "city": "Houston", "max_temp_f": 91}
+{"date": "2026-09-01", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 71}
+{"date": "2026-09-02", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 72}
+{"date": "2026-09-03", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 71}
+{"date": "2026-09-04", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 71}
+{"date": "2026-09-05", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 73}
+{"date": "2026-09-01", "icao": "KSEA", "city": "Seattle", "max_temp_f": 66}
+{"date": "2026-09-02", "icao": "KSEA", "city": "Seattle", "max_temp_f": 69}
+{"date": "2026-09-03", "icao": "KSEA", "city": "Seattle", "max_temp_f": 68}
+{"date": "2026-09-04", "icao": "KSEA", "city": "Seattle", "max_temp_f": 69}
+{"date": "2026-09-05", "icao": "KSEA", "city": "Seattle", "max_temp_f": 69}
+{"date": "2026-09-01", "icao": "KATL", "city": "Atlanta", "max_temp_f": 93}
+{"date": "2026-09-02", "icao": "KATL", "city": "Atlanta", "max_temp_f": 95}
+{"date": "2026-09-03", "icao": "KATL", "city": "Atlanta", "max_temp_f": 95}
+{"date": "2026-09-04", "icao": "KATL", "city": "Atlanta", "max_temp_f": 94}
+{"date": "2026-09-05", "icao": "KATL", "city": "Atlanta", "max_temp_f": 97}
+{"date": "2026-09-01", "icao": "KBKF", "city": "Denver", "max_temp_f": 86}
+{"date": "2026-09-02", "icao": "KBKF", "city": "Denver", "max_temp_f": 89}
+{"date": "2026-09-03", "icao": "KBKF", "city": "Denver", "max_temp_f": 92}
+{"date": "2026-09-04", "icao": "KBKF", "city": "Denver", "max_temp_f": 93}
+{"date": "2026-09-05", "icao": "KBKF", "city": "Denver", "max_temp_f": 94}
+{"date": "2026-09-01", "icao": "KAUS", "city": "Austin", "max_temp_f": 100}
+{"date": "2026-09-02", "icao": "KAUS", "city": "Austin", "max_temp_f": 100}
+{"date": "2026-09-03", "icao": "KAUS", "city": "Austin", "max_temp_f": 99}
+{"date": "2026-09-04", "icao": "KAUS", "city": "Austin", "max_temp_f": 95}
+{"date": "2026-09-05", "icao": "KAUS", "city": "Austin", "max_temp_f": 100}
+{"date": "2026-09-01", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 81}
+{"date": "2026-09-02", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 82}
+{"date": "2026-09-03", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 84}
+{"date": "2026-09-04", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 77}
+{"date": "2026-09-05", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 75}
+{"date": "2026-09-01", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 73}
+{"date": "2026-09-02", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-03", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-04", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-05", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-01", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-02", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-03", "icao": "MPMG", "city": "Panama City", "max_temp_f": 91}
+{"date": "2026-09-04", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-05", "icao": "MPMG", "city": "Panama City", "max_temp_f": 91}
+{"date": "2026-09-01", "icao": "EGLC", "city": "London", "max_temp_f": 73}
+{"date": "2026-09-02", "icao": "EGLC", "city": "London", "max_temp_f": 70}
+{"date": "2026-09-03", "icao": "EGLC", "city": "London", "max_temp_f": 79}
+{"date": "2026-09-04", "icao": "EGLC", "city": "London", "max_temp_f": 72}
+{"date": "2026-09-05", "icao": "EGLC", "city": "London", "max_temp_f": 73}
+{"date": "2026-09-01", "icao": "LFPG", "city": "Paris", "max_temp_f": 75}
+{"date": "2026-09-02", "icao": "LFPG", "city": "Paris", "max_temp_f": 77}
+{"date": "2026-09-03", "icao": "LFPG", "city": "Paris", "max_temp_f": 81}
+{"date": "2026-09-04", "icao": "LFPG", "city": "Paris", "max_temp_f": 82}
+{"date": "2026-09-05", "icao": "LFPG", "city": "Paris", "max_temp_f": 77}
+{"date": "2026-09-01", "icao": "EDDM", "city": "Munich", "max_temp_f": 75}
+{"date": "2026-09-02", "icao": "EDDM", "city": "Munich", "max_temp_f": 77}
+{"date": "2026-09-03", "icao": "EDDM", "city": "Munich", "max_temp_f": 77}
+{"date": "2026-09-04", "icao": "EDDM", "city": "Munich", "max_temp_f": 86}
+{"date": "2026-09-05", "icao": "EDDM", "city": "Munich", "max_temp_f": 75}
+{"date": "2026-09-01", "icao": "LIMC", "city": "Milan", "max_temp_f": 84}
+{"date": "2026-09-02", "icao": "LIMC", "city": "Milan", "max_temp_f": 86}
+{"date": "2026-09-03", "icao": "LIMC", "city": "Milan", "max_temp_f": 88}
+{"date": "2026-09-04", "icao": "LIMC", "city": "Milan", "max_temp_f": 91}
+{"date": "2026-09-05", "icao": "LIMC", "city": "Milan", "max_temp_f": 90}
+{"date": "2026-09-01", "icao": "LEMD", "city": "Madrid", "max_temp_f": 93}
+{"date": "2026-09-02", "icao": "LEMD", "city": "Madrid", "max_temp_f": 97}
+{"date": "2026-09-03", "icao": "LEMD", "city": "Madrid", "max_temp_f": 100}
+{"date": "2026-09-04", "icao": "LEMD", "city": "Madrid", "max_temp_f": 100}
+{"date": "2026-09-05", "icao": "LEMD", "city": "Madrid", "max_temp_f": 97}
+{"date": "2026-09-01", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 68}
+{"date": "2026-09-02", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 72}
+{"date": "2026-09-03", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 72}
+{"date": "2026-09-04", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 72}
+{"date": "2026-09-05", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 68}
+{"date": "2026-09-01", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 70}
+{"date": "2026-09-02", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 72}
+{"date": "2026-09-03", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 73}
+{"date": "2026-09-04", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 72}
+{"date": "2026-09-05", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 70}
+{"date": "2026-09-01", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 68}
+{"date": "2026-09-02", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 68}
+{"date": "2026-09-03", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 66}
+{"date": "2026-09-04", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 64}
+{"date": "2026-09-05", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 64}
+{"date": "2026-09-01", "icao": "LTAC", "city": "Ankara", "max_temp_f": 86}
+{"date": "2026-09-02", "icao": "LTAC", "city": "Ankara", "max_temp_f": 88}
+{"date": "2026-09-03", "icao": "LTAC", "city": "Ankara", "max_temp_f": 86}
+{"date": "2026-09-04", "icao": "LTAC", "city": "Ankara", "max_temp_f": 84}
+{"date": "2026-09-05", "icao": "LTAC", "city": "Ankara", "max_temp_f": 84}
+{"date": "2026-09-01", "icao": "RKSI", "city": "Seoul", "max_temp_f": 77}
+{"date": "2026-09-02", "icao": "RKSI", "city": "Seoul", "max_temp_f": 82}
+{"date": "2026-09-03", "icao": "RKSI", "city": "Seoul", "max_temp_f": 88}
+{"date": "2026-09-04", "icao": "RKSI", "city": "Seoul", "max_temp_f": 86}
+{"date": "2026-09-05", "icao": "RKSI", "city": "Seoul", "max_temp_f": 84}
+{"date": "2026-09-01", "icao": "RKPK", "city": "Busan", "max_temp_f": 90}
+{"date": "2026-09-02", "icao": "RKPK", "city": "Busan", "max_temp_f": 90}
+{"date": "2026-09-03", "icao": "RKPK", "city": "Busan", "max_temp_f": 88}
+{"date": "2026-09-04", "icao": "RKPK", "city": "Busan", "max_temp_f": 84}
+{"date": "2026-09-05", "icao": "RKPK", "city": "Busan", "max_temp_f": 84}
+{"date": "2026-09-01", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 82}
+{"date": "2026-09-02", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 88}
+{"date": "2026-09-03", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 88}
+{"date": "2026-09-04", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 81}
+{"date": "2026-09-05", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 77}
+{"date": "2026-09-01", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 86}
+{"date": "2026-09-02", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 88}
+{"date": "2026-09-03", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 90}
+{"date": "2026-09-04", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 91}
+{"date": "2026-09-05", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 91}
+{"date": "2026-09-01", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 86}
+{"date": "2026-09-02", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 86}
+{"date": "2026-09-03", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 88}
+{"date": "2026-09-04", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 88}
+{"date": "2026-09-05", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 86}
+{"date": "2026-09-01", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 84}
+{"date": "2026-09-02", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 86}
+{"date": "2026-09-03", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 85}
+{"date": "2026-09-04", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 87}
+{"date": "2026-09-05", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 88}
+{"date": "2026-09-01", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 93}
+{"date": "2026-09-02", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 91}
+{"date": "2026-09-03", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 91}
+{"date": "2026-09-04", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 93}
+{"date": "2026-09-05", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 95}
+{"date": "2026-09-01", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 93}
+{"date": "2026-09-02", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 91}
+{"date": "2026-09-03", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 82}
+{"date": "2026-09-04", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 93}
+{"date": "2026-09-05", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 93}
+{"date": "2026-09-01", "icao": "WSSS", "city": "Singapore", "max_temp_f": 90}
+{"date": "2026-09-02", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-03", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-04", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-05", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-01", "icao": "VILK", "city": "Lucknow", "max_temp_f": 86}
+{"date": "2026-09-02", "icao": "VILK", "city": "Lucknow", "max_temp_f": 86}
+{"date": "2026-09-03", "icao": "VILK", "city": "Lucknow", "max_temp_f": 86}
+{"date": "2026-09-04", "icao": "VILK", "city": "Lucknow", "max_temp_f": 88}
+{"date": "2026-09-05", "icao": "VILK", "city": "Lucknow", "max_temp_f": 90}
+{"date": "2026-09-01", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-02", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 93}
+{"date": "2026-09-03", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-04", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 93}
+{"date": "2026-09-05", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 90}
+{"date": "2026-09-01", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 82}
+{"date": "2026-09-02", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 90}
+{"date": "2026-09-03", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 81}
+{"date": "2026-09-04", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 88}
+{"date": "2026-09-05", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 88}
+{"date": "2026-09-01", "icao": "NZWN", "city": "Wellington", "max_temp_f": 57}
+{"date": "2026-09-02", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-03", "icao": "NZWN", "city": "Wellington", "max_temp_f": 63}
+{"date": "2026-09-04", "icao": "NZWN", "city": "Wellington", "max_temp_f": 64}
+{"date": "2026-09-05", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-01", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 70}
+{"date": "2026-09-02", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 75}
+{"date": "2026-09-03", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 64}
+{"date": "2026-09-04", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 64}
+{"date": "2026-09-05", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 55}
+{"date": "2026-09-01", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 70}
+{"date": "2026-09-02", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 70}
+{"date": "2026-09-03", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 84}
+{"date": "2026-09-04", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 88}
+{"date": "2026-09-05", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 68}
+{"date": "2026-09-01", "icao": "OPKC", "city": "Karachi", "max_temp_f": 86}
+{"date": "2026-09-02", "icao": "OPKC", "city": "Karachi", "max_temp_f": 91}
+{"date": "2026-09-03", "icao": "OPKC", "city": "Karachi", "max_temp_f": 90}
+{"date": "2026-09-04", "icao": "OPKC", "city": "Karachi", "max_temp_f": 88}
+{"date": "2026-09-05", "icao": "OPKC", "city": "Karachi", "max_temp_f": 91}
+{"date": "2026-09-01", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 88}
+{"date": "2026-09-02", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 86}
+{"date": "2026-09-03", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 90}
+{"date": "2026-09-04", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 82}
+{"date": "2026-09-05", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 95}
+{"date": "2026-09-01", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-02", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-03", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-04", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-05", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-01", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 90}
+{"date": "2026-09-02", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 91}
+{"date": "2026-09-03", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 90}
+{"date": "2026-09-04", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 90}
+{"date": "2026-09-05", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 90}
+{"date": "2026-09-01", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-02", "icao": "RPLL", "city": "Manila", "max_temp_f": 91}
+{"date": "2026-09-03", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-04", "icao": "RPLL", "city": "Manila", "max_temp_f": 84}
+{"date": "2026-09-05", "icao": "RPLL", "city": "Manila", "max_temp_f": 84}
+{"date": "2026-09-01", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 86}
+{"date": "2026-09-02", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 84}
+{"date": "2026-09-03", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 86}
+{"date": "2026-09-04", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 90}
+{"date": "2026-09-05", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 88}
+{"date": "2026-09-01", "icao": "FACT", "city": "Cape Town", "max_temp_f": 68}
+{"date": "2026-09-02", "icao": "FACT", "city": "Cape Town", "max_temp_f": 66}
+{"date": "2026-09-03", "icao": "FACT", "city": "Cape Town", "max_temp_f": 63}
+{"date": "2026-09-04", "icao": "FACT", "city": "Cape Town", "max_temp_f": 68}
+{"date": "2026-09-05", "icao": "FACT", "city": "Cape Town", "max_temp_f": 77}
+{"date": "2026-09-01", "icao": "UUWW", "city": "Moscow", "max_temp_f": 77}
+{"date": "2026-09-02", "icao": "UUWW", "city": "Moscow", "max_temp_f": 68}
+{"date": "2026-09-03", "icao": "UUWW", "city": "Moscow", "max_temp_f": 66}
+{"date": "2026-09-04", "icao": "UUWW", "city": "Moscow", "max_temp_f": 70}
+{"date": "2026-09-05", "icao": "UUWW", "city": "Moscow", "max_temp_f": 64}
+{"date": "2026-09-01", "icao": "RCSS", "city": "Taipei", "max_temp_f": 90}
+{"date": "2026-09-02", "icao": "RCSS", "city": "Taipei", "max_temp_f": 91}
+{"date": "2026-09-03", "icao": "RCSS", "city": "Taipei", "max_temp_f": 86}
+{"date": "2026-09-04", "icao": "RCSS", "city": "Taipei", "max_temp_f": 81}
+{"date": "2026-09-05", "icao": "RCSS", "city": "Taipei", "max_temp_f": 88}
+{"date": "2026-09-01", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 86}
+{"date": "2026-09-02", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 86}
+{"date": "2026-09-03", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 86}
+{"date": "2026-09-04", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 88}
+{"date": "2026-09-05", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 90}
+{"date": "2026-09-01", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 88}
+{"date": "2026-09-02", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 86}
+{"date": "2026-09-03", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 84}
+{"date": "2026-09-04", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 86}
+{"date": "2026-09-05", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 88}
+{"date": "2026-09-06", "icao": "KLGA", "city": "NYC", "max_temp_f": 75}
+{"date": "2026-09-06", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 76}
+{"date": "2026-09-06", "icao": "KORD", "city": "Chicago", "max_temp_f": 78}
+{"date": "2026-09-06", "icao": "KDAL", "city": "Dallas", "max_temp_f": 98}
+{"date": "2026-09-06", "icao": "KMIA", "city": "Miami", "max_temp_f": 90}
+{"date": "2026-09-06", "icao": "KHOU", "city": "Houston", "max_temp_f": 89}
+{"date": "2026-09-06", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 71}
+{"date": "2026-09-06", "icao": "KSEA", "city": "Seattle", "max_temp_f": 73}
+{"date": "2026-09-06", "icao": "KATL", "city": "Atlanta", "max_temp_f": 94}
+{"date": "2026-09-06", "icao": "KBKF", "city": "Denver", "max_temp_f": 92}
+{"date": "2026-09-06", "icao": "KAUS", "city": "Austin", "max_temp_f": 96}
+{"date": "2026-09-06", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 72}
+{"date": "2026-09-06", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 75}
+{"date": "2026-09-06", "icao": "MPMG", "city": "Panama City", "max_temp_f": 88}
+{"date": "2026-09-06", "icao": "EGLC", "city": "London", "max_temp_f": 81}
+{"date": "2026-09-06", "icao": "LFPG", "city": "Paris", "max_temp_f": 82}
+{"date": "2026-09-06", "icao": "EDDM", "city": "Munich", "max_temp_f": 75}
+{"date": "2026-09-06", "icao": "LIMC", "city": "Milan", "max_temp_f": 90}
+{"date": "2026-09-06", "icao": "LEMD", "city": "Madrid", "max_temp_f": 99}
+{"date": "2026-09-06", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 72}
+{"date": "2026-09-06", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 64}
+{"date": "2026-09-06", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 59}
+{"date": "2026-09-06", "icao": "LTAC", "city": "Ankara", "max_temp_f": 90}
+{"date": "2026-09-06", "icao": "RKSI", "city": "Seoul", "max_temp_f": 84}
+{"date": "2026-09-06", "icao": "RKPK", "city": "Busan", "max_temp_f": 84}
+{"date": "2026-09-06", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 73}
+{"date": "2026-09-06", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 88}
+{"date": "2026-09-06", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 86}
+{"date": "2026-09-06", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 87}
+{"date": "2026-09-06", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 97}
+{"date": "2026-09-06", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 95}
+{"date": "2026-09-06", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-06", "icao": "VILK", "city": "Lucknow", "max_temp_f": 88}
+{"date": "2026-09-06", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-06", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 90}
+{"date": "2026-09-06", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-06", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 54}
+{"date": "2026-09-06", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 59}
+{"date": "2026-09-06", "icao": "OPKC", "city": "Karachi", "max_temp_f": 88}
+{"date": "2026-09-06", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 86}
+{"date": "2026-09-06", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 100}
+{"date": "2026-09-06", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 90}
+{"date": "2026-09-06", "icao": "RPLL", "city": "Manila", "max_temp_f": 86}
+{"date": "2026-09-06", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 86}
+{"date": "2026-09-06", "icao": "FACT", "city": "Cape Town", "max_temp_f": 81}
+{"date": "2026-09-06", "icao": "UUWW", "city": "Moscow", "max_temp_f": 61}
+{"date": "2026-09-06", "icao": "RCSS", "city": "Taipei", "max_temp_f": 77}
+{"date": "2026-09-06", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 90}
+{"date": "2026-09-06", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 91}
+{"date": "2026-09-07", "icao": "KLGA", "city": "NYC", "max_temp_f": 79}
+{"date": "2026-09-07", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 84}
+{"date": "2026-09-07", "icao": "KORD", "city": "Chicago", "max_temp_f": 80}
+{"date": "2026-09-07", "icao": "KDAL", "city": "Dallas", "max_temp_f": 100}
+{"date": "2026-09-07", "icao": "KMIA", "city": "Miami", "max_temp_f": 91}
+{"date": "2026-09-07", "icao": "KHOU", "city": "Houston", "max_temp_f": 95}
+{"date": "2026-09-07", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 80}
+{"date": "2026-09-07", "icao": "KSEA", "city": "Seattle", "max_temp_f": 70}
+{"date": "2026-09-07", "icao": "KATL", "city": "Atlanta", "max_temp_f": 82}
+{"date": "2026-09-07", "icao": "KBKF", "city": "Denver", "max_temp_f": 90}
+{"date": "2026-09-07", "icao": "KAUS", "city": "Austin", "max_temp_f": 101}
+{"date": "2026-09-07", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 77}
+{"date": "2026-09-07", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 72}
+{"date": "2026-09-07", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-07", "icao": "EGLC", "city": "London", "max_temp_f": 77}
+{"date": "2026-09-07", "icao": "LFPG", "city": "Paris", "max_temp_f": 84}
+{"date": "2026-09-07", "icao": "EDDM", "city": "Munich", "max_temp_f": 82}
+{"date": "2026-09-07", "icao": "LIMC", "city": "Milan", "max_temp_f": 88}
+{"date": "2026-09-07", "icao": "LEMD", "city": "Madrid", "max_temp_f": 100}
+{"date": "2026-09-07", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 79}
+{"date": "2026-09-07", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 70}
+{"date": "2026-09-07", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-07", "icao": "LTAC", "city": "Ankara", "max_temp_f": 75}
+{"date": "2026-09-07", "icao": "RKSI", "city": "Seoul", "max_temp_f": 82}
+{"date": "2026-09-07", "icao": "RKPK", "city": "Busan", "max_temp_f": 84}
+{"date": "2026-09-07", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 75}
+{"date": "2026-09-07", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 84}
+{"date": "2026-09-07", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 86}
+{"date": "2026-09-07", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 90}
+{"date": "2026-09-07", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 99}
+{"date": "2026-09-07", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 90}
+{"date": "2026-09-07", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-07", "icao": "VILK", "city": "Lucknow", "max_temp_f": 88}
+{"date": "2026-09-07", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 93}
+{"date": "2026-09-07", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 91}
+{"date": "2026-09-07", "icao": "NZWN", "city": "Wellington", "max_temp_f": 50}
+{"date": "2026-09-07", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 55}
+{"date": "2026-09-07", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 57}
+{"date": "2026-09-07", "icao": "OPKC", "city": "Karachi", "max_temp_f": 90}
+{"date": "2026-09-07", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 95}
+{"date": "2026-09-07", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 97}
+{"date": "2026-09-07", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 90}
+{"date": "2026-09-07", "icao": "RPLL", "city": "Manila", "max_temp_f": 81}
+{"date": "2026-09-07", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 86}
+{"date": "2026-09-07", "icao": "FACT", "city": "Cape Town", "max_temp_f": 84}
+{"date": "2026-09-07", "icao": "UUWW", "city": "Moscow", "max_temp_f": 55}
+{"date": "2026-09-07", "icao": "RCSS", "city": "Taipei", "max_temp_f": 88}
+{"date": "2026-09-07", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 88}
+{"date": "2026-09-07", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 90}
+{"date": "2026-09-08", "icao": "KLGA", "city": "NYC", "max_temp_f": 80}
+{"date": "2026-09-08", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 91}
+{"date": "2026-09-08", "icao": "KORD", "city": "Chicago", "max_temp_f": 85}
+{"date": "2026-09-08", "icao": "KDAL", "city": "Dallas", "max_temp_f": 100}
+{"date": "2026-09-08", "icao": "KMIA", "city": "Miami", "max_temp_f": 90}
+{"date": "2026-09-08", "icao": "KHOU", "city": "Houston", "max_temp_f": 93}
+{"date": "2026-09-08", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 86}
+{"date": "2026-09-08", "icao": "KSEA", "city": "Seattle", "max_temp_f": 74}
+{"date": "2026-09-08", "icao": "KATL", "city": "Atlanta", "max_temp_f": 88}
+{"date": "2026-09-08", "icao": "KBKF", "city": "Denver", "max_temp_f": 87}
+{"date": "2026-09-08", "icao": "KAUS", "city": "Austin", "max_temp_f": 100}
+{"date": "2026-09-08", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 77}
+{"date": "2026-09-08", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 77}
+{"date": "2026-09-08", "icao": "MPMG", "city": "Panama City", "max_temp_f": 93}
+{"date": "2026-09-08", "icao": "EGLC", "city": "London", "max_temp_f": 66}
+{"date": "2026-09-08", "icao": "LFPG", "city": "Paris", "max_temp_f": 77}
+{"date": "2026-09-08", "icao": "EDDM", "city": "Munich", "max_temp_f": 90}
+{"date": "2026-09-08", "icao": "LIMC", "city": "Milan", "max_temp_f": 90}
+{"date": "2026-09-08", "icao": "LEMD", "city": "Madrid", "max_temp_f": 97}
+{"date": "2026-09-08", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 66}
+{"date": "2026-09-08", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 81}
+{"date": "2026-09-08", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-08", "icao": "LTAC", "city": "Ankara", "max_temp_f": 73}
+{"date": "2026-09-08", "icao": "RKSI", "city": "Seoul", "max_temp_f": 82}
+{"date": "2026-09-08", "icao": "RKPK", "city": "Busan", "max_temp_f": 86}
+{"date": "2026-09-08", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 84}
+{"date": "2026-09-08", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 77}
+{"date": "2026-09-08", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 86}
+{"date": "2026-09-08", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 91}
+{"date": "2026-09-08", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 99}
+{"date": "2026-09-08", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 84}
+{"date": "2026-09-08", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-08", "icao": "VILK", "city": "Lucknow", "max_temp_f": 90}
+{"date": "2026-09-08", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-08", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 95}
+{"date": "2026-09-08", "icao": "NZWN", "city": "Wellington", "max_temp_f": 55}
+{"date": "2026-09-08", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 66}
+{"date": "2026-09-08", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 66}
+{"date": "2026-09-08", "icao": "OPKC", "city": "Karachi", "max_temp_f": 90}
+{"date": "2026-09-08", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 95}
+{"date": "2026-09-08", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 100}
+{"date": "2026-09-08", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 93}
+{"date": "2026-09-08", "icao": "RPLL", "city": "Manila", "max_temp_f": 82}
+{"date": "2026-09-08", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 81}
+{"date": "2026-09-08", "icao": "FACT", "city": "Cape Town", "max_temp_f": 84}
+{"date": "2026-09-08", "icao": "UUWW", "city": "Moscow", "max_temp_f": 59}
+{"date": "2026-09-08", "icao": "RCSS", "city": "Taipei", "max_temp_f": 90}
+{"date": "2026-09-08", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 73}
+{"date": "2026-09-08", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 77}
+{"date": "2026-09-09", "icao": "KLGA", "city": "NYC", "max_temp_f": 83}
+{"date": "2026-09-09", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 97}
+{"date": "2026-09-09", "icao": "KORD", "city": "Chicago", "max_temp_f": 79}
+{"date": "2026-09-09", "icao": "KDAL", "city": "Dallas", "max_temp_f": 100}
+{"date": "2026-09-09", "icao": "KMIA", "city": "Miami", "max_temp_f": 90}
+{"date": "2026-09-09", "icao": "KHOU", "city": "Houston", "max_temp_f": 91}
+{"date": "2026-09-09", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 93}
+{"date": "2026-09-09", "icao": "KSEA", "city": "Seattle", "max_temp_f": 77}
+{"date": "2026-09-09", "icao": "KATL", "city": "Atlanta", "max_temp_f": 89}
+{"date": "2026-09-09", "icao": "KBKF", "city": "Denver", "max_temp_f": 82}
+{"date": "2026-09-09", "icao": "KAUS", "city": "Austin", "max_temp_f": 99}
+{"date": "2026-09-09", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 75}
+{"date": "2026-09-09", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 75}
+{"date": "2026-09-09", "icao": "MPMG", "city": "Panama City", "max_temp_f": 88}
+{"date": "2026-09-09", "icao": "EGLC", "city": "London", "max_temp_f": 66}
+{"date": "2026-09-09", "icao": "LFPG", "city": "Paris", "max_temp_f": 72}
+{"date": "2026-09-09", "icao": "EDDM", "city": "Munich", "max_temp_f": 72}
+{"date": "2026-09-09", "icao": "LIMC", "city": "Milan", "max_temp_f": 75}
+{"date": "2026-09-09", "icao": "LEMD", "city": "Madrid", "max_temp_f": 81}
+{"date": "2026-09-09", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 64}
+{"date": "2026-09-09", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 86}
+{"date": "2026-09-09", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 64}
+{"date": "2026-09-09", "icao": "LTAC", "city": "Ankara", "max_temp_f": 81}
+{"date": "2026-09-09", "icao": "RKSI", "city": "Seoul", "max_temp_f": 79}
+{"date": "2026-09-09", "icao": "RKPK", "city": "Busan", "max_temp_f": 79}
+{"date": "2026-09-09", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 88}
+{"date": "2026-09-09", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 81}
+{"date": "2026-09-09", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 82}
+{"date": "2026-09-09", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 91}
+{"date": "2026-09-09", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 97}
+{"date": "2026-09-09", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 81}
+{"date": "2026-09-09", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-09", "icao": "VILK", "city": "Lucknow", "max_temp_f": 93}
+{"date": "2026-09-09", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-09", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 75}
+{"date": "2026-09-09", "icao": "NZWN", "city": "Wellington", "max_temp_f": 57}
+{"date": "2026-09-09", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 68}
+{"date": "2026-09-09", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 72}
+{"date": "2026-09-09", "icao": "OPKC", "city": "Karachi", "max_temp_f": 91}
+{"date": "2026-09-09", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 95}
+{"date": "2026-09-09", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 100}
+{"date": "2026-09-09", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 93}
+{"date": "2026-09-09", "icao": "RPLL", "city": "Manila", "max_temp_f": 86}
+{"date": "2026-09-09", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 79}
+{"date": "2026-09-09", "icao": "FACT", "city": "Cape Town", "max_temp_f": 63}
+{"date": "2026-09-09", "icao": "UUWW", "city": "Moscow", "max_temp_f": 70}
+{"date": "2026-09-09", "icao": "RCSS", "city": "Taipei", "max_temp_f": 88}
+{"date": "2026-09-09", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 75}
+{"date": "2026-09-09", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 66}
+{"date": "2026-09-10", "icao": "KLGA", "city": "NYC", "max_temp_f": 87}
+{"date": "2026-09-10", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 91}
+{"date": "2026-09-10", "icao": "KORD", "city": "Chicago", "max_temp_f": 77}
+{"date": "2026-09-10", "icao": "KDAL", "city": "Dallas", "max_temp_f": 99}
+{"date": "2026-09-10", "icao": "KMIA", "city": "Miami", "max_temp_f": 90}
+{"date": "2026-09-10", "icao": "KHOU", "city": "Houston", "max_temp_f": 89}
+{"date": "2026-09-10", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 84}
+{"date": "2026-09-10", "icao": "KSEA", "city": "Seattle", "max_temp_f": 70}
+{"date": "2026-09-10", "icao": "KATL", "city": "Atlanta", "max_temp_f": 90}
+{"date": "2026-09-10", "icao": "KBKF", "city": "Denver", "max_temp_f": 89}
+{"date": "2026-09-10", "icao": "KAUS", "city": "Austin", "max_temp_f": 100}
+{"date": "2026-09-10", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 77}
+{"date": "2026-09-10", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 77}
+{"date": "2026-09-10", "icao": "MPMG", "city": "Panama City", "max_temp_f": 88}
+{"date": "2026-09-10", "icao": "EGLC", "city": "London", "max_temp_f": 70}
+{"date": "2026-09-10", "icao": "LFPG", "city": "Paris", "max_temp_f": 70}
+{"date": "2026-09-10", "icao": "EDDM", "city": "Munich", "max_temp_f": 64}
+{"date": "2026-09-10", "icao": "LIMC", "city": "Milan", "max_temp_f": 72}
+{"date": "2026-09-10", "icao": "LEMD", "city": "Madrid", "max_temp_f": 82}
+{"date": "2026-09-10", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 68}
+{"date": "2026-09-10", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 68}
+{"date": "2026-09-10", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-10", "icao": "LTAC", "city": "Ankara", "max_temp_f": 86}
+{"date": "2026-09-10", "icao": "RKSI", "city": "Seoul", "max_temp_f": 72}
+{"date": "2026-09-10", "icao": "RKPK", "city": "Busan", "max_temp_f": 81}
+{"date": "2026-09-10", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 72}
+{"date": "2026-09-10", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 88}
+{"date": "2026-09-10", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 86}
+{"date": "2026-09-10", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 90}
+{"date": "2026-09-10", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 86}
+{"date": "2026-09-10", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 73}
+{"date": "2026-09-10", "icao": "WSSS", "city": "Singapore", "max_temp_f": 90}
+{"date": "2026-09-10", "icao": "VILK", "city": "Lucknow", "max_temp_f": 93}
+{"date": "2026-09-10", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-10", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 77}
+{"date": "2026-09-10", "icao": "NZWN", "city": "Wellington", "max_temp_f": 55}
+{"date": "2026-09-10", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 70}
+{"date": "2026-09-10", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 72}
+{"date": "2026-09-10", "icao": "OPKC", "city": "Karachi", "max_temp_f": 90}
+{"date": "2026-09-10", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 90}
+{"date": "2026-09-10", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-10", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 91}
+{"date": "2026-09-10", "icao": "RPLL", "city": "Manila", "max_temp_f": 86}
+{"date": "2026-09-10", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 81}
+{"date": "2026-09-10", "icao": "FACT", "city": "Cape Town", "max_temp_f": 66}
+{"date": "2026-09-10", "icao": "UUWW", "city": "Moscow", "max_temp_f": 77}
+{"date": "2026-09-10", "icao": "RCSS", "city": "Taipei", "max_temp_f": 88}
+{"date": "2026-09-10", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 81}
+{"date": "2026-09-10", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 81}
+{"date": "2026-09-11", "icao": "KLGA", "city": "NYC", "max_temp_f": 80}
+{"date": "2026-09-11", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 85}
+{"date": "2026-09-11", "icao": "KORD", "city": "Chicago", "max_temp_f": 82}
+{"date": "2026-09-11", "icao": "KDAL", "city": "Dallas", "max_temp_f": 99}
+{"date": "2026-09-11", "icao": "KMIA", "city": "Miami", "max_temp_f": 88}
+{"date": "2026-09-11", "icao": "KHOU", "city": "Houston", "max_temp_f": 94}
+{"date": "2026-09-11", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 72}
+{"date": "2026-09-11", "icao": "KSEA", "city": "Seattle", "max_temp_f": 66}
+{"date": "2026-09-11", "icao": "KATL", "city": "Atlanta", "max_temp_f": 88}
+{"date": "2026-09-11", "icao": "KBKF", "city": "Denver", "max_temp_f": 89}
+{"date": "2026-09-11", "icao": "KAUS", "city": "Austin", "max_temp_f": 102}
+{"date": "2026-09-11", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 73}
+{"date": "2026-09-11", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 77}
+{"date": "2026-09-11", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-11", "icao": "EGLC", "city": "London", "max_temp_f": 70}
+{"date": "2026-09-11", "icao": "LFPG", "city": "Paris", "max_temp_f": 77}
+{"date": "2026-09-11", "icao": "EDDM", "city": "Munich", "max_temp_f": 68}
+{"date": "2026-09-11", "icao": "LIMC", "city": "Milan", "max_temp_f": 77}
+{"date": "2026-09-11", "icao": "LEMD", "city": "Madrid", "max_temp_f": 90}
+{"date": "2026-09-11", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 70}
+{"date": "2026-09-11", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 63}
+{"date": "2026-09-11", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-11", "icao": "LTAC", "city": "Ankara", "max_temp_f": 88}
+{"date": "2026-09-11", "icao": "RKSI", "city": "Seoul", "max_temp_f": 77}
+{"date": "2026-09-11", "icao": "RKPK", "city": "Busan", "max_temp_f": 84}
+{"date": "2026-09-11", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 70}
+{"date": "2026-09-11", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 90}
+{"date": "2026-09-11", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 81}
+{"date": "2026-09-11", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 92}
+{"date": "2026-09-11", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 75}
+{"date": "2026-09-11", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 73}
+{"date": "2026-09-11", "icao": "WSSS", "city": "Singapore", "max_temp_f": 90}
+{"date": "2026-09-11", "icao": "VILK", "city": "Lucknow", "max_temp_f": 88}
+{"date": "2026-09-11", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 84}
+{"date": "2026-09-11", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 82}
+{"date": "2026-09-11", "icao": "NZWN", "city": "Wellington", "max_temp_f": 57}
+{"date": "2026-09-11", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 66}
+{"date": "2026-09-11", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 82}
+{"date": "2026-09-11", "icao": "OPKC", "city": "Karachi", "max_temp_f": 91}
+{"date": "2026-09-11", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 90}
+{"date": "2026-09-11", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-11", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 88}
+{"date": "2026-09-11", "icao": "RPLL", "city": "Manila", "max_temp_f": 86}
+{"date": "2026-09-11", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 82}
+{"date": "2026-09-11", "icao": "FACT", "city": "Cape Town", "max_temp_f": 75}
+{"date": "2026-09-11", "icao": "UUWW", "city": "Moscow", "max_temp_f": 64}
+{"date": "2026-09-11", "icao": "RCSS", "city": "Taipei", "max_temp_f": 84}
+{"date": "2026-09-11", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 81}
+{"date": "2026-09-11", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 77}
+{"date": "2026-09-12", "icao": "KLGA", "city": "NYC", "max_temp_f": 78}
+{"date": "2026-09-12", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 81}
+{"date": "2026-09-12", "icao": "KORD", "city": "Chicago", "max_temp_f": 87}
+{"date": "2026-09-12", "icao": "KDAL", "city": "Dallas", "max_temp_f": 101}
+{"date": "2026-09-12", "icao": "KMIA", "city": "Miami", "max_temp_f": 93}
+{"date": "2026-09-12", "icao": "KHOU", "city": "Houston", "max_temp_f": 96}
+{"date": "2026-09-12", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 71}
+{"date": "2026-09-12", "icao": "KSEA", "city": "Seattle", "max_temp_f": 66}
+{"date": "2026-09-12", "icao": "KATL", "city": "Atlanta", "max_temp_f": 84}
+{"date": "2026-09-12", "icao": "KBKF", "city": "Denver", "max_temp_f": 81}
+{"date": "2026-09-12", "icao": "KAUS", "city": "Austin", "max_temp_f": 100}
+{"date": "2026-09-12", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 77}
+{"date": "2026-09-12", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-12", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-12", "icao": "EGLC", "city": "London", "max_temp_f": 73}
+{"date": "2026-09-12", "icao": "LFPG", "city": "Paris", "max_temp_f": 79}
+{"date": "2026-09-12", "icao": "EDDM", "city": "Munich", "max_temp_f": 73}
+{"date": "2026-09-12", "icao": "LIMC", "city": "Milan", "max_temp_f": 79}
+{"date": "2026-09-12", "icao": "LEMD", "city": "Madrid", "max_temp_f": 91}
+{"date": "2026-09-12", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 72}
+{"date": "2026-09-12", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 66}
+{"date": "2026-09-12", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-12", "icao": "LTAC", "city": "Ankara", "max_temp_f": 90}
+{"date": "2026-09-12", "icao": "RKSI", "city": "Seoul", "max_temp_f": 73}
+{"date": "2026-09-12", "icao": "RKPK", "city": "Busan", "max_temp_f": 86}
+{"date": "2026-09-12", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 73}
+{"date": "2026-09-12", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 82}
+{"date": "2026-09-12", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 82}
+{"date": "2026-09-12", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 91}
+{"date": "2026-09-12", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 84}
+{"date": "2026-09-12", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 72}
+{"date": "2026-09-12", "icao": "WSSS", "city": "Singapore", "max_temp_f": 90}
+{"date": "2026-09-12", "icao": "VILK", "city": "Lucknow", "max_temp_f": 91}
+{"date": "2026-09-12", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 90}
+{"date": "2026-09-12", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 88}
+{"date": "2026-09-12", "icao": "NZWN", "city": "Wellington", "max_temp_f": 57}
+{"date": "2026-09-12", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 54}
+{"date": "2026-09-12", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 68}
+{"date": "2026-09-12", "icao": "OPKC", "city": "Karachi", "max_temp_f": 97}
+{"date": "2026-09-12", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 90}
+{"date": "2026-09-12", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-12", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 90}
+{"date": "2026-09-12", "icao": "RPLL", "city": "Manila", "max_temp_f": 88}
+{"date": "2026-09-12", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 81}
+{"date": "2026-09-12", "icao": "FACT", "city": "Cape Town", "max_temp_f": 66}
+{"date": "2026-09-12", "icao": "UUWW", "city": "Moscow", "max_temp_f": 63}
+{"date": "2026-09-12", "icao": "RCSS", "city": "Taipei", "max_temp_f": 90}
+{"date": "2026-09-12", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 86}
+{"date": "2026-09-12", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 81}
+{"date": "2026-09-13", "icao": "KLGA", "city": "NYC", "max_temp_f": 81}
+{"date": "2026-09-13", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 78}
+{"date": "2026-09-13", "icao": "KORD", "city": "Chicago", "max_temp_f": 74}
+{"date": "2026-09-13", "icao": "KDAL", "city": "Dallas", "max_temp_f": 99}
+{"date": "2026-09-13", "icao": "KMIA", "city": "Miami", "max_temp_f": 90}
+{"date": "2026-09-13", "icao": "KHOU", "city": "Houston", "max_temp_f": 93}
+{"date": "2026-09-13", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 70}
+{"date": "2026-09-13", "icao": "KSEA", "city": "Seattle", "max_temp_f": 60}
+{"date": "2026-09-13", "icao": "KATL", "city": "Atlanta", "max_temp_f": 90}
+{"date": "2026-09-13", "icao": "KBKF", "city": "Denver", "max_temp_f": 94}
+{"date": "2026-09-13", "icao": "KAUS", "city": "Austin", "max_temp_f": 100}
+{"date": "2026-09-13", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 82}
+{"date": "2026-09-13", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 77}
+{"date": "2026-09-13", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-13", "icao": "EGLC", "city": "London", "max_temp_f": 73}
+{"date": "2026-09-13", "icao": "LFPG", "city": "Paris", "max_temp_f": 81}
+{"date": "2026-09-13", "icao": "EDDM", "city": "Munich", "max_temp_f": 73}
+{"date": "2026-09-13", "icao": "LIMC", "city": "Milan", "max_temp_f": 79}
+{"date": "2026-09-13", "icao": "LEMD", "city": "Madrid", "max_temp_f": 91}
+{"date": "2026-09-13", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 70}
+{"date": "2026-09-13", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 68}
+{"date": "2026-09-13", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 61}
+{"date": "2026-09-13", "icao": "LTAC", "city": "Ankara", "max_temp_f": 91}
+{"date": "2026-09-13", "icao": "RKSI", "city": "Seoul", "max_temp_f": 75}
+{"date": "2026-09-13", "icao": "RKPK", "city": "Busan", "max_temp_f": 86}
+{"date": "2026-09-13", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 77}
+{"date": "2026-09-13", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 88}
+{"date": "2026-09-13", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 84}
+{"date": "2026-09-13", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 88}
+{"date": "2026-09-13", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 81}
+{"date": "2026-09-13", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 79}
+{"date": "2026-09-13", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-13", "icao": "VILK", "city": "Lucknow", "max_temp_f": 91}
+{"date": "2026-09-13", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-13", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 90}
+{"date": "2026-09-13", "icao": "NZWN", "city": "Wellington", "max_temp_f": 61}
+{"date": "2026-09-13", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 55}
+{"date": "2026-09-13", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 61}
+{"date": "2026-09-13", "icao": "OPKC", "city": "Karachi", "max_temp_f": 104}
+{"date": "2026-09-13", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 93}
+{"date": "2026-09-13", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-13", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 90}
+{"date": "2026-09-13", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-13", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 82}
+{"date": "2026-09-13", "icao": "FACT", "city": "Cape Town", "max_temp_f": 77}
+{"date": "2026-09-13", "icao": "UUWW", "city": "Moscow", "max_temp_f": 64}
+{"date": "2026-09-13", "icao": "RCSS", "city": "Taipei", "max_temp_f": 93}
+{"date": "2026-09-13", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 84}
+{"date": "2026-09-13", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 86}
+{"date": "2026-09-14", "icao": "KLGA", "city": "NYC", "max_temp_f": 77}
+{"date": "2026-09-14", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 78}
+{"date": "2026-09-14", "icao": "KORD", "city": "Chicago", "max_temp_f": 70}
+{"date": "2026-09-14", "icao": "KDAL", "city": "Dallas", "max_temp_f": 99}
+{"date": "2026-09-14", "icao": "KMIA", "city": "Miami", "max_temp_f": 89}
+{"date": "2026-09-14", "icao": "KHOU", "city": "Houston", "max_temp_f": 94}
+{"date": "2026-09-14", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 75}
+{"date": "2026-09-14", "icao": "KSEA", "city": "Seattle", "max_temp_f": 66}
+{"date": "2026-09-14", "icao": "KATL", "city": "Atlanta", "max_temp_f": 92}
+{"date": "2026-09-14", "icao": "KBKF", "city": "Denver", "max_temp_f": 87}
+{"date": "2026-09-14", "icao": "KAUS", "city": "Austin", "max_temp_f": 101}
+{"date": "2026-09-14", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 66}
+{"date": "2026-09-14", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 75}
+{"date": "2026-09-14", "icao": "MPMG", "city": "Panama City", "max_temp_f": 88}
+{"date": "2026-09-14", "icao": "EGLC", "city": "London", "max_temp_f": 77}
+{"date": "2026-09-14", "icao": "LFPG", "city": "Paris", "max_temp_f": 84}
+{"date": "2026-09-14", "icao": "EDDM", "city": "Munich", "max_temp_f": 72}
+{"date": "2026-09-14", "icao": "LIMC", "city": "Milan", "max_temp_f": 84}
+{"date": "2026-09-14", "icao": "LEMD", "city": "Madrid", "max_temp_f": 95}
+{"date": "2026-09-14", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 73}
+{"date": "2026-09-14", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 66}
+{"date": "2026-09-14", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-14", "icao": "LTAC", "city": "Ankara", "max_temp_f": 79}
+{"date": "2026-09-14", "icao": "RKSI", "city": "Seoul", "max_temp_f": 79}
+{"date": "2026-09-14", "icao": "RKPK", "city": "Busan", "max_temp_f": 88}
+{"date": "2026-09-14", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 88}
+{"date": "2026-09-14", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 79}
+{"date": "2026-09-14", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 84}
+{"date": "2026-09-14", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 86}
+{"date": "2026-09-14", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 73}
+{"date": "2026-09-14", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 72}
+{"date": "2026-09-14", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-14", "icao": "VILK", "city": "Lucknow", "max_temp_f": 90}
+{"date": "2026-09-14", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-14", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 91}
+{"date": "2026-09-14", "icao": "NZWN", "city": "Wellington", "max_temp_f": 61}
+{"date": "2026-09-14", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 61}
+{"date": "2026-09-14", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 61}
+{"date": "2026-09-14", "icao": "OPKC", "city": "Karachi", "max_temp_f": 102}
+{"date": "2026-09-14", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 93}
+{"date": "2026-09-14", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-14", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 91}
+{"date": "2026-09-14", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-14", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 84}
+{"date": "2026-09-14", "icao": "FACT", "city": "Cape Town", "max_temp_f": 64}
+{"date": "2026-09-14", "icao": "UUWW", "city": "Moscow", "max_temp_f": 64}
+{"date": "2026-09-14", "icao": "RCSS", "city": "Taipei", "max_temp_f": 91}
+{"date": "2026-09-14", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 86}
+{"date": "2026-09-14", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 88}
+{"date": "2026-09-15", "icao": "KLGA", "city": "NYC", "max_temp_f": 72}
+{"date": "2026-09-15", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 80}
+{"date": "2026-09-15", "icao": "KORD", "city": "Chicago", "max_temp_f": 84}
+{"date": "2026-09-15", "icao": "KDAL", "city": "Dallas", "max_temp_f": 99}
+{"date": "2026-09-15", "icao": "KMIA", "city": "Miami", "max_temp_f": 92}
+{"date": "2026-09-15", "icao": "KHOU", "city": "Houston", "max_temp_f": 94}
+{"date": "2026-09-15", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 72}
+{"date": "2026-09-15", "icao": "KSEA", "city": "Seattle", "max_temp_f": 67}
+{"date": "2026-09-15", "icao": "KATL", "city": "Atlanta", "max_temp_f": 90}
+{"date": "2026-09-15", "icao": "KBKF", "city": "Denver", "max_temp_f": 73}
+{"date": "2026-09-15", "icao": "KAUS", "city": "Austin", "max_temp_f": 102}
+{"date": "2026-09-15", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 73}
+{"date": "2026-09-15", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 77}
+{"date": "2026-09-15", "icao": "MPMG", "city": "Panama City", "max_temp_f": 82}
+{"date": "2026-09-15", "icao": "EGLC", "city": "London", "max_temp_f": 73}
+{"date": "2026-09-15", "icao": "LFPG", "city": "Paris", "max_temp_f": 91}
+{"date": "2026-09-15", "icao": "EDDM", "city": "Munich", "max_temp_f": 75}
+{"date": "2026-09-15", "icao": "LIMC", "city": "Milan", "max_temp_f": 81}
+{"date": "2026-09-15", "icao": "LEMD", "city": "Madrid", "max_temp_f": 97}
+{"date": "2026-09-15", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 77}
+{"date": "2026-09-15", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 68}
+{"date": "2026-09-15", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-15", "icao": "LTAC", "city": "Ankara", "max_temp_f": 77}
+{"date": "2026-09-15", "icao": "RKSI", "city": "Seoul", "max_temp_f": 75}
+{"date": "2026-09-15", "icao": "RKPK", "city": "Busan", "max_temp_f": 84}
+{"date": "2026-09-15", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 82}
+{"date": "2026-09-15", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 82}
+{"date": "2026-09-15", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 82}
+{"date": "2026-09-15", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 87}
+{"date": "2026-09-15", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 70}
+{"date": "2026-09-15", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 70}
+{"date": "2026-09-15", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-15", "icao": "VILK", "city": "Lucknow", "max_temp_f": 91}
+{"date": "2026-09-15", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-15", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 84}
+{"date": "2026-09-15", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-15", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 66}
+{"date": "2026-09-15", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 68}
+{"date": "2026-09-15", "icao": "OPKC", "city": "Karachi", "max_temp_f": 93}
+{"date": "2026-09-15", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 95}
+{"date": "2026-09-15", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 104}
+{"date": "2026-09-15", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 93}
+{"date": "2026-09-15", "icao": "RPLL", "city": "Manila", "max_temp_f": 88}
+{"date": "2026-09-15", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 88}
+{"date": "2026-09-15", "icao": "FACT", "city": "Cape Town", "max_temp_f": 64}
+{"date": "2026-09-15", "icao": "UUWW", "city": "Moscow", "max_temp_f": 64}
+{"date": "2026-09-15", "icao": "RCSS", "city": "Taipei", "max_temp_f": 84}
+{"date": "2026-09-15", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 90}
+{"date": "2026-09-15", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 91}
+{"date": "2026-09-16", "icao": "KLGA", "city": "NYC", "max_temp_f": 78}
+{"date": "2026-09-16", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 78}
+{"date": "2026-09-16", "icao": "KORD", "city": "Chicago", "max_temp_f": 76}
+{"date": "2026-09-16", "icao": "KDAL", "city": "Dallas", "max_temp_f": 99}
+{"date": "2026-09-16", "icao": "KMIA", "city": "Miami", "max_temp_f": 91}
+{"date": "2026-09-16", "icao": "KHOU", "city": "Houston", "max_temp_f": 93}
+{"date": "2026-09-16", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 65}
+{"date": "2026-09-16", "icao": "KSEA", "city": "Seattle", "max_temp_f": 74}
+{"date": "2026-09-16", "icao": "KATL", "city": "Atlanta", "max_temp_f": 88}
+{"date": "2026-09-16", "icao": "KBKF", "city": "Denver", "max_temp_f": 89}
+{"date": "2026-09-16", "icao": "KAUS", "city": "Austin", "max_temp_f": 99}
+{"date": "2026-09-16", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 77}
+{"date": "2026-09-16", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-16", "icao": "MPMG", "city": "Panama City", "max_temp_f": 88}
+{"date": "2026-09-16", "icao": "EGLC", "city": "London", "max_temp_f": 68}
+{"date": "2026-09-16", "icao": "LFPG", "city": "Paris", "max_temp_f": 73}
+{"date": "2026-09-16", "icao": "EDDM", "city": "Munich", "max_temp_f": 81}
+{"date": "2026-09-16", "icao": "LIMC", "city": "Milan", "max_temp_f": 82}
+{"date": "2026-09-16", "icao": "LEMD", "city": "Madrid", "max_temp_f": 82}
+{"date": "2026-09-16", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 66}
+{"date": "2026-09-16", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 75}
+{"date": "2026-09-16", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 61}
+{"date": "2026-09-16", "icao": "LTAC", "city": "Ankara", "max_temp_f": 73}
+{"date": "2026-09-16", "icao": "RKSI", "city": "Seoul", "max_temp_f": 81}
+{"date": "2026-09-16", "icao": "RKPK", "city": "Busan", "max_temp_f": 84}
+{"date": "2026-09-16", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 73}
+{"date": "2026-09-16", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 88}
+{"date": "2026-09-16", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 82}
+{"date": "2026-09-16", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 90}
+{"date": "2026-09-16", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 68}
+{"date": "2026-09-16", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 79}
+{"date": "2026-09-16", "icao": "WSSS", "city": "Singapore", "max_temp_f": 93}
+{"date": "2026-09-16", "icao": "VILK", "city": "Lucknow", "max_temp_f": 93}
+{"date": "2026-09-16", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-16", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 81}
+{"date": "2026-09-16", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-16", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 57}
+{"date": "2026-09-16", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 66}
+{"date": "2026-09-16", "icao": "OPKC", "city": "Karachi", "max_temp_f": 97}
+{"date": "2026-09-16", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 88}
+{"date": "2026-09-16", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 102}
+{"date": "2026-09-16", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 91}
+{"date": "2026-09-16", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-16", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 90}
+{"date": "2026-09-16", "icao": "FACT", "city": "Cape Town", "max_temp_f": 64}
+{"date": "2026-09-16", "icao": "UUWW", "city": "Moscow", "max_temp_f": 64}
+{"date": "2026-09-16", "icao": "RCSS", "city": "Taipei", "max_temp_f": 86}
+{"date": "2026-09-16", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 91}
+{"date": "2026-09-16", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 84}
+{"date": "2026-09-17", "icao": "KLGA", "city": "NYC", "max_temp_f": 84}
+{"date": "2026-09-17", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 76}
+{"date": "2026-09-17", "icao": "KORD", "city": "Chicago", "max_temp_f": 79}
+{"date": "2026-09-17", "icao": "KDAL", "city": "Dallas", "max_temp_f": 97}
+{"date": "2026-09-17", "icao": "KMIA", "city": "Miami", "max_temp_f": 84}
+{"date": "2026-09-17", "icao": "KHOU", "city": "Houston", "max_temp_f": 87}
+{"date": "2026-09-17", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 71}
+{"date": "2026-09-17", "icao": "KSEA", "city": "Seattle", "max_temp_f": 76}
+{"date": "2026-09-17", "icao": "KATL", "city": "Atlanta", "max_temp_f": 89}
+{"date": "2026-09-17", "icao": "KBKF", "city": "Denver", "max_temp_f": 81}
+{"date": "2026-09-17", "icao": "KAUS", "city": "Austin", "max_temp_f": 96}
+{"date": "2026-09-17", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 75}
+{"date": "2026-09-17", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 75}
+{"date": "2026-09-17", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-17", "icao": "EGLC", "city": "London", "max_temp_f": 72}
+{"date": "2026-09-17", "icao": "LFPG", "city": "Paris", "max_temp_f": 72}
+{"date": "2026-09-17", "icao": "EDDM", "city": "Munich", "max_temp_f": 68}
+{"date": "2026-09-17", "icao": "LIMC", "city": "Milan", "max_temp_f": 75}
+{"date": "2026-09-17", "icao": "LEMD", "city": "Madrid", "max_temp_f": 81}
+{"date": "2026-09-17", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 63}
+{"date": "2026-09-17", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 64}
+{"date": "2026-09-17", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-17", "icao": "LTAC", "city": "Ankara", "max_temp_f": 64}
+{"date": "2026-09-17", "icao": "RKSI", "city": "Seoul", "max_temp_f": 81}
+{"date": "2026-09-17", "icao": "RKPK", "city": "Busan", "max_temp_f": 82}
+{"date": "2026-09-17", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 75}
+{"date": "2026-09-17", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 88}
+{"date": "2026-09-17", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 84}
+{"date": "2026-09-17", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 90}
+{"date": "2026-09-17", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 70}
+{"date": "2026-09-17", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 79}
+{"date": "2026-09-17", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-17", "icao": "VILK", "city": "Lucknow", "max_temp_f": 93}
+{"date": "2026-09-17", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-17", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 70}
+{"date": "2026-09-17", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-17", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 79}
+{"date": "2026-09-17", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 63}
+{"date": "2026-09-17", "icao": "OPKC", "city": "Karachi", "max_temp_f": 93}
+{"date": "2026-09-17", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 97}
+{"date": "2026-09-17", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 97}
+{"date": "2026-09-17", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 93}
+{"date": "2026-09-17", "icao": "RPLL", "city": "Manila", "max_temp_f": 88}
+{"date": "2026-09-17", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 82}
+{"date": "2026-09-17", "icao": "FACT", "city": "Cape Town", "max_temp_f": 68}
+{"date": "2026-09-17", "icao": "UUWW", "city": "Moscow", "max_temp_f": 72}
+{"date": "2026-09-17", "icao": "RCSS", "city": "Taipei", "max_temp_f": 90}
+{"date": "2026-09-17", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 86}
+{"date": "2026-09-17", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 77}
+{"date": "2026-09-18", "icao": "KLGA", "city": "NYC", "max_temp_f": 81}
+{"date": "2026-09-18", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 76}
+{"date": "2026-09-18", "icao": "KORD", "city": "Chicago", "max_temp_f": 71}
+{"date": "2026-09-18", "icao": "KDAL", "city": "Dallas", "max_temp_f": 97}
+{"date": "2026-09-18", "icao": "KMIA", "city": "Miami", "max_temp_f": 89}
+{"date": "2026-09-18", "icao": "KHOU", "city": "Houston", "max_temp_f": 92}
+{"date": "2026-09-18", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 68}
+{"date": "2026-09-18", "icao": "KSEA", "city": "Seattle", "max_temp_f": 68}
+{"date": "2026-09-18", "icao": "KATL", "city": "Atlanta", "max_temp_f": 93}
+{"date": "2026-09-18", "icao": "KBKF", "city": "Denver", "max_temp_f": 86}
+{"date": "2026-09-18", "icao": "KAUS", "city": "Austin", "max_temp_f": 97}
+{"date": "2026-09-18", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 70}
+{"date": "2026-09-18", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 75}
+{"date": "2026-09-18", "icao": "MPMG", "city": "Panama City", "max_temp_f": 91}
+{"date": "2026-09-18", "icao": "EGLC", "city": "London", "max_temp_f": 70}
+{"date": "2026-09-18", "icao": "LFPG", "city": "Paris", "max_temp_f": 72}
+{"date": "2026-09-18", "icao": "EDDM", "city": "Munich", "max_temp_f": 70}
+{"date": "2026-09-18", "icao": "LIMC", "city": "Milan", "max_temp_f": 73}
+{"date": "2026-09-18", "icao": "LEMD", "city": "Madrid", "max_temp_f": 82}
+{"date": "2026-09-18", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 64}
+{"date": "2026-09-18", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 70}
+{"date": "2026-09-18", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-18", "icao": "LTAC", "city": "Ankara", "max_temp_f": 75}
+{"date": "2026-09-18", "icao": "RKSI", "city": "Seoul", "max_temp_f": 82}
+{"date": "2026-09-18", "icao": "RKPK", "city": "Busan", "max_temp_f": 81}
+{"date": "2026-09-18", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 77}
+{"date": "2026-09-18", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 82}
+{"date": "2026-09-18", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 84}
+{"date": "2026-09-18", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 92}
+{"date": "2026-09-18", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 72}
+{"date": "2026-09-18", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 75}
+{"date": "2026-09-18", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-18", "icao": "VILK", "city": "Lucknow", "max_temp_f": 88}
+{"date": "2026-09-18", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-18", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 75}
+{"date": "2026-09-18", "icao": "NZWN", "city": "Wellington", "max_temp_f": 57}
+{"date": "2026-09-18", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 75}
+{"date": "2026-09-18", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 73}
+{"date": "2026-09-18", "icao": "OPKC", "city": "Karachi", "max_temp_f": 95}
+{"date": "2026-09-18", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 97}
+{"date": "2026-09-18", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 100}
+{"date": "2026-09-18", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 86}
+{"date": "2026-09-18", "icao": "RPLL", "city": "Manila", "max_temp_f": 91}
+{"date": "2026-09-18", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 82}
+{"date": "2026-09-18", "icao": "FACT", "city": "Cape Town", "max_temp_f": 72}
+{"date": "2026-09-18", "icao": "UUWW", "city": "Moscow", "max_temp_f": 61}
+{"date": "2026-09-18", "icao": "RCSS", "city": "Taipei", "max_temp_f": 90}
+{"date": "2026-09-18", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 86}
+{"date": "2026-09-18", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 82}
+{"date": "2026-09-19", "icao": "KLGA", "city": "NYC", "max_temp_f": 70}
+{"date": "2026-09-19", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 77}
+{"date": "2026-09-19", "icao": "KORD", "city": "Chicago", "max_temp_f": 70}
+{"date": "2026-09-19", "icao": "KDAL", "city": "Dallas", "max_temp_f": 96}
+{"date": "2026-09-19", "icao": "KMIA", "city": "Miami", "max_temp_f": 89}
+{"date": "2026-09-19", "icao": "KHOU", "city": "Houston", "max_temp_f": 92}
+{"date": "2026-09-19", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 67}
+{"date": "2026-09-19", "icao": "KSEA", "city": "Seattle", "max_temp_f": 63}
+{"date": "2026-09-19", "icao": "KATL", "city": "Atlanta", "max_temp_f": 91}
+{"date": "2026-09-19", "icao": "KBKF", "city": "Denver", "max_temp_f": 76}
+{"date": "2026-09-19", "icao": "KAUS", "city": "Austin", "max_temp_f": 97}
+{"date": "2026-09-19", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 64}
+{"date": "2026-09-19", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 77}
+{"date": "2026-09-19", "icao": "MPMG", "city": "Panama City", "max_temp_f": 88}
+{"date": "2026-09-19", "icao": "EGLC", "city": "London", "max_temp_f": 72}
+{"date": "2026-09-19", "icao": "LFPG", "city": "Paris", "max_temp_f": 77}
+{"date": "2026-09-19", "icao": "EDDM", "city": "Munich", "max_temp_f": 72}
+{"date": "2026-09-19", "icao": "LIMC", "city": "Milan", "max_temp_f": 79}
+{"date": "2026-09-19", "icao": "LEMD", "city": "Madrid", "max_temp_f": 84}
+{"date": "2026-09-19", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 68}
+{"date": "2026-09-19", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 72}
+{"date": "2026-09-19", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 61}
+{"date": "2026-09-19", "icao": "LTAC", "city": "Ankara", "max_temp_f": 75}
+{"date": "2026-09-19", "icao": "RKSI", "city": "Seoul", "max_temp_f": 82}
+{"date": "2026-09-19", "icao": "RKPK", "city": "Busan", "max_temp_f": 82}
+{"date": "2026-09-19", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 75}
+{"date": "2026-09-19", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 82}
+{"date": "2026-09-19", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 81}
+{"date": "2026-09-19", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 91}
+{"date": "2026-09-19", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 79}
+{"date": "2026-09-19", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 73}
+{"date": "2026-09-19", "icao": "WSSS", "city": "Singapore", "max_temp_f": 93}
+{"date": "2026-09-19", "icao": "VILK", "city": "Lucknow", "max_temp_f": 90}
+{"date": "2026-09-19", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 90}
+{"date": "2026-09-19", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 82}
+{"date": "2026-09-19", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-19", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 77}
+{"date": "2026-09-19", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 81}
+{"date": "2026-09-19", "icao": "OPKC", "city": "Karachi", "max_temp_f": 91}
+{"date": "2026-09-19", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 97}
+{"date": "2026-09-19", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-19", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 86}
+{"date": "2026-09-19", "icao": "RPLL", "city": "Manila", "max_temp_f": 93}
+{"date": "2026-09-19", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 84}
+{"date": "2026-09-19", "icao": "FACT", "city": "Cape Town", "max_temp_f": 73}
+{"date": "2026-09-19", "icao": "UUWW", "city": "Moscow", "max_temp_f": 64}
+{"date": "2026-09-19", "icao": "RCSS", "city": "Taipei", "max_temp_f": 93}
+{"date": "2026-09-19", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 86}
+{"date": "2026-09-19", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 79}
+{"date": "2026-09-20", "icao": "KLGA", "city": "NYC", "max_temp_f": 72}
+{"date": "2026-09-20", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 77}
+{"date": "2026-09-20", "icao": "KORD", "city": "Chicago", "max_temp_f": 70}
+{"date": "2026-09-20", "icao": "KDAL", "city": "Dallas", "max_temp_f": 96}
+{"date": "2026-09-20", "icao": "KMIA", "city": "Miami", "max_temp_f": 89}
+{"date": "2026-09-20", "icao": "KHOU", "city": "Houston", "max_temp_f": 92}
+{"date": "2026-09-20", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 64}
+{"date": "2026-09-20", "icao": "KSEA", "city": "Seattle", "max_temp_f": 70}
+{"date": "2026-09-20", "icao": "KATL", "city": "Atlanta", "max_temp_f": 88}
+{"date": "2026-09-20", "icao": "KBKF", "city": "Denver", "max_temp_f": 75}
+{"date": "2026-09-20", "icao": "KAUS", "city": "Austin", "max_temp_f": 96}
+{"date": "2026-09-20", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 70}
+{"date": "2026-09-20", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-20", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-20", "icao": "EGLC", "city": "London", "max_temp_f": 68}
+{"date": "2026-09-20", "icao": "LFPG", "city": "Paris", "max_temp_f": 73}
+{"date": "2026-09-20", "icao": "EDDM", "city": "Munich", "max_temp_f": 75}
+{"date": "2026-09-20", "icao": "LIMC", "city": "Milan", "max_temp_f": 81}
+{"date": "2026-09-20", "icao": "LEMD", "city": "Madrid", "max_temp_f": 88}
+{"date": "2026-09-20", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 66}
+{"date": "2026-09-20", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 72}
+{"date": "2026-09-20", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-20", "icao": "LTAC", "city": "Ankara", "max_temp_f": 77}
+{"date": "2026-09-20", "icao": "RKSI", "city": "Seoul", "max_temp_f": 79}
+{"date": "2026-09-20", "icao": "RKPK", "city": "Busan", "max_temp_f": 82}
+{"date": "2026-09-20", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 73}
+{"date": "2026-09-20", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 86}
+{"date": "2026-09-20", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 82}
+{"date": "2026-09-20", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 93}
+{"date": "2026-09-20", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 77}
+{"date": "2026-09-20", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 81}
+{"date": "2026-09-20", "icao": "WSSS", "city": "Singapore", "max_temp_f": 90}
+{"date": "2026-09-20", "icao": "VILK", "city": "Lucknow", "max_temp_f": 91}
+{"date": "2026-09-20", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-20", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 81}
+{"date": "2026-09-20", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-20", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 77}
+{"date": "2026-09-20", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 70}
+{"date": "2026-09-20", "icao": "OPKC", "city": "Karachi", "max_temp_f": 99}
+{"date": "2026-09-20", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 99}
+{"date": "2026-09-20", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 97}
+{"date": "2026-09-20", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 88}
+{"date": "2026-09-20", "icao": "RPLL", "city": "Manila", "max_temp_f": 91}
+{"date": "2026-09-20", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 86}
+{"date": "2026-09-20", "icao": "FACT", "city": "Cape Town", "max_temp_f": 79}
+{"date": "2026-09-20", "icao": "UUWW", "city": "Moscow", "max_temp_f": 66}
+{"date": "2026-09-20", "icao": "RCSS", "city": "Taipei", "max_temp_f": 91}
+{"date": "2026-09-20", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 86}
+{"date": "2026-09-20", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 73}
+{"date": "2026-09-21", "icao": "KLGA", "city": "NYC", "max_temp_f": 70}
+{"date": "2026-09-21", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 77}
+{"date": "2026-09-21", "icao": "KORD", "city": "Chicago", "max_temp_f": 66}
+{"date": "2026-09-21", "icao": "KDAL", "city": "Dallas", "max_temp_f": 97}
+{"date": "2026-09-21", "icao": "KMIA", "city": "Miami", "max_temp_f": 88}
+{"date": "2026-09-21", "icao": "KHOU", "city": "Houston", "max_temp_f": 92}
+{"date": "2026-09-21", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 68}
+{"date": "2026-09-21", "icao": "KSEA", "city": "Seattle", "max_temp_f": 66}
+{"date": "2026-09-21", "icao": "KATL", "city": "Atlanta", "max_temp_f": 90}
+{"date": "2026-09-21", "icao": "KBKF", "city": "Denver", "max_temp_f": 76}
+{"date": "2026-09-21", "icao": "KAUS", "city": "Austin", "max_temp_f": 99}
+{"date": "2026-09-21", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 59}
+{"date": "2026-09-21", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-21", "icao": "MPMG", "city": "Panama City", "max_temp_f": 88}
+{"date": "2026-09-21", "icao": "EGLC", "city": "London", "max_temp_f": 73}
+{"date": "2026-09-21", "icao": "LFPG", "city": "Paris", "max_temp_f": 72}
+{"date": "2026-09-21", "icao": "EDDM", "city": "Munich", "max_temp_f": 63}
+{"date": "2026-09-21", "icao": "LIMC", "city": "Milan", "max_temp_f": 86}
+{"date": "2026-09-21", "icao": "LEMD", "city": "Madrid", "max_temp_f": 91}
+{"date": "2026-09-21", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 66}
+{"date": "2026-09-21", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 57}
+{"date": "2026-09-21", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 61}
+{"date": "2026-09-21", "icao": "LTAC", "city": "Ankara", "max_temp_f": 79}
+{"date": "2026-09-21", "icao": "RKSI", "city": "Seoul", "max_temp_f": 81}
+{"date": "2026-09-21", "icao": "RKPK", "city": "Busan", "max_temp_f": 82}
+{"date": "2026-09-21", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 79}
+{"date": "2026-09-21", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 88}
+{"date": "2026-09-21", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 84}
+{"date": "2026-09-21", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 89}
+{"date": "2026-09-21", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 75}
+{"date": "2026-09-21", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 84}
+{"date": "2026-09-21", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-21", "icao": "VILK", "city": "Lucknow", "max_temp_f": 91}
+{"date": "2026-09-21", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-21", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 77}
+{"date": "2026-09-21", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-21", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 61}
+{"date": "2026-09-21", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 88}
+{"date": "2026-09-21", "icao": "OPKC", "city": "Karachi", "max_temp_f": 106}
+{"date": "2026-09-21", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 97}
+{"date": "2026-09-21", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 97}
+{"date": "2026-09-21", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 86}
+{"date": "2026-09-21", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-21", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 84}
+{"date": "2026-09-21", "icao": "FACT", "city": "Cape Town", "max_temp_f": 81}
+{"date": "2026-09-21", "icao": "UUWW", "city": "Moscow", "max_temp_f": 70}
+{"date": "2026-09-21", "icao": "RCSS", "city": "Taipei", "max_temp_f": 90}
+{"date": "2026-09-21", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 82}
+{"date": "2026-09-21", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 77}
+{"date": "2026-09-22", "icao": "KLGA", "city": "NYC", "max_temp_f": 69}
+{"date": "2026-09-22", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 76}
+{"date": "2026-09-22", "icao": "KORD", "city": "Chicago", "max_temp_f": 62}
+{"date": "2026-09-22", "icao": "KDAL", "city": "Dallas", "max_temp_f": 97}
+{"date": "2026-09-22", "icao": "KMIA", "city": "Miami", "max_temp_f": 88}
+{"date": "2026-09-22", "icao": "KHOU", "city": "Houston", "max_temp_f": 96}
+{"date": "2026-09-22", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 66}
+{"date": "2026-09-22", "icao": "KSEA", "city": "Seattle", "max_temp_f": 68}
+{"date": "2026-09-22", "icao": "KATL", "city": "Atlanta", "max_temp_f": 86}
+{"date": "2026-09-22", "icao": "KBKF", "city": "Denver", "max_temp_f": 84}
+{"date": "2026-09-22", "icao": "KAUS", "city": "Austin", "max_temp_f": 99}
+{"date": "2026-09-22", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 63}
+{"date": "2026-09-22", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-22", "icao": "MPMG", "city": "Panama City", "max_temp_f": 88}
+{"date": "2026-09-22", "icao": "EGLC", "city": "London", "max_temp_f": 77}
+{"date": "2026-09-22", "icao": "LFPG", "city": "Paris", "max_temp_f": 75}
+{"date": "2026-09-22", "icao": "EDDM", "city": "Munich", "max_temp_f": 63}
+{"date": "2026-09-22", "icao": "LIMC", "city": "Milan", "max_temp_f": 77}
+{"date": "2026-09-22", "icao": "LEMD", "city": "Madrid", "max_temp_f": 93}
+{"date": "2026-09-22", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 66}
+{"date": "2026-09-22", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 63}
+{"date": "2026-09-22", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 59}
+{"date": "2026-09-22", "icao": "LTAC", "city": "Ankara", "max_temp_f": 79}
+{"date": "2026-09-22", "icao": "RKSI", "city": "Seoul", "max_temp_f": 82}
+{"date": "2026-09-22", "icao": "RKPK", "city": "Busan", "max_temp_f": 82}
+{"date": "2026-09-22", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 86}
+{"date": "2026-09-22", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 86}
+{"date": "2026-09-22", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 82}
+{"date": "2026-09-22", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 90}
+{"date": "2026-09-22", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 72}
+{"date": "2026-09-22", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 79}
+{"date": "2026-09-22", "icao": "WSSS", "city": "Singapore", "max_temp_f": 88}
+{"date": "2026-09-22", "icao": "VILK", "city": "Lucknow", "max_temp_f": 91}
+{"date": "2026-09-22", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 88}
+{"date": "2026-09-22", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 75}
+{"date": "2026-09-22", "icao": "NZWN", "city": "Wellington", "max_temp_f": 57}
+{"date": "2026-09-22", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 57}
+{"date": "2026-09-22", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 77}
+{"date": "2026-09-22", "icao": "OPKC", "city": "Karachi", "max_temp_f": 102}
+{"date": "2026-09-22", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 93}
+{"date": "2026-09-22", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 97}
+{"date": "2026-09-22", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 86}
+{"date": "2026-09-22", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-22", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 88}
+{"date": "2026-09-22", "icao": "FACT", "city": "Cape Town", "max_temp_f": 90}
+{"date": "2026-09-22", "icao": "UUWW", "city": "Moscow", "max_temp_f": 61}
+{"date": "2026-09-22", "icao": "RCSS", "city": "Taipei", "max_temp_f": 91}
+{"date": "2026-09-22", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 90}
+{"date": "2026-09-22", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 84}
+{"date": "2026-09-23", "icao": "KLGA", "city": "NYC", "max_temp_f": 70}
+{"date": "2026-09-23", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 77}
+{"date": "2026-09-23", "icao": "KORD", "city": "Chicago", "max_temp_f": 68}
+{"date": "2026-09-23", "icao": "KDAL", "city": "Dallas", "max_temp_f": 98}
+{"date": "2026-09-23", "icao": "KMIA", "city": "Miami", "max_temp_f": 82}
+{"date": "2026-09-23", "icao": "KHOU", "city": "Houston", "max_temp_f": 94}
+{"date": "2026-09-23", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 77}
+{"date": "2026-09-23", "icao": "KSEA", "city": "Seattle", "max_temp_f": 66}
+{"date": "2026-09-23", "icao": "KATL", "city": "Atlanta", "max_temp_f": 80}
+{"date": "2026-09-23", "icao": "KBKF", "city": "Denver", "max_temp_f": 74}
+{"date": "2026-09-23", "icao": "KAUS", "city": "Austin", "max_temp_f": 95}
+{"date": "2026-09-23", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 64}
+{"date": "2026-09-23", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 77}
+{"date": "2026-09-23", "icao": "MPMG", "city": "Panama City", "max_temp_f": 91}
+{"date": "2026-09-23", "icao": "EGLC", "city": "London", "max_temp_f": 73}
+{"date": "2026-09-23", "icao": "LFPG", "city": "Paris", "max_temp_f": 81}
+{"date": "2026-09-23", "icao": "EDDM", "city": "Munich", "max_temp_f": 66}
+{"date": "2026-09-23", "icao": "LIMC", "city": "Milan", "max_temp_f": 75}
+{"date": "2026-09-23", "icao": "LEMD", "city": "Madrid", "max_temp_f": 93}
+{"date": "2026-09-23", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 68}
+{"date": "2026-09-23", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 59}
+{"date": "2026-09-23", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 52}
+{"date": "2026-09-23", "icao": "LTAC", "city": "Ankara", "max_temp_f": 66}
+{"date": "2026-09-23", "icao": "RKSI", "city": "Seoul", "max_temp_f": 81}
+{"date": "2026-09-23", "icao": "RKPK", "city": "Busan", "max_temp_f": 82}
+{"date": "2026-09-23", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 75}
+{"date": "2026-09-23", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 88}
+{"date": "2026-09-23", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 84}
+{"date": "2026-09-23", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 91}
+{"date": "2026-09-23", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 79}
+{"date": "2026-09-23", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 82}
+{"date": "2026-09-23", "icao": "WSSS", "city": "Singapore", "max_temp_f": 90}
+{"date": "2026-09-23", "icao": "VILK", "city": "Lucknow", "max_temp_f": 91}
+{"date": "2026-09-23", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 88}
+{"date": "2026-09-23", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 77}
+{"date": "2026-09-23", "icao": "NZWN", "city": "Wellington", "max_temp_f": 52}
+{"date": "2026-09-23", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 68}
+{"date": "2026-09-23", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 61}
+{"date": "2026-09-23", "icao": "OPKC", "city": "Karachi", "max_temp_f": 97}
+{"date": "2026-09-23", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 95}
+{"date": "2026-09-23", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 97}
+{"date": "2026-09-23", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 86}
+{"date": "2026-09-23", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-23", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 86}
+{"date": "2026-09-23", "icao": "FACT", "city": "Cape Town", "max_temp_f": 68}
+{"date": "2026-09-23", "icao": "UUWW", "city": "Moscow", "max_temp_f": 64}
+{"date": "2026-09-23", "icao": "RCSS", "city": "Taipei", "max_temp_f": 90}
+{"date": "2026-09-23", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 91}
+{"date": "2026-09-23", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 86}
+{"date": "2026-09-24", "icao": "KLGA", "city": "NYC", "max_temp_f": 68}
+{"date": "2026-09-24", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 77}
+{"date": "2026-09-24", "icao": "KORD", "city": "Chicago", "max_temp_f": 69}
+{"date": "2026-09-24", "icao": "KDAL", "city": "Dallas", "max_temp_f": 93}
+{"date": "2026-09-24", "icao": "KMIA", "city": "Miami", "max_temp_f": 91}
+{"date": "2026-09-24", "icao": "KHOU", "city": "Houston", "max_temp_f": 94}
+{"date": "2026-09-24", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 76}
+{"date": "2026-09-24", "icao": "KSEA", "city": "Seattle", "max_temp_f": 62}
+{"date": "2026-09-24", "icao": "KATL", "city": "Atlanta", "max_temp_f": 70}
+{"date": "2026-09-24", "icao": "KBKF", "city": "Denver", "max_temp_f": 71}
+{"date": "2026-09-24", "icao": "KAUS", "city": "Austin", "max_temp_f": 97}
+{"date": "2026-09-24", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 66}
+{"date": "2026-09-24", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-24", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-24", "icao": "EGLC", "city": "London", "max_temp_f": 70}
+{"date": "2026-09-24", "icao": "LFPG", "city": "Paris", "max_temp_f": 73}
+{"date": "2026-09-24", "icao": "EDDM", "city": "Munich", "max_temp_f": 63}
+{"date": "2026-09-24", "icao": "LIMC", "city": "Milan", "max_temp_f": 75}
+{"date": "2026-09-24", "icao": "LEMD", "city": "Madrid", "max_temp_f": 95}
+{"date": "2026-09-24", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 64}
+{"date": "2026-09-24", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 57}
+{"date": "2026-09-24", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 57}
+{"date": "2026-09-24", "icao": "LTAC", "city": "Ankara", "max_temp_f": 66}
+{"date": "2026-09-24", "icao": "RKSI", "city": "Seoul", "max_temp_f": 77}
+{"date": "2026-09-24", "icao": "RKPK", "city": "Busan", "max_temp_f": 86}
+{"date": "2026-09-24", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 81}
+{"date": "2026-09-24", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 77}
+{"date": "2026-09-24", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 82}
+{"date": "2026-09-24", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 92}
+{"date": "2026-09-24", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 82}
+{"date": "2026-09-24", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 73}
+{"date": "2026-09-24", "icao": "WSSS", "city": "Singapore", "max_temp_f": 90}
+{"date": "2026-09-24", "icao": "VILK", "city": "Lucknow", "max_temp_f": 84}
+{"date": "2026-09-24", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 90}
+{"date": "2026-09-24", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 86}
+{"date": "2026-09-24", "icao": "NZWN", "city": "Wellington", "max_temp_f": 55}
+{"date": "2026-09-24", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 79}
+{"date": "2026-09-24", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 68}
+{"date": "2026-09-24", "icao": "OPKC", "city": "Karachi", "max_temp_f": 93}
+{"date": "2026-09-24", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 95}
+{"date": "2026-09-24", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 97}
+{"date": "2026-09-24", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 88}
+{"date": "2026-09-24", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-24", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 79}
+{"date": "2026-09-24", "icao": "FACT", "city": "Cape Town", "max_temp_f": 73}
+{"date": "2026-09-24", "icao": "UUWW", "city": "Moscow", "max_temp_f": 70}
+{"date": "2026-09-24", "icao": "RCSS", "city": "Taipei", "max_temp_f": 90}
+{"date": "2026-09-24", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 90}
+{"date": "2026-09-24", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 75}
+{"date": "2026-09-25", "icao": "KLGA", "city": "NYC", "max_temp_f": 69}
+{"date": "2026-09-25", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 77}
+{"date": "2026-09-25", "icao": "KORD", "city": "Chicago", "max_temp_f": 64}
+{"date": "2026-09-25", "icao": "KDAL", "city": "Dallas", "max_temp_f": 92}
+{"date": "2026-09-25", "icao": "KMIA", "city": "Miami", "max_temp_f": 90}
+{"date": "2026-09-25", "icao": "KHOU", "city": "Houston", "max_temp_f": 91}
+{"date": "2026-09-25", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 70}
+{"date": "2026-09-25", "icao": "KSEA", "city": "Seattle", "max_temp_f": 62}
+{"date": "2026-09-25", "icao": "KATL", "city": "Atlanta", "max_temp_f": 76}
+{"date": "2026-09-25", "icao": "KBKF", "city": "Denver", "max_temp_f": 75}
+{"date": "2026-09-25", "icao": "KAUS", "city": "Austin", "max_temp_f": 97}
+{"date": "2026-09-25", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 70}
+{"date": "2026-09-25", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 77}
+{"date": "2026-09-25", "icao": "MPMG", "city": "Panama City", "max_temp_f": 86}
+{"date": "2026-09-25", "icao": "EGLC", "city": "London", "max_temp_f": 75}
+{"date": "2026-09-25", "icao": "LFPG", "city": "Paris", "max_temp_f": 82}
+{"date": "2026-09-25", "icao": "EDDM", "city": "Munich", "max_temp_f": 66}
+{"date": "2026-09-25", "icao": "LIMC", "city": "Milan", "max_temp_f": 72}
+{"date": "2026-09-25", "icao": "LEMD", "city": "Madrid", "max_temp_f": 95}
+{"date": "2026-09-25", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 72}
+{"date": "2026-09-25", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 61}
+{"date": "2026-09-25", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 55}
+{"date": "2026-09-25", "icao": "LTAC", "city": "Ankara", "max_temp_f": 68}
+{"date": "2026-09-25", "icao": "RKSI", "city": "Seoul", "max_temp_f": 75}
+{"date": "2026-09-25", "icao": "RKPK", "city": "Busan", "max_temp_f": 81}
+{"date": "2026-09-25", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 81}
+{"date": "2026-09-25", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 79}
+{"date": "2026-09-25", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 88}
+{"date": "2026-09-25", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 88}
+{"date": "2026-09-25", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 84}
+{"date": "2026-09-25", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 82}
+{"date": "2026-09-25", "icao": "WSSS", "city": "Singapore", "max_temp_f": 90}
+{"date": "2026-09-25", "icao": "VILK", "city": "Lucknow", "max_temp_f": 75}
+{"date": "2026-09-25", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-25", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 91}
+{"date": "2026-09-25", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-25", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 81}
+{"date": "2026-09-25", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 82}
+{"date": "2026-09-25", "icao": "OPKC", "city": "Karachi", "max_temp_f": 93}
+{"date": "2026-09-25", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 95}
+{"date": "2026-09-25", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-25", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 86}
+{"date": "2026-09-25", "icao": "RPLL", "city": "Manila", "max_temp_f": 93}
+{"date": "2026-09-25", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 72}
+{"date": "2026-09-25", "icao": "FACT", "city": "Cape Town", "max_temp_f": 73}
+{"date": "2026-09-25", "icao": "UUWW", "city": "Moscow", "max_temp_f": 54}
+{"date": "2026-09-25", "icao": "RCSS", "city": "Taipei", "max_temp_f": 91}
+{"date": "2026-09-25", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 81}
+{"date": "2026-09-25", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 72}
+{"date": "2026-09-26", "icao": "KLGA", "city": "NYC", "max_temp_f": 63}
+{"date": "2026-09-26", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 81}
+{"date": "2026-09-26", "icao": "KORD", "city": "Chicago", "max_temp_f": 68}
+{"date": "2026-09-26", "icao": "KDAL", "city": "Dallas", "max_temp_f": 94}
+{"date": "2026-09-26", "icao": "KMIA", "city": "Miami", "max_temp_f": 87}
+{"date": "2026-09-26", "icao": "KHOU", "city": "Houston", "max_temp_f": 90}
+{"date": "2026-09-26", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 69}
+{"date": "2026-09-26", "icao": "KSEA", "city": "Seattle", "max_temp_f": 64}
+{"date": "2026-09-26", "icao": "KATL", "city": "Atlanta", "max_temp_f": 80}
+{"date": "2026-09-26", "icao": "KBKF", "city": "Denver", "max_temp_f": 82}
+{"date": "2026-09-26", "icao": "KAUS", "city": "Austin", "max_temp_f": 92}
+{"date": "2026-09-26", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 73}
+{"date": "2026-09-26", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 75}
+{"date": "2026-09-26", "icao": "MPMG", "city": "Panama City", "max_temp_f": 90}
+{"date": "2026-09-26", "icao": "EGLC", "city": "London", "max_temp_f": 70}
+{"date": "2026-09-26", "icao": "LFPG", "city": "Paris", "max_temp_f": 73}
+{"date": "2026-09-26", "icao": "EDDM", "city": "Munich", "max_temp_f": 75}
+{"date": "2026-09-26", "icao": "LIMC", "city": "Milan", "max_temp_f": 75}
+{"date": "2026-09-26", "icao": "LEMD", "city": "Madrid", "max_temp_f": 93}
+{"date": "2026-09-26", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 68}
+{"date": "2026-09-26", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 61}
+{"date": "2026-09-26", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 59}
+{"date": "2026-09-26", "icao": "LTAC", "city": "Ankara", "max_temp_f": 70}
+{"date": "2026-09-26", "icao": "RKSI", "city": "Seoul", "max_temp_f": 79}
+{"date": "2026-09-26", "icao": "RKPK", "city": "Busan", "max_temp_f": 72}
+{"date": "2026-09-26", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 73}
+{"date": "2026-09-26", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 81}
+{"date": "2026-09-26", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 86}
+{"date": "2026-09-26", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 88}
+{"date": "2026-09-26", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 82}
+{"date": "2026-09-26", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 82}
+{"date": "2026-09-26", "icao": "WSSS", "city": "Singapore", "max_temp_f": 93}
+{"date": "2026-09-26", "icao": "VILK", "city": "Lucknow", "max_temp_f": 79}
+{"date": "2026-09-26", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 90}
+{"date": "2026-09-26", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 77}
+{"date": "2026-09-26", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-26", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 75}
+{"date": "2026-09-26", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 91}
+{"date": "2026-09-26", "icao": "OPKC", "city": "Karachi", "max_temp_f": 91}
+{"date": "2026-09-26", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 95}
+{"date": "2026-09-26", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 99}
+{"date": "2026-09-26", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 84}
+{"date": "2026-09-26", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-26", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 79}
+{"date": "2026-09-26", "icao": "FACT", "city": "Cape Town", "max_temp_f": 70}
+{"date": "2026-09-26", "icao": "UUWW", "city": "Moscow", "max_temp_f": 63}
+{"date": "2026-09-26", "icao": "RCSS", "city": "Taipei", "max_temp_f": 95}
+{"date": "2026-09-26", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 82}
+{"date": "2026-09-26", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 75}
+{"date": "2026-09-27", "icao": "KLGA", "city": "NYC", "max_temp_f": 64}
+{"date": "2026-09-28", "icao": "KLGA", "city": "NYC", "max_temp_f": 63}
+{"date": "2026-09-27", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 84}
+{"date": "2026-09-28", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 77}
+{"date": "2026-09-27", "icao": "KORD", "city": "Chicago", "max_temp_f": 72}
+{"date": "2026-09-28", "icao": "KORD", "city": "Chicago", "max_temp_f": 72}
+{"date": "2026-09-27", "icao": "KDAL", "city": "Dallas", "max_temp_f": 94}
+{"date": "2026-09-28", "icao": "KDAL", "city": "Dallas", "max_temp_f": 93}
+{"date": "2026-09-27", "icao": "KMIA", "city": "Miami", "max_temp_f": 88}
+{"date": "2026-09-28", "icao": "KMIA", "city": "Miami", "max_temp_f": 88}
+{"date": "2026-09-27", "icao": "KHOU", "city": "Houston", "max_temp_f": 93}
+{"date": "2026-09-28", "icao": "KHOU", "city": "Houston", "max_temp_f": 92}
+{"date": "2026-09-27", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 65}
+{"date": "2026-09-28", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 69}
+{"date": "2026-09-27", "icao": "KSEA", "city": "Seattle", "max_temp_f": 64}
+{"date": "2026-09-28", "icao": "KSEA", "city": "Seattle", "max_temp_f": 64}
+{"date": "2026-09-27", "icao": "KATL", "city": "Atlanta", "max_temp_f": 81}
+{"date": "2026-09-28", "icao": "KATL", "city": "Atlanta", "max_temp_f": 80}
+{"date": "2026-09-27", "icao": "KBKF", "city": "Denver", "max_temp_f": 84}
+{"date": "2026-09-28", "icao": "KBKF", "city": "Denver", "max_temp_f": 68}
+{"date": "2026-09-27", "icao": "KAUS", "city": "Austin", "max_temp_f": 97}
+{"date": "2026-09-28", "icao": "KAUS", "city": "Austin", "max_temp_f": 97}
+{"date": "2026-09-27", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 75}
+{"date": "2026-09-28", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 70}
+{"date": "2026-09-27", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-28", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-27", "icao": "MPMG", "city": "Panama City", "max_temp_f": 88}
+{"date": "2026-09-28", "icao": "MPMG", "city": "Panama City", "max_temp_f": 88}
+{"date": "2026-09-27", "icao": "EGLC", "city": "London", "max_temp_f": 72}
+{"date": "2026-09-28", "icao": "EGLC", "city": "London", "max_temp_f": 66}
+{"date": "2026-09-27", "icao": "LFPG", "city": "Paris", "max_temp_f": 82}
+{"date": "2026-09-28", "icao": "LFPG", "city": "Paris", "max_temp_f": 75}
+{"date": "2026-09-27", "icao": "EDDM", "city": "Munich", "max_temp_f": 75}
+{"date": "2026-09-28", "icao": "EDDM", "city": "Munich", "max_temp_f": 79}
+{"date": "2026-09-27", "icao": "LIMC", "city": "Milan", "max_temp_f": 77}
+{"date": "2026-09-28", "icao": "LIMC", "city": "Milan", "max_temp_f": 77}
+{"date": "2026-09-27", "icao": "LEMD", "city": "Madrid", "max_temp_f": 88}
+{"date": "2026-09-28", "icao": "LEMD", "city": "Madrid", "max_temp_f": 79}
+{"date": "2026-09-27", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 70}
+{"date": "2026-09-28", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 70}
+{"date": "2026-09-27", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 68}
+{"date": "2026-09-28", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 70}
+{"date": "2026-09-27", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 61}
+{"date": "2026-09-28", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 61}
+{"date": "2026-09-27", "icao": "LTAC", "city": "Ankara", "max_temp_f": 73}
+{"date": "2026-09-28", "icao": "LTAC", "city": "Ankara", "max_temp_f": 61}
+{"date": "2026-09-27", "icao": "RKSI", "city": "Seoul", "max_temp_f": 79}
+{"date": "2026-09-28", "icao": "RKSI", "city": "Seoul", "max_temp_f": 73}
+{"date": "2026-09-27", "icao": "RKPK", "city": "Busan", "max_temp_f": 75}
+{"date": "2026-09-28", "icao": "RKPK", "city": "Busan", "max_temp_f": 79}
+{"date": "2026-09-27", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 75}
+{"date": "2026-09-28", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 79}
+{"date": "2026-09-27", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 82}
+{"date": "2026-09-28", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 77}
+{"date": "2026-09-27", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 84}
+{"date": "2026-09-28", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 79}
+{"date": "2026-09-27", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 92}
+{"date": "2026-09-28", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 90}
+{"date": "2026-09-27", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 86}
+{"date": "2026-09-28", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 77}
+{"date": "2026-09-27", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 81}
+{"date": "2026-09-28", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 77}
+{"date": "2026-09-27", "icao": "WSSS", "city": "Singapore", "max_temp_f": 86}
+{"date": "2026-09-28", "icao": "WSSS", "city": "Singapore", "max_temp_f": 86}
+{"date": "2026-09-27", "icao": "VILK", "city": "Lucknow", "max_temp_f": 77}
+{"date": "2026-09-28", "icao": "VILK", "city": "Lucknow", "max_temp_f": 90}
+{"date": "2026-09-27", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 84}
+{"date": "2026-09-28", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-27", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 79}
+{"date": "2026-09-28", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 75}
+{"date": "2026-09-27", "icao": "NZWN", "city": "Wellington", "max_temp_f": 61}
+{"date": "2026-09-28", "icao": "NZWN", "city": "Wellington", "max_temp_f": 59}
+{"date": "2026-09-27", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 63}
+{"date": "2026-09-28", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 70}
+{"date": "2026-09-27", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 84}
+{"date": "2026-09-28", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 86}
+{"date": "2026-09-27", "icao": "OPKC", "city": "Karachi", "max_temp_f": 91}
+{"date": "2026-09-28", "icao": "OPKC", "city": "Karachi", "max_temp_f": 90}
+{"date": "2026-09-27", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 97}
+{"date": "2026-09-28", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 97}
+{"date": "2026-09-27", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 95}
+{"date": "2026-09-28", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 95}
+{"date": "2026-09-27", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 86}
+{"date": "2026-09-28", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 86}
+{"date": "2026-09-27", "icao": "RPLL", "city": "Manila", "max_temp_f": 91}
+{"date": "2026-09-28", "icao": "RPLL", "city": "Manila", "max_temp_f": 90}
+{"date": "2026-09-27", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 79}
+{"date": "2026-09-28", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 79}
+{"date": "2026-09-27", "icao": "FACT", "city": "Cape Town", "max_temp_f": 64}
+{"date": "2026-09-28", "icao": "FACT", "city": "Cape Town", "max_temp_f": 73}
+{"date": "2026-09-27", "icao": "UUWW", "city": "Moscow", "max_temp_f": 64}
+{"date": "2026-09-28", "icao": "UUWW", "city": "Moscow", "max_temp_f": 57}
+{"date": "2026-09-27", "icao": "RCSS", "city": "Taipei", "max_temp_f": 95}
+{"date": "2026-09-28", "icao": "RCSS", "city": "Taipei", "max_temp_f": 99}
+{"date": "2026-09-27", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 81}
+{"date": "2026-09-28", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 82}
+{"date": "2026-09-27", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 75}
+{"date": "2026-09-28", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 72}
+{"date": "2026-09-29", "icao": "KLGA", "city": "NYC", "max_temp_f": 71}
+{"date": "2026-09-29", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 82}
+{"date": "2026-09-29", "icao": "KORD", "city": "Chicago", "max_temp_f": 80}
+{"date": "2026-09-29", "icao": "KDAL", "city": "Dallas", "max_temp_f": 96}
+{"date": "2026-09-29", "icao": "KMIA", "city": "Miami", "max_temp_f": 82}
+{"date": "2026-09-29", "icao": "KHOU", "city": "Houston", "max_temp_f": 91}
+{"date": "2026-09-29", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 81}
+{"date": "2026-09-29", "icao": "KSEA", "city": "Seattle", "max_temp_f": 64}
+{"date": "2026-09-29", "icao": "KATL", "city": "Atlanta", "max_temp_f": 87}
+{"date": "2026-09-29", "icao": "KBKF", "city": "Denver", "max_temp_f": 72}
+{"date": "2026-09-29", "icao": "KAUS", "city": "Austin", "max_temp_f": 98}
+{"date": "2026-09-29", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 73}
+{"date": "2026-09-29", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 79}
+{"date": "2026-09-29", "icao": "MPMG", "city": "Panama City", "max_temp_f": 91}
+{"date": "2026-09-29", "icao": "EGLC", "city": "London", "max_temp_f": 76}
+{"date": "2026-09-29", "icao": "LFPG", "city": "Paris", "max_temp_f": 84}
+{"date": "2026-09-29", "icao": "EDDM", "city": "Munich", "max_temp_f": 77}
+{"date": "2026-09-29", "icao": "LIMC", "city": "Milan", "max_temp_f": 78}
+{"date": "2026-09-29", "icao": "LEMD", "city": "Madrid", "max_temp_f": 80}
+{"date": "2026-09-29", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 71}
+{"date": "2026-09-29", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 61}
+{"date": "2026-09-29", "icao": "LTAC", "city": "Ankara", "max_temp_f": 61}
+{"date": "2026-09-29", "icao": "RKSI", "city": "Seoul", "max_temp_f": 76}
+{"date": "2026-09-29", "icao": "RKPK", "city": "Busan", "max_temp_f": 77}
+{"date": "2026-09-29", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 72}
+{"date": "2026-09-29", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 82}
+{"date": "2026-09-29", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 79}
+{"date": "2026-09-29", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 91}
+{"date": "2026-09-29", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 80}
+{"date": "2026-09-29", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 87}
+{"date": "2026-09-29", "icao": "WSSS", "city": "Singapore", "max_temp_f": 93}
+{"date": "2026-09-29", "icao": "VILK", "city": "Lucknow", "max_temp_f": 88}
+{"date": "2026-09-29", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 94}
+{"date": "2026-09-29", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 73}
+{"date": "2026-09-29", "icao": "NZWN", "city": "Wellington", "max_temp_f": 66}
+{"date": "2026-09-29", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 67}
+{"date": "2026-09-29", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 93}
+{"date": "2026-09-29", "icao": "OPKC", "city": "Karachi", "max_temp_f": 92}
+{"date": "2026-09-29", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 98}
+{"date": "2026-09-29", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 98}
+{"date": "2026-09-29", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 85}
+{"date": "2026-09-29", "icao": "RPLL", "city": "Manila", "max_temp_f": 93}
+{"date": "2026-09-29", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 84}
+{"date": "2026-09-29", "icao": "FACT", "city": "Cape Town", "max_temp_f": 84}
+{"date": "2026-09-29", "icao": "UUWW", "city": "Moscow", "max_temp_f": 60}
+{"date": "2026-09-29", "icao": "RCSS", "city": "Taipei", "max_temp_f": 98}
+{"date": "2026-09-29", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 87}
+{"date": "2026-09-29", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 78}
+{"date": "2026-09-30", "icao": "KLGA", "city": "NYC", "max_temp_f": 74}
+{"date": "2026-09-30", "icao": "KLAX", "city": "Los Angeles", "max_temp_f": 82}
+{"date": "2026-09-30", "icao": "KORD", "city": "Chicago", "max_temp_f": 66}
+{"date": "2026-09-30", "icao": "KDAL", "city": "Dallas", "max_temp_f": 91}
+{"date": "2026-09-30", "icao": "KMIA", "city": "Miami", "max_temp_f": 83}
+{"date": "2026-09-30", "icao": "KHOU", "city": "Houston", "max_temp_f": 94}
+{"date": "2026-09-30", "icao": "KSFO", "city": "San Francisco", "max_temp_f": 79}
+{"date": "2026-09-30", "icao": "KSEA", "city": "Seattle", "max_temp_f": 64}
+{"date": "2026-09-30", "icao": "KATL", "city": "Atlanta", "max_temp_f": 88}
+{"date": "2026-09-30", "icao": "KBKF", "city": "Denver", "max_temp_f": 63}
+{"date": "2026-09-30", "icao": "KAUS", "city": "Austin", "max_temp_f": 95}
+{"date": "2026-09-30", "icao": "CYYZ", "city": "Toronto", "max_temp_f": 76}
+{"date": "2026-09-30", "icao": "MMMX", "city": "Mexico City", "max_temp_f": 81}
+{"date": "2026-09-30", "icao": "MPMG", "city": "Panama City", "max_temp_f": 89}
+{"date": "2026-09-30", "icao": "EGLC", "city": "London", "max_temp_f": 75}
+{"date": "2026-09-30", "icao": "LFPG", "city": "Paris", "max_temp_f": 72}
+{"date": "2026-09-30", "icao": "EDDM", "city": "Munich", "max_temp_f": 77}
+{"date": "2026-09-30", "icao": "LIMC", "city": "Milan", "max_temp_f": 78}
+{"date": "2026-09-30", "icao": "LEMD", "city": "Madrid", "max_temp_f": 84}
+{"date": "2026-09-30", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 76}
+{"date": "2026-09-29", "icao": "EHAM", "city": "Amsterdam", "max_temp_f": 78}
+{"date": "2026-09-30", "icao": "EPWA", "city": "Warsaw", "max_temp_f": 70}
+{"date": "2026-09-30", "icao": "EFHK", "city": "Helsinki", "max_temp_f": 63}
+{"date": "2026-09-30", "icao": "LTAC", "city": "Ankara", "max_temp_f": 61}
+{"date": "2026-09-30", "icao": "RKSI", "city": "Seoul", "max_temp_f": 77}
+{"date": "2026-09-30", "icao": "RKPK", "city": "Busan", "max_temp_f": 81}
+{"date": "2026-09-30", "icao": "RJTT", "city": "Tokyo", "max_temp_f": 69}
+{"date": "2026-09-30", "icao": "ZBAA", "city": "Beijing", "max_temp_f": 68}
+{"date": "2026-09-30", "icao": "ZSPD", "city": "Shanghai", "max_temp_f": 75}
+{"date": "2026-09-30", "icao": "ZGSZ", "city": "Shenzhen", "max_temp_f": 91}
+{"date": "2026-09-30", "icao": "ZUCK", "city": "Chongqing", "max_temp_f": 76}
+{"date": "2026-09-30", "icao": "ZUUU", "city": "Chengdu", "max_temp_f": 79}
+{"date": "2026-09-30", "icao": "WSSS", "city": "Singapore", "max_temp_f": 91}
+{"date": "2026-09-30", "icao": "VILK", "city": "Lucknow", "max_temp_f": 88}
+{"date": "2026-09-30", "icao": "WMKK", "city": "Kuala Lumpur", "max_temp_f": 91}
+{"date": "2026-09-30", "icao": "ZHHH", "city": "Wuhan", "max_temp_f": 74}
+{"date": "2026-09-30", "icao": "NZWN", "city": "Wellington", "max_temp_f": 61}
+{"date": "2026-09-30", "icao": "SAEZ", "city": "Buenos Aires", "max_temp_f": 64}
+{"date": "2026-09-30", "icao": "SBGR", "city": "Sao Paulo", "max_temp_f": 92}
+{"date": "2026-09-30", "icao": "OPKC", "city": "Karachi", "max_temp_f": 91}
+{"date": "2026-09-30", "icao": "ZGGG", "city": "Guangzhou", "max_temp_f": 99}
+{"date": "2026-09-30", "icao": "OEJN", "city": "Jeddah", "max_temp_f": 97}
+{"date": "2026-09-30", "icao": "LLBG", "city": "Tel Aviv", "max_temp_f": 85}
+{"date": "2026-09-30", "icao": "RPLL", "city": "Manila", "max_temp_f": 94}
+{"date": "2026-09-30", "icao": "ZSQD", "city": "Qingdao", "max_temp_f": 78}
+{"date": "2026-09-30", "icao": "FACT", "city": "Cape Town", "max_temp_f": 93}
+{"date": "2026-09-30", "icao": "UUWW", "city": "Moscow", "max_temp_f": 63}
+{"date": "2026-09-30", "icao": "RCSS", "city": "Taipei", "max_temp_f": 97}
+{"date": "2026-09-30", "icao": "ZSJN", "city": "Jinan", "max_temp_f": 73}
+{"date": "2026-09-30", "icao": "ZHCC", "city": "Zhengzhou", "max_temp_f": 76}

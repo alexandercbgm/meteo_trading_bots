@@ -1,0 +1,16 @@
+[Unit]
+Description=Weather bot (Polymarket)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=bot
+WorkingDirectory=/home/bot/weather_bot
+ExecStart=/home/bot/venv/bin/python -u /home/bot/weather_bot/start_bot.py
+Restart=always
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

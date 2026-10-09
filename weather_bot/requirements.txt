@@ -1,0 +1,7 @@
+selenium
+requests
+pytz
+PyYAML
+pandas
+plotly
+polymarket-client

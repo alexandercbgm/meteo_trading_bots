@@ -1,0 +1,169 @@
+# config/watched_icaos_weather_forecast.yaml
+#
+# Список городов, за которыми следит PriceMonitor (src/price_monitor.py), и
+# отдельный "скорректированный" отчёт (AccuracyReportBuilder.build_watched_report,
+# см. reports/accuracy_report_watched.html).
+#
+# defaults — общие параметры по умолчанию для ВСЕХ городов ниже. Любое поле
+# конкретного города, оставленное пустым, наследует значение отсюда; заданное
+# явно — переопределяет defaults ТОЛЬКО для этого города.
+#
+# По каждому городу в watched_icaos:
+#   city             — имя для отображения (справочно, должно совпадать с cities.py)
+#   strategy         — "flat" или "pyramid" (должна входить в
+#                       price_monitor.weather_forecast.strategies_list в config.yaml)
+#   loss_limit       — (необязательно) сколько промахов подряд допускает пирамида. По умолчанию
+#                       единое для всей стратегии — price_monitor.weather_forecast.loss_limit в
+#                       config.yaml; задай здесь только чтобы переопределить для ОДНОГО города.
+#   weather_source   — какой прогноз использовать: "" (по умолчанию Wunderground)
+#                       или "Windy"
+#   weather_corr     — поправка к прогнозу в БАКЕТАХ/"ставках" (не в градусах):
+#                       таргет = прогноз + поправка. Пусто/не задано = наследует defaults.
+#   min_price_limit  — НИЖНИЙ порог цены ставки (в центах) НА ЭТОТ ТАРГЕТ: сигнал
+#                       шлётся, только если цена >= этого порога. Пусто/не задано
+#                       (в т.ч. и в defaults) = ограничения снизу НЕТ — на сигнал
+#                       это никак не влияет, проверяется только max_price_limit.
+#   max_price_limit  — ВЕРХНИЙ потолок цены (в центах): сигнал шлётся, только
+#                       если цена <= этого потолка. Пусто/не задано = наследует
+#                       defaults (там 66 по умолчанию).
+#   comment          — произвольный текст, добавляется отдельной строкой в
+#                       уведомление в Telegram, если не пустой. Пусто/не
+#                       задано = наследует defaults.
+
+defaults:
+  weather_source: ""
+  weather_corr:
+  min_price_limit:
+  max_price_limit: 66
+  comment: ""
+
+watched_icaos:
+  # --- ASIA ---
+  # ZSPD:
+  #   city: "Shanghai"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr:
+  #   min_price_limit: 30
+  #   comment: ""
+  # WMKK:
+  #   city: "Kuala Lumpur"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr:
+  #   min_price_limit: 30
+  #   comment: ""
+  OEJN:
+    city: "Jeddah"
+    strategy: "pyramid"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 20
+    comment: ""
+  # ZSQD:
+  #   city: "Qingdao"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr:
+  #   min_price_limit: 30
+  #   comment: ""
+  # RKSI:
+  #   city: "Seoul"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr: 1
+  #   min_price_limit: 30
+  #   comment: ""
+  # RJTT:
+  #   city: "Tokyo"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr:
+  #   min_price_limit: 20
+  #   comment: ""
+  # RKPK:
+  #   city: "Busan"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr:
+  #   min_price_limit: 40
+  #   comment: ""
+  # ZHHH:
+  #   city: "Wuhan"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr:
+  #   min_price_limit: 20
+  #   comment: ""
+  # --- EUROPE ---
+  # EPWA:
+  #   city: "Warsaw"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr:
+  #   min_price_limit: 20
+  #   comment: ""
+  # LIMC:
+  #   city: "Milan"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr:
+  #   min_price_limit: 30
+  #   comment: ""
+  # UUWW:
+  #   city: "Moscow"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr: 1
+  #   min_price_limit: 25
+  #   comment: ""
+  # EDDM:
+  #   city: "Munich"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr: 1
+  #   min_price_limit: 30
+  #   comment: ""
+  # LFPG:
+  #   city: "Paris"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr: 1
+  #   min_price_limit: 30
+  #   comment: ""
+  # --- AMERICA ---
+  # KBKF:
+  #   city: "Denver"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr: 1
+  #   min_price_limit: 20
+  #   comment: ""
+  # KLGA:
+  #   city: "NYC"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr:
+  #   min_price_limit: 20
+  #   comment: ""
+  # KMIA:
+  #   city: "Miami"
+  #   strategy: "pyramid"
+  #   weather_source: "Windy"
+  #   weather_corr: 1
+  #   min_price_limit: 30
+  #   comment: ""
+  # KSFO:
+  #   city: "San Francisco"
+  #   strategy: "pyramid"
+  #   weather_source: ""
+  #   weather_corr: 1
+  #   min_price_limit: 30
+  #   comment: ""
+  # KSEA:
+  #   city: "Seattle"
+  #   strategy: "pyramid"
+  #   weather_source: "Windy"
+  #   weather_corr: 1
+  #   min_price_limit: 30
+  #   comment: ""

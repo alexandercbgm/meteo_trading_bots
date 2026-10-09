@@ -1,0 +1,330 @@
+{"date": "2026-10-01", "icao": "RKPK", "city": "Busan", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "ZSQD", "city": "Qingdao", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "KLGA", "city": "NYC", "bucket": "78-79°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "KLAX", "city": "Los Angeles", "bucket": "76-77°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "KORD", "city": "Chicago", "bucket": "70-71°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "KDAL", "city": "Dallas", "bucket": "80-81°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "KMIA", "city": "Miami", "bucket": "82-83°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "KHOU", "city": "Houston", "bucket": "88-89°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "KSFO", "city": "San Francisco", "bucket": "72-73°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "KSEA", "city": "Seattle", "bucket": "66-67°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "KATL", "city": "Atlanta", "bucket": "84-85°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "KBKF", "city": "Denver", "bucket": "68-69°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "KAUS", "city": "Austin", "bucket": "86-87°F", "scale": "F"}
+{"date": "2026-10-01", "icao": "CYYZ", "city": "Toronto", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "MMMX", "city": "Mexico City", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "MPMG", "city": "Panama City", "bucket": "29°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "EGLC", "city": "London", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "LFPG", "city": "Paris", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "EDDM", "city": "Munich", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "LIMC", "city": "Milan", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "LEMD", "city": "Madrid", "bucket": "29°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "EHAM", "city": "Amsterdam", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "EPWA", "city": "Warsaw", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "EFHK", "city": "Helsinki", "bucket": "16°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "LTAC", "city": "Ankara", "bucket": "17°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "RKSI", "city": "Seoul", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "RJTT", "city": "Tokyo", "bucket": "27°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "ZBAA", "city": "Beijing", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "ZSPD", "city": "Shanghai", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "ZGSZ", "city": "Shenzhen", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "ZUCK", "city": "Chongqing", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "ZUUU", "city": "Chengdu", "bucket": "27°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "WSSS", "city": "Singapore", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "VILK", "city": "Lucknow", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "WMKK", "city": "Kuala Lumpur", "bucket": "34°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "ZHHH", "city": "Wuhan", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "NZWN", "city": "Wellington", "bucket": "15°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "SAEZ", "city": "Buenos Aires", "bucket": "15°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "SBGR", "city": "Sao Paulo", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "OPKC", "city": "Karachi", "bucket": "34°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "ZGGG", "city": "Guangzhou", "bucket": "36°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "OEJN", "city": "Jeddah", "bucket": "36°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "LLBG", "city": "Tel Aviv", "bucket": "28°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "RPLL", "city": "Manila", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "FACT", "city": "Cape Town", "bucket": "27°C or higher", "scale": "C"}
+{"date": "2026-10-01", "icao": "UUWW", "city": "Moscow", "bucket": "13°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "RCSS", "city": "Taipei", "bucket": "35°C", "scale": "C"}
+{"date": "2026-10-01", "icao": "ZHCC", "city": "Zhengzhou", "bucket": "22°C or below", "scale": "C"}
+{"date": "2026-10-02", "icao": "KLGA", "city": "NYC", "bucket": "86-87°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "KLAX", "city": "Los Angeles", "bucket": "84-85°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "KORD", "city": "Chicago", "bucket": "66-67°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "KDAL", "city": "Dallas", "bucket": "80-81°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "KMIA", "city": "Miami", "bucket": "88-89°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "KHOU", "city": "Houston", "bucket": "90-91°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "KSFO", "city": "San Francisco", "bucket": "74-75°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "KSEA", "city": "Seattle", "bucket": "70-71°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "KATL", "city": "Atlanta", "bucket": "82-83°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "KBKF", "city": "Denver", "bucket": "80-81°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "KAUS", "city": "Austin", "bucket": "78-79°F", "scale": "F"}
+{"date": "2026-10-02", "icao": "CYYZ", "city": "Toronto", "bucket": "19°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "MMMX", "city": "Mexico City", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "MPMG", "city": "Panama City", "bucket": "31°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "EGLC", "city": "London", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "LFPG", "city": "Paris", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "EDDM", "city": "Munich", "bucket": "19°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "LIMC", "city": "Milan", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "LEMD", "city": "Madrid", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "EHAM", "city": "Amsterdam", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "EPWA", "city": "Warsaw", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "EFHK", "city": "Helsinki", "bucket": "15°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "LTAC", "city": "Ankara", "bucket": "18°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "RKSI", "city": "Seoul", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "RKPK", "city": "Busan", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "RJTT", "city": "Tokyo", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "ZBAA", "city": "Beijing", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "ZSPD", "city": "Shanghai", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "ZGSZ", "city": "Shenzhen", "bucket": "31°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "ZUCK", "city": "Chongqing", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "ZUUU", "city": "Chengdu", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "WSSS", "city": "Singapore", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "VILK", "city": "Lucknow", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "WMKK", "city": "Kuala Lumpur", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "ZHHH", "city": "Wuhan", "bucket": "18°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "NZWN", "city": "Wellington", "bucket": "15°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "SAEZ", "city": "Buenos Aires", "bucket": "18°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "SBGR", "city": "Sao Paulo", "bucket": "19°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "OPKC", "city": "Karachi", "bucket": "35°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "ZGGG", "city": "Guangzhou", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "OEJN", "city": "Jeddah", "bucket": "35°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "LLBG", "city": "Tel Aviv", "bucket": "30°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "RPLL", "city": "Manila", "bucket": "34°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "ZSQD", "city": "Qingdao", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "FACT", "city": "Cape Town", "bucket": "19°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "UUWW", "city": "Moscow", "bucket": "13°C", "scale": "C"}
+{"date": "2026-10-02", "icao": "RCSS", "city": "Taipei", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "KLGA", "city": "NYC", "bucket": "70-71°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "KLAX", "city": "Los Angeles", "bucket": "100-101°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "KORD", "city": "Chicago", "bucket": "68-69°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "KDAL", "city": "Dallas", "bucket": "74-75°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "KMIA", "city": "Miami", "bucket": "86-87°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "KHOU", "city": "Houston", "bucket": "88-89°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "KSFO", "city": "San Francisco", "bucket": "88-89°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "KSEA", "city": "Seattle", "bucket": "66-67°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "KATL", "city": "Atlanta", "bucket": "84-85°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "KBKF", "city": "Denver", "bucket": "82-83°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "KAUS", "city": "Austin", "bucket": "78-79°F", "scale": "F"}
+{"date": "2026-10-03", "icao": "CYYZ", "city": "Toronto", "bucket": "16°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "MMMX", "city": "Mexico City", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "MPMG", "city": "Panama City", "bucket": "30°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "EGLC", "city": "London", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "LFPG", "city": "Paris", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "EDDM", "city": "Munich", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "LIMC", "city": "Milan", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "LEMD", "city": "Madrid", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "EHAM", "city": "Amsterdam", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "EPWA", "city": "Warsaw", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "EFHK", "city": "Helsinki", "bucket": "13°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "LTAC", "city": "Ankara", "bucket": "17°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "RKSI", "city": "Seoul", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "RKPK", "city": "Busan", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "RJTT", "city": "Tokyo", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "ZBAA", "city": "Beijing", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "ZSPD", "city": "Shanghai", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "ZGSZ", "city": "Shenzhen", "bucket": "29°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "ZUCK", "city": "Chongqing", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "ZUUU", "city": "Chengdu", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "WSSS", "city": "Singapore", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "VILK", "city": "Lucknow", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "WMKK", "city": "Kuala Lumpur", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "ZHHH", "city": "Wuhan", "bucket": "19°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "NZWN", "city": "Wellington", "bucket": "13°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "SAEZ", "city": "Buenos Aires", "bucket": "18°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "SBGR", "city": "Sao Paulo", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "OPKC", "city": "Karachi", "bucket": "34°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "ZGGG", "city": "Guangzhou", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "OEJN", "city": "Jeddah", "bucket": "36°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "LLBG", "city": "Tel Aviv", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "RPLL", "city": "Manila", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "ZSQD", "city": "Qingdao", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "FACT", "city": "Cape Town", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "UUWW", "city": "Moscow", "bucket": "11°C", "scale": "C"}
+{"date": "2026-10-03", "icao": "RCSS", "city": "Taipei", "bucket": "30°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "RKPK", "city": "Busan", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "KLGA", "city": "NYC", "bucket": "62-63°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "KLAX", "city": "Los Angeles", "bucket": "100-101°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "KORD", "city": "Chicago", "bucket": "72-73°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "KDAL", "city": "Dallas", "bucket": "78-79°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "KMIA", "city": "Miami", "bucket": "88-89°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "KHOU", "city": "Houston", "bucket": "78-79°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "KSFO", "city": "San Francisco", "bucket": "82-83°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "KSEA", "city": "Seattle", "bucket": "68-69°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "KATL", "city": "Atlanta", "bucket": "76-77°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "KBKF", "city": "Denver", "bucket": "80-81°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "KAUS", "city": "Austin", "bucket": "76-77°F", "scale": "F"}
+{"date": "2026-10-04", "icao": "CYYZ", "city": "Toronto", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "MMMX", "city": "Mexico City", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "MPMG", "city": "Panama City", "bucket": "32°C or higher", "scale": "C"}
+{"date": "2026-10-04", "icao": "EGLC", "city": "London", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "LFPG", "city": "Paris", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "EDDM", "city": "Munich", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "LIMC", "city": "Milan", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "LEMD", "city": "Madrid", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "EHAM", "city": "Amsterdam", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "EPWA", "city": "Warsaw", "bucket": "18°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "EFHK", "city": "Helsinki", "bucket": "15°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "LTAC", "city": "Ankara", "bucket": "19°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "RKSI", "city": "Seoul", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "RJTT", "city": "Tokyo", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "ZBAA", "city": "Beijing", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "ZSPD", "city": "Shanghai", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "ZGSZ", "city": "Shenzhen", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "ZUCK", "city": "Chongqing", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "ZUUU", "city": "Chengdu", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "WSSS", "city": "Singapore", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "VILK", "city": "Lucknow", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "WMKK", "city": "Kuala Lumpur", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "ZHHH", "city": "Wuhan", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "NZWN", "city": "Wellington", "bucket": "13°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "SAEZ", "city": "Buenos Aires", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "SBGR", "city": "Sao Paulo", "bucket": "28°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "OPKC", "city": "Karachi", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "ZGGG", "city": "Guangzhou", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "OEJN", "city": "Jeddah", "bucket": "35°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "LLBG", "city": "Tel Aviv", "bucket": "30°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "RPLL", "city": "Manila", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "ZSQD", "city": "Qingdao", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "FACT", "city": "Cape Town", "bucket": "28°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "UUWW", "city": "Moscow", "bucket": "13°C", "scale": "C"}
+{"date": "2026-10-04", "icao": "RCSS", "city": "Taipei", "bucket": "35°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "RKPK", "city": "Busan", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "KLGA", "city": "NYC", "bucket": "70-71°F", "scale": "F"}
+{"date": "2026-10-05", "icao": "KLAX", "city": "Los Angeles", "bucket": "100°F or higher", "scale": "F"}
+{"date": "2026-10-05", "icao": "KORD", "city": "Chicago", "bucket": "68-69°F", "scale": "F"}
+{"date": "2026-10-05", "icao": "KDAL", "city": "Dallas", "bucket": "86-87°F", "scale": "F"}
+{"date": "2026-10-05", "icao": "KMIA", "city": "Miami", "bucket": "88-89°F", "scale": "F"}
+{"date": "2026-10-05", "icao": "KHOU", "city": "Houston", "bucket": "86-87°F", "scale": "F"}
+{"date": "2026-10-05", "icao": "KSFO", "city": "San Francisco", "bucket": "75°F or below", "scale": "F"}
+{"date": "2026-10-05", "icao": "KSEA", "city": "Seattle", "bucket": "68-69°F", "scale": "F"}
+{"date": "2026-10-05", "icao": "KATL", "city": "Atlanta", "bucket": "74-75°F", "scale": "F"}
+{"date": "2026-10-05", "icao": "KBKF", "city": "Denver", "bucket": "86-87°F", "scale": "F"}
+{"date": "2026-10-05", "icao": "KAUS", "city": "Austin", "bucket": "88-89°F", "scale": "F"}
+{"date": "2026-10-05", "icao": "CYYZ", "city": "Toronto", "bucket": "15°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "MMMX", "city": "Mexico City", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "MPMG", "city": "Panama City", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "EGLC", "city": "London", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "LFPG", "city": "Paris", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "EDDM", "city": "Munich", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "LIMC", "city": "Milan", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "LEMD", "city": "Madrid", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "EHAM", "city": "Amsterdam", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "EPWA", "city": "Warsaw", "bucket": "18°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "EFHK", "city": "Helsinki", "bucket": "14°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "LTAC", "city": "Ankara", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "RKSI", "city": "Seoul", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "RJTT", "city": "Tokyo", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "ZBAA", "city": "Beijing", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "ZSPD", "city": "Shanghai", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "ZGSZ", "city": "Shenzhen", "bucket": "30°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "ZUCK", "city": "Chongqing", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "ZUUU", "city": "Chengdu", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "WSSS", "city": "Singapore", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "VILK", "city": "Lucknow", "bucket": "34°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "WMKK", "city": "Kuala Lumpur", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "ZHHH", "city": "Wuhan", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "NZWN", "city": "Wellington", "bucket": "16°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "SAEZ", "city": "Buenos Aires", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "SBGR", "city": "Sao Paulo", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "OPKC", "city": "Karachi", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "ZGGG", "city": "Guangzhou", "bucket": "28°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "OEJN", "city": "Jeddah", "bucket": "35°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "LLBG", "city": "Tel Aviv", "bucket": "28°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "RPLL", "city": "Manila", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "ZSQD", "city": "Qingdao", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "FACT", "city": "Cape Town", "bucket": "27°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "UUWW", "city": "Moscow", "bucket": "13°C", "scale": "C"}
+{"date": "2026-10-05", "icao": "RCSS", "city": "Taipei", "bucket": "29°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "RKPK", "city": "Busan", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "KLGA", "city": "NYC", "bucket": "62-63°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "KLAX", "city": "Los Angeles", "bucket": "94-95°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "KORD", "city": "Chicago", "bucket": "74-75°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "KDAL", "city": "Dallas", "bucket": "86-87°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "KMIA", "city": "Miami", "bucket": "88-89°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "KHOU", "city": "Houston", "bucket": "90-91°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "KSFO", "city": "San Francisco", "bucket": "80-81°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "KSEA", "city": "Seattle", "bucket": "66-67°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "KATL", "city": "Atlanta", "bucket": "76-77°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "KBKF", "city": "Denver", "bucket": "86-87°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "KAUS", "city": "Austin", "bucket": "90-91°F", "scale": "F"}
+{"date": "2026-10-06", "icao": "CYYZ", "city": "Toronto", "bucket": "14°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "MMMX", "city": "Mexico City", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "MPMG", "city": "Panama City", "bucket": "29°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "EGLC", "city": "London", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "LFPG", "city": "Paris", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "EDDM", "city": "Munich", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "LIMC", "city": "Milan", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "LEMD", "city": "Madrid", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "EHAM", "city": "Amsterdam", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "EPWA", "city": "Warsaw", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "EFHK", "city": "Helsinki", "bucket": "15°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "LTAC", "city": "Ankara", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "RKSI", "city": "Seoul", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "RJTT", "city": "Tokyo", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "ZBAA", "city": "Beijing", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "ZSPD", "city": "Shanghai", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "ZGSZ", "city": "Shenzhen", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "ZUCK", "city": "Chongqing", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "ZUUU", "city": "Chengdu", "bucket": "27°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "WSSS", "city": "Singapore", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "VILK", "city": "Lucknow", "bucket": "31°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "WMKK", "city": "Kuala Lumpur", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "ZHHH", "city": "Wuhan", "bucket": "27°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "NZWN", "city": "Wellington", "bucket": "16°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "SAEZ", "city": "Buenos Aires", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "SBGR", "city": "Sao Paulo", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "OPKC", "city": "Karachi", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "ZGGG", "city": "Guangzhou", "bucket": "27°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "OEJN", "city": "Jeddah", "bucket": "36°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "LLBG", "city": "Tel Aviv", "bucket": "27°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "RPLL", "city": "Manila", "bucket": "34°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "ZSQD", "city": "Qingdao", "bucket": "27°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "FACT", "city": "Cape Town", "bucket": "17°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "UUWW", "city": "Moscow", "bucket": "12°C", "scale": "C"}
+{"date": "2026-10-06", "icao": "RCSS", "city": "Taipei", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "KLGA", "city": "NYC", "bucket": "66-67°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "KLAX", "city": "Los Angeles", "bucket": "84-85°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "KORD", "city": "Chicago", "bucket": "78-79°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "KDAL", "city": "Dallas", "bucket": "88-89°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "KMIA", "city": "Miami", "bucket": "88-89°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "KHOU", "city": "Houston", "bucket": "90-91°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "KSFO", "city": "San Francisco", "bucket": "74-75°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "KSEA", "city": "Seattle", "bucket": "66-67°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "KATL", "city": "Atlanta", "bucket": "78-79°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "KBKF", "city": "Denver", "bucket": "80-81°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "KAUS", "city": "Austin", "bucket": "90-91°F", "scale": "F"}
+{"date": "2026-10-07", "icao": "CYYZ", "city": "Toronto", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "MMMX", "city": "Mexico City", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "MPMG", "city": "Panama City", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "EGLC", "city": "London", "bucket": "16°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "LFPG", "city": "Paris", "bucket": "18°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "EDDM", "city": "Munich", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "LIMC", "city": "Milan", "bucket": "18°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "LEMD", "city": "Madrid", "bucket": "23°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "EHAM", "city": "Amsterdam", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "EPWA", "city": "Warsaw", "bucket": "21°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "EFHK", "city": "Helsinki", "bucket": "14°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "LTAC", "city": "Ankara", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "RKSI", "city": "Seoul", "bucket": "22°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "RKPK", "city": "Busan", "bucket": "24°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "RJTT", "city": "Tokyo", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "ZBAA", "city": "Beijing", "bucket": "27°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "ZSPD", "city": "Shanghai", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "ZGSZ", "city": "Shenzhen", "bucket": "30°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "ZUCK", "city": "Chongqing", "bucket": "29°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "ZUUU", "city": "Chengdu", "bucket": "25°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "WSSS", "city": "Singapore", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "VILK", "city": "Lucknow", "bucket": "32°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "WMKK", "city": "Kuala Lumpur", "bucket": "34°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "ZHHH", "city": "Wuhan", "bucket": "27°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "NZWN", "city": "Wellington", "bucket": "15°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "SAEZ", "city": "Buenos Aires", "bucket": "18°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "SBGR", "city": "Sao Paulo", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "OPKC", "city": "Karachi", "bucket": "33°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "ZGGG", "city": "Guangzhou", "bucket": "30°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "OEJN", "city": "Jeddah", "bucket": "38°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "LLBG", "city": "Tel Aviv", "bucket": "29°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "RPLL", "city": "Manila", "bucket": "34°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "ZSQD", "city": "Qingdao", "bucket": "26°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "FACT", "city": "Cape Town", "bucket": "20°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "UUWW", "city": "Moscow", "bucket": "14°C", "scale": "C"}
+{"date": "2026-10-07", "icao": "RCSS", "city": "Taipei", "bucket": "28°C", "scale": "C"}

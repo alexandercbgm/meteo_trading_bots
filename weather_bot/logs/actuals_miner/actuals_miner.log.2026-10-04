@@ -1,0 +1,110 @@
+2026-10-04 14:02:45.257 - INFO - 🚀 Майнер фактических максимумов: 2026-10 до 2026-10-03
+2026-10-04 14:02:50.926 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KLGA&startDate=20261003&endDate=20261003
+2026-10-04 14:02:52.232 - INFO - 📈 [Wunderground-API] KLGA 2026-10: собрано 30 дней
+2026-10-04 14:02:52.233 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KLAX&startDate=20261003&endDate=20261003
+2026-10-04 14:02:54.188 - INFO - 📈 [Wunderground-API] KLAX 2026-10: собрано 30 дней
+2026-10-04 14:02:54.190 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KORD&startDate=20261003&endDate=20261003
+2026-10-04 14:02:55.783 - INFO - 📈 [Wunderground-API] KORD 2026-10: собрано 30 дней
+2026-10-04 14:02:55.799 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KDAL&startDate=20261003&endDate=20261003
+2026-10-04 14:03:00.093 - INFO - 📈 [Wunderground-API] KDAL 2026-10: собрано 30 дней
+2026-10-04 14:03:00.093 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KMIA&startDate=20261003&endDate=20261003
+2026-10-04 14:03:03.224 - INFO - 📈 [Wunderground-API] KMIA 2026-10: собрано 30 дней
+2026-10-04 14:03:03.224 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KHOU&startDate=20261003&endDate=20261003
+2026-10-04 14:03:03.868 - INFO - 📈 [Wunderground-API] KHOU 2026-10: собрано 30 дней
+2026-10-04 14:03:03.868 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KSFO&startDate=20261003&endDate=20261003
+2026-10-04 14:03:07.990 - INFO - 📈 [Wunderground-API] KSFO 2026-10: собрано 30 дней
+2026-10-04 14:03:07.990 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KSEA&startDate=20261003&endDate=20261003
+2026-10-04 14:03:08.879 - INFO - 📈 [Wunderground-API] KSEA 2026-10: собрано 30 дней
+2026-10-04 14:03:08.881 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KATL&startDate=20261003&endDate=20261003
+2026-10-04 14:03:11.275 - INFO - 📈 [Wunderground-API] KATL 2026-10: собрано 30 дней
+2026-10-04 14:03:11.275 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KBKF&startDate=20261003&endDate=20261003
+2026-10-04 14:03:12.958 - INFO - 📈 [Wunderground-API] KBKF 2026-10: собрано 30 дней
+2026-10-04 14:03:12.958 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=KAUS&startDate=20261003&endDate=20261003
+2026-10-04 14:03:15.593 - INFO - 📈 [Wunderground-API] KAUS 2026-10: собрано 30 дней
+2026-10-04 14:03:15.593 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=CYYZ&startDate=20261003&endDate=20261003
+2026-10-04 14:03:21.040 - INFO - 📈 [Wunderground-API] CYYZ 2026-10: собрано 30 дней
+2026-10-04 14:03:21.040 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=MMMX&startDate=20261003&endDate=20261003
+2026-10-04 14:03:22.216 - INFO - 📈 [Wunderground-API] MMMX 2026-10: собрано 30 дней
+2026-10-04 14:03:22.216 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=MPMG&startDate=20261003&endDate=20261003
+2026-10-04 14:03:23.823 - INFO - 📈 [Wunderground-API] MPMG 2026-10: собрано 30 дней
+2026-10-04 14:03:23.826 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=EGLC&startDate=20261003&endDate=20261003
+2026-10-04 14:03:24.721 - INFO - 📈 [Wunderground-API] EGLC 2026-10: собрано 30 дней
+2026-10-04 14:03:24.721 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=LFPG&startDate=20261003&endDate=20261003
+2026-10-04 14:03:27.946 - INFO - 📈 [Wunderground-API] LFPG 2026-10: собрано 30 дней
+2026-10-04 14:03:27.946 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=EDDM&startDate=20261003&endDate=20261003
+2026-10-04 14:03:28.567 - INFO - 📈 [Wunderground-API] EDDM 2026-10: собрано 30 дней
+2026-10-04 14:03:28.567 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=LIMC&startDate=20261003&endDate=20261003
+2026-10-04 14:03:30.345 - INFO - 📈 [Wunderground-API] LIMC 2026-10: собрано 30 дней
+2026-10-04 14:03:30.345 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=LEMD&startDate=20261003&endDate=20261003
+2026-10-04 14:03:31.886 - INFO - 📈 [Wunderground-API] LEMD 2026-10: собрано 30 дней
+2026-10-04 14:03:31.886 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=EHAM&startDate=20261003&endDate=20261003
+2026-10-04 14:03:33.085 - INFO - 📈 [Wunderground-API] EHAM 2026-10: собрано 30 дней
+2026-10-04 14:03:33.085 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=EPWA&startDate=20261003&endDate=20261003
+2026-10-04 14:03:54.641 - ERROR - ❌ [Wunderground-API] Ошибка EPWA 2026-10: HTTPSConnectionPool(host='api.weather.com', port=443): Read timed out. (read timeout=15)
+2026-10-04 14:04:06.416 - WARNING - ⚠️ Не удалось инициировать звонок (попытка 1/3): HTTPConnectionPool(host='api.callmebot.com', port=80): Read timed out. (read timeout=10)
+2026-10-04 14:04:15.657 - INFO - 📞 Звонок инициирован (попытка 2/3)
+2026-10-04 14:04:15.659 - WARNING - ⚠️ [Wunderground-API] EPWA 2026-10: безбраузерный метод не сработал — переходим на старый Selenium-метод (Chrome)
+2026-10-04 14:04:45.681 - ERROR - ❌ Подключение к Chrome (127.0.0.1:9222) не завершилось за 30 сек. Бот сам попробует подключиться заново на следующем круге.
+2026-10-04 14:05:09.046 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/pl/warsaw/EPWA/date/2026-10
+2026-10-04 14:05:09.046 - ERROR - ❌ [Actuals] Ошибка EPWA 2026-10: [AttributeError] на шаге «открытие вкладки»: 'NoneType' object has no attribute 'execute_script'
+2026-10-04 14:05:41.197 - ERROR - ❌ Подключение к Chrome (127.0.0.1:9222) не завершилось за 30 сек. Бот сам попробует подключиться заново на следующем круге.
+2026-10-04 14:05:41.198 - INFO - 🔗 [Actuals/day] Открываю: https://www.wunderground.com/history/daily/pl/warsaw/EPWA/date/2026-10-3
+2026-10-04 14:05:41.198 - ERROR - ❌ [Actuals/day] Ошибка EPWA 2026-10-03: [AttributeError] на шаге «открытие вкладки»: 'NoneType' object has no attribute 'execute_script'
+2026-10-04 14:05:50.219 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=EFHK&startDate=20261003&endDate=20261003
+2026-10-04 14:05:51.288 - INFO - 📈 [Wunderground-API] EFHK 2026-10: собрано 30 дней
+2026-10-04 14:05:51.306 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=LTAC&startDate=20261003&endDate=20261003
+2026-10-04 14:05:52.708 - INFO - 📈 [Wunderground-API] LTAC 2026-10: собрано 30 дней
+2026-10-04 14:05:52.708 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=RKSI&startDate=20261003&endDate=20261003
+2026-10-04 14:05:54.082 - INFO - 📈 [Wunderground-API] RKSI 2026-10: собрано 30 дней
+2026-10-04 14:05:54.082 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=RKPK&startDate=20261003&endDate=20261003
+2026-10-04 14:05:54.705 - INFO - 📈 [Wunderground-API] RKPK 2026-10: собрано 30 дней
+2026-10-04 14:05:54.705 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=RJTT&startDate=20261003&endDate=20261003
+2026-10-04 14:05:55.674 - INFO - 📈 [Wunderground-API] RJTT 2026-10: собрано 30 дней
+2026-10-04 14:05:55.674 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=ZBAA&startDate=20261003&endDate=20261003
+2026-10-04 14:05:56.853 - INFO - 📈 [Wunderground-API] ZBAA 2026-10: собрано 30 дней
+2026-10-04 14:05:56.869 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=ZSPD&startDate=20261003&endDate=20261003
+2026-10-04 14:06:01.712 - INFO - 📈 [Wunderground-API] ZSPD 2026-10: собрано 30 дней
+2026-10-04 14:06:01.712 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=ZGSZ&startDate=20261003&endDate=20261003
+2026-10-04 14:06:03.690 - INFO - 📈 [Wunderground-API] ZGSZ 2026-10: собрано 30 дней
+2026-10-04 14:06:03.690 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=ZUCK&startDate=20261003&endDate=20261003
+2026-10-04 14:06:04.805 - INFO - 📈 [Wunderground-API] ZUCK 2026-10: собрано 30 дней
+2026-10-04 14:06:04.805 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=ZUUU&startDate=20261003&endDate=20261003
+2026-10-04 14:06:09.967 - INFO - 📈 [Wunderground-API] ZUUU 2026-10: собрано 30 дней
+2026-10-04 14:06:09.967 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=WSSS&startDate=20261003&endDate=20261003
+2026-10-04 14:06:12.163 - INFO - 📈 [Wunderground-API] WSSS 2026-10: собрано 30 дней
+2026-10-04 14:06:12.167 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=VILK&startDate=20261003&endDate=20261003
+2026-10-04 14:06:14.767 - INFO - 📈 [Wunderground-API] VILK 2026-10: собрано 30 дней
+2026-10-04 14:06:14.767 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=WMKK&startDate=20261003&endDate=20261003
+2026-10-04 14:06:15.470 - INFO - 📈 [Wunderground-API] WMKK 2026-10: собрано 30 дней
+2026-10-04 14:06:15.470 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=ZHHH&startDate=20261003&endDate=20261003
+2026-10-04 14:06:28.059 - INFO - 📈 [Wunderground-API] ZHHH 2026-10: собрано 30 дней
+2026-10-04 14:06:28.059 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=NZWN&startDate=20261002&endDate=20261003
+2026-10-04 14:06:29.895 - INFO - 📈 [Wunderground-API] NZWN 2026-10: собрано 30 дней
+2026-10-04 14:06:29.902 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=SAEZ&startDate=20261003&endDate=20261003
+2026-10-04 14:06:31.457 - INFO - 📈 [Wunderground-API] SAEZ 2026-10: собрано 30 дней
+2026-10-04 14:06:31.459 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=SBGR&startDate=20261003&endDate=20261003
+2026-10-04 14:06:33.828 - INFO - 📈 [Wunderground-API] SBGR 2026-10: собрано 30 дней
+2026-10-04 14:06:33.828 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=OPKC&startDate=20261003&endDate=20261003
+2026-10-04 14:06:36.621 - INFO - 📈 [Wunderground-API] OPKC 2026-10: собрано 30 дней
+2026-10-04 14:06:36.621 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=ZGGG&startDate=20261003&endDate=20261003
+2026-10-04 14:06:38.807 - INFO - 📈 [Wunderground-API] ZGGG 2026-10: собрано 30 дней
+2026-10-04 14:06:38.814 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=OEJN&startDate=20261003&endDate=20261003
+2026-10-04 14:06:43.656 - INFO - 📈 [Wunderground-API] OEJN 2026-10: собрано 30 дней
+2026-10-04 14:06:43.656 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=LLBG&startDate=20261003&endDate=20261003
+2026-10-04 14:06:56.593 - INFO - 📈 [Wunderground-API] LLBG 2026-10: собрано 30 дней
+2026-10-04 14:06:56.593 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=RPLL&startDate=20261003&endDate=20261003
+2026-10-04 14:06:57.468 - INFO - 📈 [Wunderground-API] RPLL 2026-10: собрано 30 дней
+2026-10-04 14:06:57.468 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=ZSQD&startDate=20261003&endDate=20261003
+2026-10-04 14:07:08.216 - INFO - 📈 [Wunderground-API] ZSQD 2026-10: собрано 30 дней
+2026-10-04 14:07:08.216 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=FACT&startDate=20261003&endDate=20261003
+2026-10-04 14:07:11.562 - INFO - 📈 [Wunderground-API] FACT 2026-10: собрано 30 дней
+2026-10-04 14:07:11.562 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=UUWW&startDate=20261003&endDate=20261003
+2026-10-04 14:07:12.150 - INFO - 📈 [Wunderground-API] UUWW 2026-10: собрано 30 дней
+2026-10-04 14:07:12.155 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=RCSS&startDate=20261003&endDate=20261003
+2026-10-04 14:07:15.697 - INFO - 📈 [Wunderground-API] RCSS 2026-10: собрано 30 дней
+2026-10-04 14:07:15.697 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=ZSJN&startDate=20261003&endDate=20261003
+2026-10-04 14:07:19.439 - INFO - 📈 [Wunderground-API] ZSJN 2026-10: собрано 30 дней
+2026-10-04 14:07:19.439 - INFO - 🔗 [Wunderground-API] Открываю: https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?apiKey=YOUR_WUNDERGROUND_API_KEY&language=en-US&units=e&format=json&icaoCode=ZHCC&startDate=20261003&endDate=20261003
+2026-10-04 14:07:21.480 - INFO - 📈 [Wunderground-API] ZHCC 2026-10: собрано 30 дней
+2026-10-04 14:07:21.480 - INFO - 💾 2026-10: дозаписано 49 новых строк в data_mining/wunderground_history\actuals_2026_10.jsonl
+2026-10-04 14:07:29.020 - INFO - 📋 Отправлена сводка фактических максимумов за 2026-10-03

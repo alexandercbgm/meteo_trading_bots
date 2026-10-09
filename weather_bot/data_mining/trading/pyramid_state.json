@@ -1,0 +1,24 @@
+{
+  "weather_forecast|RKSI": 1,
+  "max_bet|RKPK": 0,
+  "max_bet|VILK": 0,
+  "weather_forecast|OEJN": 0,
+  "max_bet|CYYZ": 0,
+  "max_bet|KDAL": 0,
+  "max_bet|KAUS": 0,
+  "max_bet|ZSQD": 1,
+  "max_bet|EFHK": 1,
+  "weather_forecast|UUWW": 1,
+  "max_bet|EDDM": 0,
+  "max_bet|KLAX": 0,
+  "weather_forecast|EPWA": 1,
+  "weather_forecast|KSEA": 1,
+  "max_bet|ZSQD|series": {
+    "loss": 3.31,
+    "last_lot": 5.0
+  },
+  "max_bet|EFHK|series": {
+    "loss": 2.96,
+    "last_lot": 5.0
+  }
+}

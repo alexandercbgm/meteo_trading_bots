@@ -1,0 +1,25 @@
+2026-09-24 00:03:33.488 - INFO - ⏭️ [Trader/max_bet] KAUS: вне test_cities_limit (2) -- сигнал отправлен, ботом не торгуется
+2026-09-24 02:04:19.817 - INFO - ⏭️ [Trader/max_bet] KLAX: вне test_cities_limit (2) -- сигнал отправлен, ботом не торгуется
+2026-09-24 02:05:24.916 - INFO - ⏭️ [Trader/weather_forecast] KSEA: вне test_cities_limit (2) -- сигнал отправлен, ботом не торгуется
+2026-09-24 10:02:22.764 - ERROR - ❌ [Trader] Gamma API ошибка RKPK: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?slug=highest-temperature-in-busan-on-september-24-2026 (Caused by NewConnectionError("HTTPSConnection(host='gamma-api.polymarket.com', port=443): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение"))
+2026-09-24 10:02:22.771 - ERROR - ❌ [Trader/max_bet] RKPK: не нашёл токен бакета (target_bucket=30) через Gamma API -- позиция НЕ открыта
+2026-09-24 11:11:13.866 - INFO - ⏭️ [Trader/max_bet] ZSQD: вне test_cities_limit (2) -- сигнал отправлен, ботом не торгуется
+2026-09-24 13:34:08.745 - INFO - 🛒 [Trader/max_bet] VILK: открываю позицию -- 29°C, лот 10.0 по 0.66$ (тип pyramid, промахов подряд: 1)
+2026-09-24 13:34:20.769 - INFO - 📨 [Trader/max_bet] VILK: заявка отправлена, order_id=0x2cfbaac996c4ce14952ea05e48ac647666930926a4320eef5a60530578ffb0a2
+2026-09-24 13:34:20.771 - INFO - ⛓️ [Trader] Ордер рассчитан на блокчейне, транзакции: ('0xde4daaa8bb0c24d98d6447dfc2c5c43cc5a716903decbcf17d64a654c672dc9b',)
+2026-09-24 13:34:28.970 - INFO - ✅ [Trader/max_bet] VILK: позиция открыта (подтверждена в list_positions) по 49.5¢
+2026-09-24 14:26:54.071 - WARNING - ⚠️ [Trader] OEJN 2026-09-22: факт по рынку уже есть, но не удалось подтвердить исполнение ордера 0x4e9220f178bba218206d8fcad33d8fb7c544b42368b5f90e5eed40626e4dc9f4 (verify_error (1/3): OpenOrder response did not match expected shape) -- откладываю разрешение позиции до следующего цикла
+2026-09-24 14:26:54.090 - INFO - 📉 [Trader/weather_forecast] RKSI 2026-09-23: хит ✅ -- факт 27°C, лот 5.0, P&L без комиссии +1.80$, P&L с учётом комиссии (0.060$) +1.74$, баланс стратегии +4.92$ -> +6.66$
+2026-09-24 14:26:55.419 - INFO - 📉 [Trader/max_bet] RKPK 2026-09-23: хит ✅ -- факт 28°C, лот 5.0, P&L без комиссии +2.25$, P&L с учётом комиссии (0.060$) +2.19$, баланс стратегии -0.08$ -> +2.11$
+2026-09-24 14:26:56.379 - INFO - 📉 [Trader/max_bet] VILK 2026-09-23: промах ❌ -- факт 33°C, лот 10.0, P&L без комиссии -4.84$, P&L с учётом комиссии (0.120$) -4.96$, баланс стратегии +2.11$ -> -2.85$
+2026-09-24 14:26:58.253 - INFO - 📊 [Trader] Дневная сводка за 2026-09-23 отправлена в Telegram (3 городов за сутки, 4 всего в списке)
+2026-09-24 15:18:52.937 - INFO - 📂 Загружено 2 открытых позиций из 1 файла trading
+2026-09-24 16:05:28.134 - INFO - ⏭️ [Trader/max_bet] EFHK: вне test_cities_limit (2) -- сигнал отправлен, ботом не торгуется
+2026-09-24 16:07:52.166 - WARNING - ⚠️ [Trader] OEJN 2026-09-22: факт по рынку уже есть, но не удалось подтвердить исполнение ордера 0x4e9220f178bba218206d8fcad33d8fb7c544b42368b5f90e5eed40626e4dc9f4 (verify_error (2/3): OpenOrder response did not match expected shape) -- откладываю разрешение позиции до следующего цикла
+2026-09-24 16:07:52.166 - INFO - 🛒 [Trader/weather_forecast] OEJN: открываю позицию -- 35°C, лот 5.0 по 0.66$ (тип pyramid, промахов подряд: 0)
+2026-09-24 16:07:53.526 - INFO - 📨 [Trader/weather_forecast] OEJN: заявка отправлена, order_id=0xc5732db81721c794de4ce11a8d9ea45adc4b2165067a1503b3e45b5b71aa24ab
+2026-09-24 16:07:53.530 - INFO - ⛓️ [Trader] Ордер рассчитан на блокчейне, транзакции: ('0xdcca1b80f5e4e522f372d454763f838dcd4e399cdcb8e76877faa632bb805a0f',)
+2026-09-24 16:07:53.852 - WARNING - ⚠️ [Trader/weather_forecast] OEJN: не удалось подтвердить ни исполнение, ни статус ордера -- не удалось проверить статус ордера -- OpenOrder response did not match expected shape. На всякий случай НЕ переразмещаю заявку (могла остаться живой или уже исполниться) -- оставляю как есть, разрешится позже через resolve_positions.
+2026-09-24 17:07:29.216 - INFO - ⏭️ [Trader/max_bet] EDDM: вне test_cities_limit (2) -- сигнал отправлен, ботом не торгуется
+2026-09-24 23:04:14.139 - INFO - ⏭️ [Trader/max_bet] CYYZ: вне test_cities_limit (2) -- сигнал отправлен, ботом не торгуется
+2026-09-24 23:11:33.166 - INFO - 📂 Загружено 3 открытых позиций из 1 файла trading

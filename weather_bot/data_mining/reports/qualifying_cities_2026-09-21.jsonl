@@ -1,0 +1,9 @@
+{"city": "London", "icao": "EGLC", "source": "wunderground", "hit_rate_pct": 50.0, "max_streak": 2, "avg_price_cents": 47.4, "median_price_cents": 51.5, "date": "2026-09-21"}
+{"city": "Warsaw", "icao": "EPWA", "source": "wunderground", "hit_rate_pct": 69.2, "max_streak": 2, "avg_price_cents": 47.4, "median_price_cents": 45.0, "date": "2026-09-21"}
+{"city": "Busan", "icao": "RKPK", "source": "wunderground", "hit_rate_pct": 48.0, "max_streak": 3, "avg_price_cents": 44.4, "median_price_cents": 45.0, "date": "2026-09-21"}
+{"city": "Dallas", "icao": "KDAL", "source": "wunderground", "hit_rate_pct": 66.7, "max_streak": 3, "avg_price_cents": 55.1, "median_price_cents": 58.2, "date": "2026-09-21"}
+{"city": "Helsinki", "icao": "EFHK", "source": "wunderground", "hit_rate_pct": 50.0, "max_streak": 3, "avg_price_cents": 52.8, "median_price_cents": 53.0, "date": "2026-09-21"}
+{"city": "Los Angeles", "icao": "KLAX", "source": "wunderground", "hit_rate_pct": 44.4, "max_streak": 3, "avg_price_cents": 53.2, "median_price_cents": 56.2, "date": "2026-09-21"}
+{"city": "Qingdao", "icao": "ZSQD", "source": "wunderground", "hit_rate_pct": 50.0, "max_streak": 3, "avg_price_cents": 44.1, "median_price_cents": 44.0, "date": "2026-09-21"}
+{"city": "Toronto", "icao": "CYYZ", "source": "wunderground", "hit_rate_pct": 40.7, "max_streak": 3, "avg_price_cents": 30.6, "median_price_cents": 30.0, "date": "2026-09-21"}
+{"city": "Zhengzhou", "icao": "ZHCC", "source": "wunderground", "hit_rate_pct": 44.0, "max_streak": 3, "avg_price_cents": 38.0, "median_price_cents": 31.0, "date": "2026-09-21"}

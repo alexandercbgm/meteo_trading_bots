@@ -1,0 +1,365 @@
+2026-09-20 01:13:26.157 - ERROR - ❌ Подключение к Chrome (127.0.0.1:9222) не завершилось за 30 сек — похоже на известное зависание Selenium при подключении к уже открытому Chrome (github.com/SeleniumHQ/selenium/issues/14906). Попробуй переключиться между вкладками в Chrome или перезапустить его.
+2026-09-20 01:16:46.776 - INFO - ✅ Selenium подключен к Chrome
+2026-09-20 01:17:29.239 - INFO - ✅ Selenium подключен к Chrome
+2026-09-20 01:21:03.251 - INFO - ✅ Selenium подключен к Chrome
+2026-09-20 14:04:20.130 - INFO - 🚀 Майнер фактических максимумов: 2026-09 до 2026-09-19
+2026-09-20 14:04:21.122 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/ny/new-york-city/KLGA/date/2026-9
+2026-09-20 14:05:15.782 - DEBUG - 🪵 [Actuals] KLGA: URL подтверждён — https://www.wunderground.com/history/monthly/us/ny/new-york-city/KLGA/date/2026-9
+2026-09-20 14:05:15.873 - DEBUG - 🪵 [Actuals] KLGA: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:05:29.876 - INFO - 📈 [Actuals] KLGA 2026-09: собрано 20 дней
+2026-09-20 14:05:30.194 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/ca/los-angeles/KLAX/date/2026-9
+2026-09-20 14:05:32.705 - DEBUG - 🪵 [Actuals] KLAX: URL подтверждён — https://www.wunderground.com/history/monthly/us/ca/los-angeles/KLAX/date/2026-9
+2026-09-20 14:05:34.953 - DEBUG - 🪵 [Actuals] KLAX: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:05:46.871 - INFO - 📈 [Actuals] KLAX 2026-09: собрано 19 дней
+2026-09-20 14:05:47.196 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/il/chicago/KORD/date/2026-9
+2026-09-20 14:05:49.333 - DEBUG - 🪵 [Actuals] KORD: URL подтверждён — https://www.wunderground.com/history/monthly/us/il/chicago/KORD/date/2026-9
+2026-09-20 14:05:51.677 - DEBUG - 🪵 [Actuals] KORD: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:06:05.532 - INFO - 📈 [Actuals] KORD 2026-09: собрано 20 дней
+2026-09-20 14:06:05.877 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/tx/dallas/KDAL/date/2026-9
+2026-09-20 14:06:08.996 - DEBUG - 🪵 [Actuals] KDAL: URL подтверждён — https://www.wunderground.com/history/monthly/us/tx/dallas/KDAL/date/2026-9
+2026-09-20 14:06:12.700 - DEBUG - 🪵 [Actuals] KDAL: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:06:24.462 - INFO - 📈 [Actuals] KDAL 2026-09: собрано 20 дней
+2026-09-20 14:06:24.692 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/fl/miami/KMIA/date/2026-9
+2026-09-20 14:06:28.186 - DEBUG - 🪵 [Actuals] KMIA: URL подтверждён — https://www.wunderground.com/history/monthly/us/fl/miami/KMIA/date/2026-9
+2026-09-20 14:06:31.462 - DEBUG - 🪵 [Actuals] KMIA: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:06:42.737 - INFO - 📈 [Actuals] KMIA 2026-09: собрано 20 дней
+2026-09-20 14:06:42.973 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/tx/houston/KHOU/date/2026-9
+2026-09-20 14:06:55.918 - DEBUG - 🪵 [Actuals] KHOU: URL подтверждён — https://www.wunderground.com/history/monthly/us/tx/houston/KHOU/date/2026-9
+2026-09-20 14:06:55.951 - DEBUG - 🪵 [Actuals] KHOU: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:07:07.830 - INFO - 📈 [Actuals] KHOU 2026-09: собрано 20 дней
+2026-09-20 14:07:08.068 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/ca/san-francisco/KSFO/date/2026-9
+2026-09-20 14:07:09.902 - DEBUG - 🪵 [Actuals] KSFO: URL подтверждён — https://www.wunderground.com/history/monthly/us/ca/san-francisco/KSFO/date/2026-9
+2026-09-20 14:07:12.207 - DEBUG - 🪵 [Actuals] KSFO: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:07:24.152 - INFO - 📈 [Actuals] KSFO 2026-09: собрано 19 дней
+2026-09-20 14:07:24.467 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/wa/seatac/KSEA/date/2026-9
+2026-09-20 14:07:28.100 - DEBUG - 🪵 [Actuals] KSEA: URL подтверждён — https://www.wunderground.com/history/monthly/us/wa/seatac/KSEA/date/2026-9
+2026-09-20 14:07:31.051 - DEBUG - 🪵 [Actuals] KSEA: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:07:42.965 - INFO - 📈 [Actuals] KSEA 2026-09: собрано 19 дней
+2026-09-20 14:07:43.233 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/ga/atlanta/KATL/date/2026-9
+2026-09-20 14:07:45.584 - DEBUG - 🪵 [Actuals] KATL: URL подтверждён — https://www.wunderground.com/history/monthly/us/ga/atlanta/KATL/date/2026-9
+2026-09-20 14:07:48.819 - DEBUG - 🪵 [Actuals] KATL: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:08:00.202 - INFO - 📈 [Actuals] KATL 2026-09: собрано 20 дней
+2026-09-20 14:08:00.441 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/co/aurora/KBKF/date/2026-9
+2026-09-20 14:08:26.060 - DEBUG - 🪵 [Actuals] KBKF: URL подтверждён — https://www.wunderground.com/history/monthly/us/co/aurora/KBKF/date/2026-9
+2026-09-20 14:08:26.081 - DEBUG - 🪵 [Actuals] KBKF: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:08:38.098 - INFO - 📈 [Actuals] KBKF 2026-09: собрано 19 дней
+2026-09-20 14:08:38.365 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/us/tx/austin/KAUS/date/2026-9
+2026-09-20 14:08:43.632 - DEBUG - 🪵 [Actuals] KAUS: URL подтверждён — https://www.wunderground.com/history/monthly/us/tx/austin/KAUS/date/2026-9
+2026-09-20 14:08:46.272 - DEBUG - 🪵 [Actuals] KAUS: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:08:58.093 - INFO - 📈 [Actuals] KAUS 2026-09: собрано 20 дней
+2026-09-20 14:08:58.468 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/ca/mississauga/CYYZ/date/2026-9
+2026-09-20 14:09:01.507 - DEBUG - 🪵 [Actuals] CYYZ: URL подтверждён — https://www.wunderground.com/history/monthly/ca/mississauga/CYYZ/date/2026-9
+2026-09-20 14:09:09.748 - DEBUG - 🪵 [Actuals] CYYZ: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:09:21.261 - INFO - 📈 [Actuals] CYYZ 2026-09: собрано 20 дней
+2026-09-20 14:09:21.621 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/mx/mexico-city/MMMX/date/2026-9
+2026-09-20 14:09:27.431 - DEBUG - 🪵 [Actuals] MMMX: URL подтверждён — https://www.wunderground.com/history/monthly/mx/mexico-city/MMMX/date/2026-9
+2026-09-20 14:09:32.412 - DEBUG - 🪵 [Actuals] MMMX: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:09:44.218 - INFO - 📈 [Actuals] MMMX 2026-09: собрано 20 дней
+2026-09-20 14:09:44.503 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/pa/panama-city/MPMG/date/2026-9
+2026-09-20 14:09:49.628 - DEBUG - 🪵 [Actuals] MPMG: URL подтверждён — https://www.wunderground.com/history/monthly/pa/panama-city/MPMG/date/2026-9
+2026-09-20 14:10:02.317 - WARNING - ⚠️ [Actuals] MPMG: таблица не появилась за 12с (попытка 1/3, 'No data record': True)
+2026-09-20 14:10:24.096 - WARNING - ⚠️ [Actuals] MPMG: таблица не появилась за 12с (попытка 2/3, 'No data record': True)
+2026-09-20 14:10:44.881 - WARNING - ⚠️ [Actuals] MPMG: таблица не появилась за 12с (попытка 3/3, 'No data record': True)
+2026-09-20 14:10:44.882 - ERROR - ❌ [Actuals] Ошибка MPMG 2026-09: [TimeoutException] на шаге «поиск таблицы дат (DATE_TABLE_XPATH)»: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff691241035+5a95]
+	chromedriver!(No symbol) [0x7ff691162c70]
+	chromedriver!(No symbol) [0x7ff690f84a7d]
+	chromedriver!(No symbol) [0x7ff690fdff91]
+	chromedriver!(No symbol) [0x7ff690fe025c]
+	chromedriver!(No symbol) [0x7ff691032f67]
+	chromedriver!(No symbol) [0x7ff69102fbea]
+	chromedriver!(No symbol) [0x7ff690fd1d02]
+	chromedriver!(No symbol) [0x7ff690fd2b13]
+	chromedriver!GetHandleVerifier [0x7ff691661411+425e71]
+	chromedriver!GetHandleVerifier [0x7ff69168ca47+4514a7]
+	chromedriver!GetHandleVerifier [0x7ff69168094e+4453ae]
+	chromedriver!GetHandleVerifier [0x7ff69133bf6e+1009ce]
+	chromedriver!(No symbol) [0x7ff691170a05]
+	chromedriver!(No symbol) [0x7ff69116bcf4]
+	chromedriver!(No symbol) [0x7ff69116be84]
+	chromedriver!(No symbol) [0x7ff6911566ac]
+	KERNEL32!BaseThreadInitThunk [0x7ff86e35ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff86ee0ad6c+2c]
+
+2026-09-20 14:10:44.883 - DEBUG - 🔇 [scrape_month_actuals:MPMG:2026-09] Транзиентная ошибка подавлена для Telegram (см. лог выше)
+2026-09-20 14:10:45.169 - WARNING - ⚠️ [Actuals] MPMG 2026-09: месячная таблица не открылась после 3 попыток — переходим на майнинг по недостающим дням
+2026-09-20 14:10:45.171 - INFO - 🔗 [Actuals/day] Открываю: https://www.wunderground.com/history/daily/pa/panama-city/MPMG/date/2026-9-19
+2026-09-20 14:11:02.109 - INFO - 📈 [Actuals/day] MPMG 2026-09-19: максимум 88° из 26 часовых значений
+2026-09-20 14:11:02.382 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/gb/london/EGLC/date/2026-9
+2026-09-20 14:11:05.274 - DEBUG - 🪵 [Actuals] EGLC: URL подтверждён — https://www.wunderground.com/history/monthly/gb/london/EGLC/date/2026-9
+2026-09-20 14:11:13.708 - DEBUG - 🪵 [Actuals] EGLC: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:11:25.156 - INFO - 📈 [Actuals] EGLC 2026-09: собрано 20 дней
+2026-09-20 14:11:25.488 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/fr/paris/LFPG/date/2026-9
+2026-09-20 14:11:27.771 - DEBUG - 🪵 [Actuals] LFPG: URL подтверждён — https://www.wunderground.com/history/monthly/fr/paris/LFPG/date/2026-9
+2026-09-20 14:11:30.698 - DEBUG - 🪵 [Actuals] LFPG: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:11:42.328 - INFO - 📈 [Actuals] LFPG 2026-09: собрано 20 дней
+2026-09-20 14:11:42.710 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/de/munich/EDDM/date/2026-9
+2026-09-20 14:11:45.962 - DEBUG - 🪵 [Actuals] EDDM: URL подтверждён — https://www.wunderground.com/history/monthly/de/munich/EDDM/date/2026-9
+2026-09-20 14:11:48.714 - DEBUG - 🪵 [Actuals] EDDM: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:12:00.360 - INFO - 📈 [Actuals] EDDM 2026-09: собрано 20 дней
+2026-09-20 14:12:00.684 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/it/milan/LIMC/date/2026-9
+2026-09-20 14:12:03.828 - DEBUG - 🪵 [Actuals] LIMC: URL подтверждён — https://www.wunderground.com/history/monthly/it/milan/LIMC/date/2026-9
+2026-09-20 14:12:08.294 - DEBUG - 🪵 [Actuals] LIMC: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:12:19.938 - INFO - 📈 [Actuals] LIMC 2026-09: собрано 20 дней
+2026-09-20 14:12:20.291 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/es/madrid/LEMD/date/2026-9
+2026-09-20 14:12:23.271 - DEBUG - 🪵 [Actuals] LEMD: URL подтверждён — https://www.wunderground.com/history/monthly/es/madrid/LEMD/date/2026-9
+2026-09-20 14:12:27.294 - DEBUG - 🪵 [Actuals] LEMD: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:12:38.977 - INFO - 📈 [Actuals] LEMD 2026-09: собрано 20 дней
+2026-09-20 14:12:39.219 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/nl/schiphol/EHAM/date/2026-9
+2026-09-20 14:12:42.323 - DEBUG - 🪵 [Actuals] EHAM: URL подтверждён — https://www.wunderground.com/history/monthly/nl/schiphol/EHAM/date/2026-9
+2026-09-20 14:12:45.902 - DEBUG - 🪵 [Actuals] EHAM: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:12:57.986 - INFO - 📈 [Actuals] EHAM 2026-09: собрано 20 дней
+2026-09-20 14:12:58.301 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/pl/warsaw/EPWA/date/2026-9
+2026-09-20 14:13:00.670 - DEBUG - 🪵 [Actuals] EPWA: URL подтверждён — https://www.wunderground.com/history/monthly/pl/warsaw/EPWA/date/2026-9
+2026-09-20 14:13:03.730 - DEBUG - 🪵 [Actuals] EPWA: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:13:15.457 - INFO - 📈 [Actuals] EPWA 2026-09: собрано 20 дней
+2026-09-20 14:13:15.765 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/fi/vantaa/EFHK/date/2026-9
+2026-09-20 14:13:31.770 - DEBUG - 🪵 [Actuals] EFHK: URL подтверждён — https://www.wunderground.com/history/monthly/fi/vantaa/EFHK/date/2026-9
+2026-09-20 14:13:31.816 - DEBUG - 🪵 [Actuals] EFHK: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:13:43.114 - INFO - 📈 [Actuals] EFHK 2026-09: собрано 20 дней
+2026-09-20 14:13:43.441 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/tr/%C3%A7ubuk/LTAC/date/2026-9
+2026-09-20 14:13:47.288 - DEBUG - 🪵 [Actuals] LTAC: URL подтверждён — https://www.wunderground.com/history/monthly/tr/%C3%A7ubuk/LTAC/date/2026-9
+2026-09-20 14:13:55.425 - DEBUG - 🪵 [Actuals] LTAC: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:14:07.471 - INFO - 📈 [Actuals] LTAC 2026-09: собрано 20 дней
+2026-09-20 14:14:07.736 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/kr/incheon/RKSI/date/2026-9
+2026-09-20 14:14:10.882 - DEBUG - 🪵 [Actuals] RKSI: URL подтверждён — https://www.wunderground.com/history/monthly/kr/incheon/RKSI/date/2026-9
+2026-09-20 14:14:20.782 - DEBUG - 🪵 [Actuals] RKSI: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:14:32.414 - INFO - 📈 [Actuals] RKSI 2026-09: собрано 20 дней
+2026-09-20 14:14:32.813 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/kr/busan/RKPK/date/2026-9
+2026-09-20 14:14:35.952 - DEBUG - 🪵 [Actuals] RKPK: URL подтверждён — https://www.wunderground.com/history/monthly/kr/busan/RKPK/date/2026-9
+2026-09-20 14:14:38.726 - DEBUG - 🪵 [Actuals] RKPK: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:14:50.511 - INFO - 📈 [Actuals] RKPK 2026-09: собрано 20 дней
+2026-09-20 14:14:50.768 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/jp/tokyo/RJTT/date/2026-9
+2026-09-20 14:14:52.820 - DEBUG - 🪵 [Actuals] RJTT: URL подтверждён — https://www.wunderground.com/history/monthly/jp/tokyo/RJTT/date/2026-9
+2026-09-20 14:14:55.407 - DEBUG - 🪵 [Actuals] RJTT: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:15:09.298 - INFO - 📈 [Actuals] RJTT 2026-09: собрано 20 дней
+2026-09-20 14:15:09.678 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/cn/beijing/ZBAA/date/2026-9
+2026-09-20 14:15:11.740 - DEBUG - 🪵 [Actuals] ZBAA: URL подтверждён — https://www.wunderground.com/history/monthly/cn/beijing/ZBAA/date/2026-9
+2026-09-20 14:15:16.902 - DEBUG - 🪵 [Actuals] ZBAA: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:15:28.972 - INFO - 📈 [Actuals] ZBAA 2026-09: собрано 20 дней
+2026-09-20 14:15:29.261 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/cn/shanghai/ZSPD/date/2026-9
+2026-09-20 14:15:33.741 - DEBUG - 🪵 [Actuals] ZSPD: URL подтверждён — https://www.wunderground.com/history/monthly/cn/shanghai/ZSPD/date/2026-9
+2026-09-20 14:15:38.459 - DEBUG - 🪵 [Actuals] ZSPD: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:15:49.900 - INFO - 📈 [Actuals] ZSPD 2026-09: собрано 20 дней
+2026-09-20 14:15:50.256 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/cn/shenzhen/ZGSZ/date/2026-9
+2026-09-20 14:15:54.161 - DEBUG - 🪵 [Actuals] ZGSZ: URL подтверждён — https://www.wunderground.com/history/monthly/cn/shenzhen/ZGSZ/date/2026-9
+2026-09-20 14:16:08.395 - WARNING - ⚠️ [Actuals] ZGSZ: таблица не появилась за 12с (попытка 1/3, 'No data record': True)
+2026-09-20 14:16:28.650 - WARNING - ⚠️ [Actuals] ZGSZ: таблица не появилась за 12с (попытка 2/3, 'No data record': True)
+2026-09-20 14:16:50.482 - WARNING - ⚠️ [Actuals] ZGSZ: таблица не появилась за 12с (попытка 3/3, 'No data record': True)
+2026-09-20 14:16:50.483 - ERROR - ❌ [Actuals] Ошибка ZGSZ 2026-09: [TimeoutException] на шаге «поиск таблицы дат (DATE_TABLE_XPATH)»: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff691241035+5a95]
+	chromedriver!(No symbol) [0x7ff691162c70]
+	chromedriver!(No symbol) [0x7ff690f84a7d]
+	chromedriver!(No symbol) [0x7ff690fdff91]
+	chromedriver!(No symbol) [0x7ff690fe025c]
+	chromedriver!(No symbol) [0x7ff691032f67]
+	chromedriver!(No symbol) [0x7ff69102fbea]
+	chromedriver!(No symbol) [0x7ff690fd1d02]
+	chromedriver!(No symbol) [0x7ff690fd2b13]
+	chromedriver!GetHandleVerifier [0x7ff691661411+425e71]
+	chromedriver!GetHandleVerifier [0x7ff69168ca47+4514a7]
+	chromedriver!GetHandleVerifier [0x7ff69168094e+4453ae]
+	chromedriver!GetHandleVerifier [0x7ff69133bf6e+1009ce]
+	chromedriver!(No symbol) [0x7ff691170a05]
+	chromedriver!(No symbol) [0x7ff69116bcf4]
+	chromedriver!(No symbol) [0x7ff69116be84]
+	chromedriver!(No symbol) [0x7ff6911566ac]
+	KERNEL32!BaseThreadInitThunk [0x7ff86e35ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff86ee0ad6c+2c]
+
+2026-09-20 14:16:50.485 - DEBUG - 🔇 [scrape_month_actuals:ZGSZ:2026-09] Транзиентная ошибка подавлена для Telegram (см. лог выше)
+2026-09-20 14:16:50.777 - WARNING - ⚠️ [Actuals] ZGSZ 2026-09: месячная таблица не открылась после 3 попыток — переходим на майнинг по недостающим дням
+2026-09-20 14:16:50.779 - INFO - 🔗 [Actuals/day] Открываю: https://www.wunderground.com/history/daily/cn/shenzhen/ZGSZ/date/2026-9-19
+2026-09-20 14:17:05.518 - INFO - 📈 [Actuals/day] ZGSZ 2026-09-19: максимум 91° из 24 часовых значений
+2026-09-20 14:17:05.793 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/cn/chongqing/ZUCK/date/2026-9
+2026-09-20 14:17:08.163 - DEBUG - 🪵 [Actuals] ZUCK: URL подтверждён — https://www.wunderground.com/history/monthly/cn/chongqing/ZUCK/date/2026-9
+2026-09-20 14:17:20.569 - WARNING - ⚠️ [Actuals] ZUCK: таблица не появилась за 12с (попытка 1/3, 'No data record': True)
+2026-09-20 14:17:43.996 - WARNING - ⚠️ [Actuals] ZUCK: таблица не появилась за 12с (попытка 2/3, 'No data record': True)
+2026-09-20 14:18:04.786 - WARNING - ⚠️ [Actuals] ZUCK: таблица не появилась за 12с (попытка 3/3, 'No data record': True)
+2026-09-20 14:18:04.788 - ERROR - ❌ [Actuals] Ошибка ZUCK 2026-09: [TimeoutException] на шаге «поиск таблицы дат (DATE_TABLE_XPATH)»: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff691241035+5a95]
+	chromedriver!(No symbol) [0x7ff691162c70]
+	chromedriver!(No symbol) [0x7ff690f84a7d]
+	chromedriver!(No symbol) [0x7ff690fdff91]
+	chromedriver!(No symbol) [0x7ff690fe025c]
+	chromedriver!(No symbol) [0x7ff691032f67]
+	chromedriver!(No symbol) [0x7ff69102fbea]
+	chromedriver!(No symbol) [0x7ff690fd1d02]
+	chromedriver!(No symbol) [0x7ff690fd2b13]
+	chromedriver!GetHandleVerifier [0x7ff691661411+425e71]
+	chromedriver!GetHandleVerifier [0x7ff69168ca47+4514a7]
+	chromedriver!GetHandleVerifier [0x7ff69168094e+4453ae]
+	chromedriver!GetHandleVerifier [0x7ff69133bf6e+1009ce]
+	chromedriver!(No symbol) [0x7ff691170a05]
+	chromedriver!(No symbol) [0x7ff69116bcf4]
+	chromedriver!(No symbol) [0x7ff69116be84]
+	chromedriver!(No symbol) [0x7ff6911566ac]
+	KERNEL32!BaseThreadInitThunk [0x7ff86e35ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff86ee0ad6c+2c]
+
+2026-09-20 14:18:04.789 - DEBUG - 🔇 [scrape_month_actuals:ZUCK:2026-09] Транзиентная ошибка подавлена для Telegram (см. лог выше)
+2026-09-20 14:18:05.231 - WARNING - ⚠️ [Actuals] ZUCK 2026-09: месячная таблица не открылась после 3 попыток — переходим на майнинг по недостающим дням
+2026-09-20 14:18:05.233 - INFO - 🔗 [Actuals/day] Открываю: https://www.wunderground.com/history/daily/cn/chongqing/ZUCK/date/2026-9-19
+2026-09-20 14:18:24.937 - INFO - 📈 [Actuals/day] ZUCK 2026-09-19: максимум 79° из 24 часовых значений
+2026-09-20 14:18:25.263 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/cn/chengdu/ZUUU/date/2026-9
+2026-09-20 14:18:28.291 - DEBUG - 🪵 [Actuals] ZUUU: URL подтверждён — https://www.wunderground.com/history/monthly/cn/chengdu/ZUUU/date/2026-9
+2026-09-20 14:18:31.680 - DEBUG - 🪵 [Actuals] ZUUU: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:18:43.167 - INFO - 📈 [Actuals] ZUUU 2026-09: собрано 20 дней
+2026-09-20 14:18:43.485 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/sg/singapore/WSSS/date/2026-9
+2026-09-20 14:18:46.432 - DEBUG - 🪵 [Actuals] WSSS: URL подтверждён — https://www.wunderground.com/history/monthly/sg/singapore/WSSS/date/2026-9
+2026-09-20 14:18:49.693 - DEBUG - 🪵 [Actuals] WSSS: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:19:01.506 - INFO - 📈 [Actuals] WSSS 2026-09: собрано 20 дней
+2026-09-20 14:19:01.825 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/in/lucknow/VILK/date/2026-9
+2026-09-20 14:19:04.917 - DEBUG - 🪵 [Actuals] VILK: URL подтверждён — https://www.wunderground.com/history/monthly/in/lucknow/VILK/date/2026-9
+2026-09-20 14:19:17.240 - WARNING - ⚠️ [Actuals] VILK: таблица не появилась за 12с (попытка 1/3, 'No data record': True)
+2026-09-20 14:19:37.746 - WARNING - ⚠️ [Actuals] VILK: таблица не появилась за 12с (попытка 2/3, 'No data record': True)
+2026-09-20 14:19:58.106 - WARNING - ⚠️ [Actuals] VILK: таблица не появилась за 12с (попытка 3/3, 'No data record': True)
+2026-09-20 14:19:58.108 - ERROR - ❌ [Actuals] Ошибка VILK 2026-09: [TimeoutException] на шаге «поиск таблицы дат (DATE_TABLE_XPATH)»: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff691241035+5a95]
+	chromedriver!(No symbol) [0x7ff691162c70]
+	chromedriver!(No symbol) [0x7ff690f84a7d]
+	chromedriver!(No symbol) [0x7ff690fdff91]
+	chromedriver!(No symbol) [0x7ff690fe025c]
+	chromedriver!(No symbol) [0x7ff691032f67]
+	chromedriver!(No symbol) [0x7ff69102fbea]
+	chromedriver!(No symbol) [0x7ff690fd1d02]
+	chromedriver!(No symbol) [0x7ff690fd2b13]
+	chromedriver!GetHandleVerifier [0x7ff691661411+425e71]
+	chromedriver!GetHandleVerifier [0x7ff69168ca47+4514a7]
+	chromedriver!GetHandleVerifier [0x7ff69168094e+4453ae]
+	chromedriver!GetHandleVerifier [0x7ff69133bf6e+1009ce]
+	chromedriver!(No symbol) [0x7ff691170a05]
+	chromedriver!(No symbol) [0x7ff69116bcf4]
+	chromedriver!(No symbol) [0x7ff69116be84]
+	chromedriver!(No symbol) [0x7ff6911566ac]
+	KERNEL32!BaseThreadInitThunk [0x7ff86e35ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff86ee0ad6c+2c]
+
+2026-09-20 14:19:58.112 - DEBUG - 🔇 [scrape_month_actuals:VILK:2026-09] Транзиентная ошибка подавлена для Telegram (см. лог выше)
+2026-09-20 14:19:58.429 - WARNING - ⚠️ [Actuals] VILK 2026-09: месячная таблица не открылась после 3 попыток — переходим на майнинг по недостающим дням
+2026-09-20 14:19:58.431 - INFO - 🔗 [Actuals/day] Открываю: https://www.wunderground.com/history/daily/in/lucknow/VILK/date/2026-9-19
+2026-09-20 14:20:16.424 - INFO - 📈 [Actuals/day] VILK 2026-09-19: максимум 90° из 48 часовых значений
+2026-09-20 14:20:16.686 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/my/sepang-district/WMKK/date/2026-9
+2026-09-20 14:20:51.188 - DEBUG - 🪵 [Actuals] WMKK: URL подтверждён — https://www.wunderground.com/history/monthly/my/sepang-district/WMKK/date/2026-9
+2026-09-20 14:20:51.209 - DEBUG - 🪵 [Actuals] WMKK: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:21:03.377 - INFO - 📈 [Actuals] WMKK 2026-09: собрано 20 дней
+2026-09-20 14:21:03.682 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/cn/wuhan/ZHHH/date/2026-9
+2026-09-20 14:21:06.786 - DEBUG - 🪵 [Actuals] ZHHH: URL подтверждён — https://www.wunderground.com/history/monthly/cn/wuhan/ZHHH/date/2026-9
+2026-09-20 14:21:19.006 - WARNING - ⚠️ [Actuals] ZHHH: таблица не появилась за 12с (попытка 1/3, 'No data record': True)
+2026-09-20 14:21:38.150 - WARNING - ⚠️ [Actuals] ZHHH: таблица не появилась за 12с (попытка 2/3, 'No data record': True)
+2026-09-20 14:22:16.018 - WARNING - ⚠️ [Actuals] ZHHH: таблица не появилась за 12с (попытка 3/3, 'No data record': True)
+2026-09-20 14:22:16.022 - ERROR - ❌ [Actuals] Ошибка ZHHH 2026-09: [TimeoutException] на шаге «поиск таблицы дат (DATE_TABLE_XPATH)»: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff691241035+5a95]
+	chromedriver!(No symbol) [0x7ff691162c70]
+	chromedriver!(No symbol) [0x7ff690f84a7d]
+	chromedriver!(No symbol) [0x7ff690fdff91]
+	chromedriver!(No symbol) [0x7ff690fe025c]
+	chromedriver!(No symbol) [0x7ff691032f67]
+	chromedriver!(No symbol) [0x7ff69102fbea]
+	chromedriver!(No symbol) [0x7ff690fd1d02]
+	chromedriver!(No symbol) [0x7ff690fd2b13]
+	chromedriver!GetHandleVerifier [0x7ff691661411+425e71]
+	chromedriver!GetHandleVerifier [0x7ff69168ca47+4514a7]
+	chromedriver!GetHandleVerifier [0x7ff69168094e+4453ae]
+	chromedriver!GetHandleVerifier [0x7ff69133bf6e+1009ce]
+	chromedriver!(No symbol) [0x7ff691170a05]
+	chromedriver!(No symbol) [0x7ff69116bcf4]
+	chromedriver!(No symbol) [0x7ff69116be84]
+	chromedriver!(No symbol) [0x7ff6911566ac]
+	KERNEL32!BaseThreadInitThunk [0x7ff86e35ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff86ee0ad6c+2c]
+
+2026-09-20 14:22:16.028 - DEBUG - 🔇 [scrape_month_actuals:ZHHH:2026-09] Транзиентная ошибка подавлена для Telegram (см. лог выше)
+2026-09-20 14:22:16.387 - WARNING - ⚠️ [Actuals] ZHHH 2026-09: месячная таблица не открылась после 3 попыток — переходим на майнинг по недостающим дням
+2026-09-20 14:22:16.389 - INFO - 🔗 [Actuals/day] Открываю: https://www.wunderground.com/history/daily/cn/wuhan/ZHHH/date/2026-9-19
+2026-09-20 14:22:35.069 - INFO - 📈 [Actuals/day] ZHHH 2026-09-19: максимум 82° из 24 часовых значений
+2026-09-20 14:22:35.330 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/nz/wellington/NZWN/date/2026-9
+2026-09-20 14:22:38.002 - DEBUG - 🪵 [Actuals] NZWN: URL подтверждён — https://www.wunderground.com/history/monthly/nz/wellington/NZWN/date/2026-9
+2026-09-20 14:22:42.625 - DEBUG - 🪵 [Actuals] NZWN: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:22:54.521 - INFO - 📈 [Actuals] NZWN 2026-09: собрано 20 дней
+2026-09-20 14:22:54.964 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/ar/ezeiza/SAEZ/date/2026-9
+2026-09-20 14:22:58.848 - DEBUG - 🪵 [Actuals] SAEZ: URL подтверждён — https://www.wunderground.com/history/monthly/ar/ezeiza/SAEZ/date/2026-9
+2026-09-20 14:23:02.209 - DEBUG - 🪵 [Actuals] SAEZ: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:23:13.656 - INFO - 📈 [Actuals] SAEZ 2026-09: собрано 20 дней
+2026-09-20 14:23:13.915 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/br/guarulhos/SBGR/date/2026-9
+2026-09-20 14:23:17.718 - DEBUG - 🪵 [Actuals] SBGR: URL подтверждён — https://www.wunderground.com/history/monthly/br/guarulhos/SBGR/date/2026-9
+2026-09-20 14:23:19.098 - DEBUG - 🪵 [Actuals] SBGR: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:23:30.902 - INFO - 📈 [Actuals] SBGR 2026-09: собрано 20 дней
+2026-09-20 14:23:31.168 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/pk/karachi/OPKC/date/2026-9
+2026-09-20 14:23:33.466 - DEBUG - 🪵 [Actuals] OPKC: URL подтверждён — https://www.wunderground.com/history/monthly/pk/karachi/OPKC/date/2026-9
+2026-09-20 14:23:36.743 - DEBUG - 🪵 [Actuals] OPKC: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:23:49.662 - INFO - 📈 [Actuals] OPKC 2026-09: собрано 20 дней
+2026-09-20 14:23:49.986 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/cn/guangzhou/ZGGG/date/2026-9
+2026-09-20 14:23:53.470 - DEBUG - 🪵 [Actuals] ZGGG: URL подтверждён — https://www.wunderground.com/history/monthly/cn/guangzhou/ZGGG/date/2026-9
+2026-09-20 14:23:55.994 - DEBUG - 🪵 [Actuals] ZGGG: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:24:07.684 - INFO - 📈 [Actuals] ZGGG 2026-09: собрано 20 дней
+2026-09-20 14:24:07.968 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/sa/jeddah/OEJN/date/2026-9
+2026-09-20 14:24:09.816 - DEBUG - 🪵 [Actuals] OEJN: URL подтверждён — https://www.wunderground.com/history/monthly/sa/jeddah/OEJN/date/2026-9
+2026-09-20 14:24:11.646 - DEBUG - 🪵 [Actuals] OEJN: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:24:23.773 - INFO - 📈 [Actuals] OEJN 2026-09: собрано 20 дней
+2026-09-20 14:24:24.089 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/il/tel-aviv/LLBG/date/2026-9
+2026-09-20 14:24:26.124 - DEBUG - 🪵 [Actuals] LLBG: URL подтверждён — https://www.wunderground.com/history/monthly/il/tel-aviv/LLBG/date/2026-9
+2026-09-20 14:24:34.788 - DEBUG - 🪵 [Actuals] LLBG: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:24:47.017 - INFO - 📈 [Actuals] LLBG 2026-09: собрано 20 дней
+2026-09-20 14:24:47.387 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/ph/manila/RPLL/date/2026-9
+2026-09-20 14:24:49.392 - DEBUG - 🪵 [Actuals] RPLL: URL подтверждён — https://www.wunderground.com/history/monthly/ph/manila/RPLL/date/2026-9
+2026-09-20 14:24:51.128 - DEBUG - 🪵 [Actuals] RPLL: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:25:03.159 - INFO - 📈 [Actuals] RPLL 2026-09: собрано 20 дней
+2026-09-20 14:25:03.456 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/cn/qingdao/ZSQD/date/2026-9
+2026-09-20 14:25:06.121 - DEBUG - 🪵 [Actuals] ZSQD: URL подтверждён — https://www.wunderground.com/history/monthly/cn/qingdao/ZSQD/date/2026-9
+2026-09-20 14:25:07.764 - DEBUG - 🪵 [Actuals] ZSQD: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:25:19.579 - INFO - 📈 [Actuals] ZSQD 2026-09: собрано 20 дней
+2026-09-20 14:25:19.823 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/za/matroosfontein/FACT/date/2026-9
+2026-09-20 14:25:23.025 - DEBUG - 🪵 [Actuals] FACT: URL подтверждён — https://www.wunderground.com/history/monthly/za/matroosfontein/FACT/date/2026-9
+2026-09-20 14:25:26.345 - DEBUG - 🪵 [Actuals] FACT: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:25:38.290 - INFO - 📈 [Actuals] FACT 2026-09: собрано 20 дней
+2026-09-20 14:25:38.551 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/ru/moscow/UUWW/date/2026-9
+2026-09-20 14:25:41.507 - DEBUG - 🪵 [Actuals] UUWW: URL подтверждён — https://www.wunderground.com/history/monthly/ru/moscow/UUWW/date/2026-9
+2026-09-20 14:25:45.468 - DEBUG - 🪵 [Actuals] UUWW: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:25:57.409 - INFO - 📈 [Actuals] UUWW 2026-09: собрано 20 дней
+2026-09-20 14:25:57.667 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/tw/taipei/RCSS/date/2026-9
+2026-09-20 14:26:13.065 - DEBUG - 🪵 [Actuals] RCSS: URL подтверждён — https://www.wunderground.com/history/monthly/tw/taipei/RCSS/date/2026-9
+2026-09-20 14:26:13.087 - DEBUG - 🪵 [Actuals] RCSS: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:26:24.873 - INFO - 📈 [Actuals] RCSS 2026-09: собрано 20 дней
+2026-09-20 14:26:25.158 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/cn/jinan/ZSJN/date/2026-9
+2026-09-20 14:26:48.052 - DEBUG - 🪵 [Actuals] ZSJN: URL подтверждён — https://www.wunderground.com/history/monthly/cn/jinan/ZSJN/date/2026-9
+2026-09-20 14:27:00.345 - WARNING - ⚠️ [Actuals] ZSJN: таблица не появилась за 12с (попытка 1/3, 'No data record': True)
+2026-09-20 14:27:20.574 - WARNING - ⚠️ [Actuals] ZSJN: таблица не появилась за 12с (попытка 2/3, 'No data record': True)
+2026-09-20 14:27:43.622 - WARNING - ⚠️ [Actuals] ZSJN: таблица не появилась за 12с (попытка 3/3, 'No data record': True)
+2026-09-20 14:27:43.623 - ERROR - ❌ [Actuals] Ошибка ZSJN 2026-09: [TimeoutException] на шаге «поиск таблицы дат (DATE_TABLE_XPATH)»: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff691241035+5a95]
+	chromedriver!(No symbol) [0x7ff691162c70]
+	chromedriver!(No symbol) [0x7ff690f84a7d]
+	chromedriver!(No symbol) [0x7ff690fdff91]
+	chromedriver!(No symbol) [0x7ff690fe025c]
+	chromedriver!(No symbol) [0x7ff691032f67]
+	chromedriver!(No symbol) [0x7ff69102fbea]
+	chromedriver!(No symbol) [0x7ff690fd1d02]
+	chromedriver!(No symbol) [0x7ff690fd2b13]
+	chromedriver!GetHandleVerifier [0x7ff691661411+425e71]
+	chromedriver!GetHandleVerifier [0x7ff69168ca47+4514a7]
+	chromedriver!GetHandleVerifier [0x7ff69168094e+4453ae]
+	chromedriver!GetHandleVerifier [0x7ff69133bf6e+1009ce]
+	chromedriver!(No symbol) [0x7ff691170a05]
+	chromedriver!(No symbol) [0x7ff69116bcf4]
+	chromedriver!(No symbol) [0x7ff69116be84]
+	chromedriver!(No symbol) [0x7ff6911566ac]
+	KERNEL32!BaseThreadInitThunk [0x7ff86e35ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff86ee0ad6c+2c]
+
+2026-09-20 14:27:43.625 - DEBUG - 🔇 [scrape_month_actuals:ZSJN:2026-09] Транзиентная ошибка подавлена для Telegram (см. лог выше)
+2026-09-20 14:27:44.008 - WARNING - ⚠️ [Actuals] ZSJN 2026-09: месячная таблица не открылась после 3 попыток — переходим на майнинг по недостающим дням
+2026-09-20 14:27:44.009 - INFO - 🔗 [Actuals/day] Открываю: https://www.wunderground.com/history/daily/cn/jinan/ZSJN/date/2026-9-19
+2026-09-20 14:28:00.293 - INFO - 📈 [Actuals/day] ZSJN 2026-09-19: максимум 86° из 24 часовых значений
+2026-09-20 14:28:00.593 - INFO - 🔗 [Actuals] Открываю: https://www.wunderground.com/history/monthly/cn/zhengzhou/ZHCC/date/2026-9
+2026-09-20 14:28:13.717 - DEBUG - 🪵 [Actuals] ZHCC: URL подтверждён — https://www.wunderground.com/history/monthly/cn/zhengzhou/ZHCC/date/2026-9
+2026-09-20 14:28:13.735 - DEBUG - 🪵 [Actuals] ZHCC: таблица дат найдена, жду 10с на дорисовку
+2026-09-20 14:28:25.921 - INFO - 📈 [Actuals] ZHCC 2026-09: собрано 20 дней
+2026-09-20 14:28:26.217 - INFO - 💾 2026-09: дозаписано 49 новых строк в data_mining/wunderground_history\actuals_2026_09.jsonl
+2026-09-20 14:28:30.223 - INFO - 📋 Отправлена сводка фактических максимумов за 2026-09-19

@@ -1,0 +1,382 @@
+# config.yaml
+#
+# Единая точка настройки всего проекта. Секции соответствуют компонентам:
+# telegram / paths / chrome — общая инфраструктура;
+# weather_miner / actuals_miner / accuracy_report — параметры трёх майнеров/отчёта
+#   (перенесены сюда из констант исходных weather_miner.py / actuals_miner.py /
+#   accuracy_analysis.py);
+# scheduler — расписание оркестратора (Orchestrator): когда именно ставить
+#   исторический майнинг на паузу и запускать факт + отчёт + отбор городов;
+# criteria — пороги отбора городов по качеству прогноза (Orchestrator, пункт 4
+#   технического задания).
+
+telegram:
+  token: "YOUR_TELEGRAM_BOT_TOKEN"
+  chat_id: "YOUR_TELEGRAM_CHAT_ID"
+
+paths:
+  data_dir: "data_mining"
+  log_dir: "logs"
+  # Данные по типам — каждый пишется и читается из своей отдельной папки
+  # (внутри неё — по-прежнему по файлу на сутки, как и раньше, кроме
+  # wunderground_history_dir — там по-прежнему по файлу на МЕСЯЦ, без
+  # изменений в этой части).
+  wunderground_forecast_dir: "data_mining/wunderground_forcast"
+  wunderground_history_dir: "data_mining/wunderground_history"
+  windy_forecast_dir: "data_mining/windy_forcast"
+  # polymarket_gamma_dir хранит ДВА разных типа записей, различаемых ТОЛЬКО
+  # именем файла — папку специально не разносим (см. src/polymarket_actuals_miner.py):
+  #   polymarket_gamma_<YYYY>_<MM>_<DD>.jsonl — живые цены слотов 6/9/12
+  #     (WeatherMiner.scrape_polymarket), по файлу на СУТКИ, майнятся строго
+  #     "в моменте" — задним числом их взять неоткуда (Gamma API не хранит историю).
+  #   polymarket_gamma_<YYYY>_<MM>.jsonl — факт СОБСТВЕННОГО разрешения события
+  #     (PolymarketActualsMiner), по файлу на МЕСЯЦ — можно домайнить/перемайнить
+  #     задним числом в любой момент (событие уже разрешилось).
+  polymarket_gamma_dir: "data_mining/polymarket_gamma"
+  polymarket_clob_dir: "data_mining/polymarket_clob"
+  # Журнал авто-торговли (TradingEngine, см. src/trader.py): посуточные
+  # trades_<YYYY_MM_DD>.jsonl (одна запись НА ПОЗИЦИЮ, перезаписывается по
+  # мере смены статуса — открылась/не открылась/разрешилась по факту) плюс
+  # три небольших JSON-файла состояния (перечитываются при каждом старте, а
+  # не только раз — чтобы бот не терял открытые позиции/счётчик промахов
+  # пирамиды/накопленный риск при перезапуске):
+  #   open_positions.json — все ещё НЕ разрешённые позиции;
+  #   pyramid_state.json  — текущий счётчик промахов подряд на (стратегия, город);
+  #   risk_state.json     — накопленный реализованный P&L на стратегию и суммарно.
+  trading_dir: "data_mining/trading"
+  # Отчёт — ОДИН файл, перезаписывается каждый день (весит много, история не нужна).
+  report_dir: "data_mining/reports"
+  report_filename: "accuracy_report.html"
+  # Второй отчёт — только по городам из watched_icaos.yaml, с уже применённой
+  # (из того же файла) поправкой и порогом цены на город, без интерактивных
+  # бегунков (см. AccuracyReportBuilder.build_watched_report). Тоже один файл,
+  # перезаписывается каждый день.
+  watched_report_filename: "accuracy_report_watched.html"
+  # Третий отчёт — только по городам из watched_icaos_max_bet.yaml, БЕЗ
+  # прогноза погоды вообще: таргет = бакет самой дорогой ставки Polymarket
+  # (см. AccuracyReportBuilder.build_market_target_report). Тоже один файл,
+  # перезаписывается каждый день.
+  max_bet_report_filename: "accuracy_report_max_bet.html"
+  # Список городов по критериям — сохраняется отдельным JSONL-файлом на каждый день.
+  qualifying_cities_dir: "data_mining/reports"
+
+chrome:
+  debugger_address: "127.0.0.1:9222"
+  # Подключение к уже запущенному Chrome (webdriver.Chrome с debuggerAddress)
+  # может молча зависать на несколько минут без каких-либо ошибок в логе —
+  # это известная проблема самого Selenium при подключении к Chrome с
+  # неактивными вкладками (https://github.com/SeleniumHQ/selenium/issues/14906).
+  # Через connect_timeout_sec секунд попытка считается неудачной, пишется
+  # понятная ошибка в лог/Telegram вместо тихого зависания. Сама попытка
+  # подключения в фоновом потоке может продолжаться и после таймаута — просто
+  # основной поток её больше не ждёт.
+  connect_timeout_sec: 30
+
+vpn_check:
+  # Проверка "не отвалился ли VPN" (BaseSeleniumMiner._check_vpn_dropped,
+  # вызывается WeatherMiner/ActualsMiner после КАЖДОЙ загрузки страницы
+  # Wunderground/Polymarket) — ДВА независимых признака:
+  #   1. Wunderground открылся, но отдаёт геоблок — "This content is no
+  #      longer available in your area" где-то в <body> (VPN отвалился либо
+  #      сменил регион на не тот, что нужен сайту).
+  #   2. Polymarket вообще не открылся — родная страница ошибки Chrome с
+  #      текстом "Не удается получить доступ к сайту" (без VPN до Polymarket
+  #      просто не достучаться).
+  # В обоих случаях — уведомление в Telegram ВСЕГДА; звонок через CallMeBot —
+  # только если call_alert_enabled: true (как у price_monitor.risk/trader —
+  # тот же call_user/call_max_attempts/call_retry_delay_sec, тот же паттерн
+  # звонка). Дедуп — раз в сутки (см. BaseSeleniumMiner._notified_errors_today),
+  # чтобы не звонить на каждый снапшот подряд, пока VPN не подняли обратно.
+  call_alert_enabled: true
+  call_user: "@alexander_butakov_ds"
+  call_max_attempts: 3
+  call_retry_delay_sec: 3
+
+error_notifications:
+  # Подстроки, при наличии которых в тексте исключения ошибка пишется ТОЛЬКО в
+  # лог — без отправки в Telegram (сама ошибка по-прежнему логируется целиком,
+  # ничего не теряется, просто не шлётся в чат). По умолчанию — "пустые"
+  # WebDriverException с голым нативным стектрейсом chromedriver (обрыв IPC
+  # между драйвером и Chrome): на практике транзиентные, без полезного текста.
+  telegram_suppress_patterns:
+    - "chromedriver!"
+
+wunderground_api:
+  # Безбраузерный майнинг Wunderground через внутренний JSON API самого сайта
+  # (api.weather.com) — реальный ключ и оба эндпоинта подсмотрены из
+  # DevTools на живом wunderground.com (НЕ старый публичный ключ из блогов).
+  # Прогноз: v3/location/point (резолв ICAO -> geocode) + v3/wx/forecast/hourly/15day
+  #   по geocode (НЕ по icaoCode напрямую — так делает и сам сайт).
+  # Факт (история): v3/wx/conditions/historical/dailysummary/30day по icaoCode
+  #   напрямую (геокод не нужен — это данные реальной станции, не сетки модели).
+  key: "YOUR_WUNDERGROUND_API_KEY"
+  request_timeout_sec: 15
+
+weather_miner:
+  # Способ майнинга прогноза Wunderground: "api" — новый безбраузерный метод
+  # через wunderground_api выше (протестирован, совпадает с сайтом);
+  # "chrome" — старый Selenium-метод (scrape_wunderground, оставлен как есть).
+  wunderground_mining_method: "api"
+  # Майнинг Windy через Chrome выключен: официальный бесплатный API Windy
+  # намеренно отдаёт испорченные данные (см. wu_windy_no_chrome.ipynb),
+  # а рабочего безбраузерного метода для Windy пока нет — см. переписку.
+  # Chrome-код scrape_windy оставлен в файле нетронутым, просто не вызывается.
+  windy_enabled: false
+  # Gamma-майнинг ставок Polymarket (WeatherMiner.scrape_polymarket*) БОЛЬШЕ
+  # НЕ ЖИВЁТ ЗДЕСЬ (история флага polymarket_gamma_enabled/_mining_method —
+  # см. git). Он был нужен, чтобы заранее накопить бакеты события для
+  # price_monitor.check_city_snapshot*/check_city_snapshot_max_bet, но эти
+  # данные всё равно использовались только с ОДНОГО слота
+  # (price_monitor.monitor_slot), ровно в момент проверки сигнала — плюс
+  # PolymarketClobMiner (см. polymarket_clob_miner ниже) НЕЗАВИСИМО резолвил
+  # тот же Gamma-эндпоинт под token_id для CLOB, т.е. Gamma реально
+  # запрашивалась дважды на одно и то же событие. Теперь PriceMonitor
+  # запрашивает Gamma живьём сам, через тот же Gamma-кэш, что и CLOB (см.
+  # src/price_monitor.py, src/polymarket_clob_miner.py:fetch_gamma_bets) —
+  # отдельного флага/способа майнинга под это больше нет. Методы
+  # scrape_polymarket/scrape_polymarket_api в weather_miner.py оставлены
+  # нетронутыми, просто не вызываются (на случай отката).
+  # Час локального времени города -> метка слота (как в исходном SNAPSHOT_SLOTS).
+  snapshot_slots:
+    6: "06:00"
+    9: "09:00"
+    12: "12:00"
+  last_slot_label: "12:00"       # после него шлём суточную сводку по городу
+  send_daily_summary: false      # сводка по каждому городу отдельно
+  send_global_daily_summary: true
+  # Глобальная сводка шлётся раз в сутки в фиксированное время по UTC (а не по
+  # факту смены календарной даты UTC, как раньше) — за сутки по UTC на момент
+  # срабатывания (а не за "вчера").
+  #
+  # БЫЛО 19:00 UTC — и это оказалось БАГОМ: 19:00 UTC — это ровно НАЧАЛО
+  # полуденного (последнего) слота America/Los_Angeles (Los Angeles, San
+  # Francisco, Seattle — единственные три города из cities.py в этом поясе)
+  # летом при действующем DST (UTC-7: 12:00 PDT = 19:00 UTC), а зимой (UTC-8)
+  # их полуденный слот начинается в 20:00 UTC. Проверка сводки
+  # (_maybe_send_global_daily_summary) внутри run_cycle() вызывается ДО цикла
+  # по городам — то есть выполняется РАНЬШЕ, чем в этом же круге будет смайнен
+  # слот 12 для этих трёх городов, если триггер попадает точно в начало их
+  # полуденного часа. Поэтому сводка систематически (каждый день) недосчитывала
+  # ровно один слот именно у Los Angeles/San Francisco/Seattle — данные при
+  # этом смайнивались корректно, просто чуть ПОЗЖЕ момента отправки сводки.
+  #
+  # Сейчас — 21:00 UTC: с запасом (1 час летом, 1 час зимой — 12:00 PDT/PST
+  # либо истекает, либо только что истёк) позже полуденного слота ЛЮБОГО
+  # города из cities.py в любое время года, включая Los Angeles/SF/Seattle.
+  global_summary_trigger_hour_utc: 21
+  global_summary_trigger_minute_window: 15  # ширина окна срабатывания в минутах (0..N-1)
+  windy_cutoff_label: "11pm"     # включительно; дальше в таблице Windy — прогноз на завтра
+  page_load_wait_sec: 10
+  cycle_sleep_sec: 300           # пауза между кругами при автономном запуске (вне Orchestrator)
+
+polymarket_clob_miner:
+  # Реальные bid/ask по всем бакетам Yes/No события Polymarket — через CLOB
+  # API (POST /books), НЕ через Selenium: обычные HTTP-запросы (requests),
+  # без браузера. Слот — 15-минутная сетка по ЛОКАЛЬНОМУ времени КАЖДОГО
+  # города, только в дневном окне [slot_start_hour, slot_end_hour). Когда на
+  # очередном круге Orchestrator сразу у нескольких городов настал слот —
+  # все их token_id (Yes+No по каждому бакету) уходят ОДНИМ батч-запросом к
+  # CLOB API (см. src/polymarket_clob_miner.py).
+  slot_start_hour: 6             # включительно, по местному времени города
+  slot_end_hour: 18              # НЕ включительно
+  slot_minutes: [0, 15, 30, 45]
+  clob_batch_chunk_size: 500     # лимит API на кол-во token_id в одном /books-запросе
+  cycle_sleep_sec: 60            # пауза между кругами при автономном запуске (вне Orchestrator)
+
+polymarket_actuals_miner:
+  # Факт СОБСТВЕННОГО разрешения события Polymarket (какой бакет реально
+  # выиграл в этот день, по данным самого рынка — outcomePrices выигравшего
+  # исхода "Yes" близко к 1) — отдельный от Wunderground-факта (ActualsMiner)
+  # источник истины, через Gamma API (requests, БЕЗ Selenium). См.
+  # src/polymarket_actuals_miner.py.
+  #
+  # run(target_date=...) / mine_missing_for_month(year, month, up_to_date) —
+  # ПО ВСЕМ городам сразу. Автоматически вызывается ИЗ ДНЕВНОГО ПАЙПЛАЙНА
+  # Orchestrator (_run_daily_pipeline), СРАЗУ ПОСЛЕ actuals_miner.run() — тем
+  # же target_date (см. scheduler ниже — "вчера" по Сиэтлу, сразу после
+  # полуночи там же: к этому моменту сутки уже завершились у ВСЕХ городов).
+  # Раньше был отдельный "начало суток каждого города" триггер — от него
+  # отказались (см. docstring модуля) в пользу единого пайплайна, как у
+  # actuals_miner.
+  resolved_yes_price_threshold: 0.99  # порог цены Yes, при котором исход считается разрешённым (победившим)
+  # Уведомления в Telegram: "начал работу"/"закончил работу" — БЕЗУСЛОВНО
+  # (как и у ActualsMiner.run — см. ниже), флагом управляется только сводка
+  # (send_summary) — тем же принципом, что у остальных сводок ниже.
+  send_summary: true
+
+actuals_miner:
+  # Способ майнинга факта Wunderground: "chrome" — старый Selenium-метод
+  # (scrape_month_actuals/_scrape_missing_days, оставлен как есть);
+  # "api" — новый безбраузерный метод через wunderground_api (эндпоинт и
+  # общий подход подтверждены реальным network-логом сайта, но точные имена
+  # полей ответа НЕ подтверждены живым тестом — прежде чем переключать на
+  # "api" в проде, стоит сверить вывод с сайтом хотя бы по паре городов).
+  mining_method: "api"
+  page_load_wait_sec: 10
+  actuals_table_wait_sec: 12
+  actuals_max_retries: 3
+  actuals_retry_delay_sec: 5
+  # Уведомления "начал/закончил работу" (ActualsMiner.run) — БЕЗУСЛОВНО, как
+  # и раньше; флагом управляется только сводка по факту Wunderground
+  # (_build_actuals_daily_summary) — раньше отправлялась безусловно, теперь
+  # так же, как сводки прогноза (weather_miner.send_global_daily_summary) и
+  # факта Polymarket (polymarket_actuals_miner.send_summary).
+  send_summary: true
+
+accuracy_report:
+  # Слот по умолчанию — используется и на главном графике, и в блоке рейтингов,
+  # и при отборе городов по критериям (Orchestrator/criteria.py).
+  default_slot_key: "12:00"
+  # Ширина бакета ставки Polymarket в градусах шкалы (см. МЕТРИКА в accuracy_report.py).
+  bucket_width:
+    F: 2
+    C: 1
+  # Дата перехода на НОВЫЕ источники цены/факта (CLOB bid/ask + собственное
+  # разрешение Polymarket) вместо СТАРЫХ (Gamma-лейблы + факт Wunderground) —
+  # см. AccuracyReportBuilder.build_dataframe(). Даты <= этой — "старые"
+  # (era="old", источник — как раньше), даты > этой — "новые" (era="new",
+  # источник — CLOB/Gamma-факт). В отчётах — галочки "Старые"/"Новые".
+  data_era_cutoff_date: "2026-09-17"
+
+scheduler:
+  # Сиэтл выбран как триггер: это САМЫЙ ЗАПАДНЫЙ часовой пояс среди cities.py
+  # (America/Los_Angeles) — то есть его сутки заканчиваются позже, чем у
+  # любого другого города в списке. Поэтому триггерим пайплайн СРАЗУ ПОСЛЕ
+  # ПОЛУНОЧИ по Сиэтлу (а не в 18:00, как было раньше по ошибке — тогда
+  # сутки самого Сиэтла ещё не заканчивались, и факта по нему и другим
+  # западным городам (LA, SF) ещё не было, отчёт строился без них). К
+  # моменту полуночи по Сиэтлу сутки уже гарантированно завершились у ВСЕХ
+  # городов из cities.py (у них часовые пояса не западнее).
+  seattle_timezone: "America/Los_Angeles"
+  actuals_trigger_hour: 0         # локальный час по Сиэтлу — сразу после полуночи
+  actuals_trigger_minute_window: 15  # ширина окна срабатывания в минутах (0..N-1)
+  # Смещение (в днях) от текущей даты по Сиэтлу до дня, за который майнится факт
+  # и строится отчёт. Триггер срабатывает СРАЗУ ПОСЛЕ полуночи — то есть
+  # "текущая дата по Сиэтлу" на момент запуска уже НОВЫЙ день, а нужны сутки,
+  # которые ТОЛЬКО ЧТО завершились — поэтому 1 (вчера), а не 0. Параметризовано
+  # по требованию ТЗ ("день, до которого майнить, нужно параметризировать").
+  target_date_offset_days: 1
+  cycle_sleep_sec: 300             # пауза основного цикла Orchestrator между проходами
+
+criteria:
+  min_hit_rate_pct: 40        # >= 40% попаданий за последние 30 дней
+  hit_rate_window_days: 30
+  max_avg_price_cents: 60     # <= 60 центов средняя цена ставки за последние 10 дней
+  max_median_price_cents: 60  # <= 60 центов медианная цена ставки за последние 10 дней
+  price_window_days: 10
+  max_streak: 3               # <= 3 промахов максимальная серия за последние 30 дней
+  streak_window_days: 30
+  # Отправка списка отобранных городов в Telegram (QualifyingCitiesNotifier)
+  # — отбор и сохранение в JSONL (data_mining/reports/qualifying_cities_<дата>.jsonl)
+  # при этом происходят ВСЕГДА, независимо от флага — он гасит только
+  # отправку сообщения в чат.
+  send_ranking_to_telegram: false
+
+price_monitor:
+  # "На лету" уведомления по двум НЕЗАВИСИМЫМ наборам сигналов — работают
+  # прямо в цикле майнера погоды (WeatherMiner.mine_city), без отдельного
+  # цикла и без дополнительных сетевых запросов. См. src/price_monitor.py.
+  # enabled/monitor_slot общие для обоих наборов; список городов, пороги цены
+  # и настройки звонка — раздельно, в подсекциях weather_forecast/max_bet.
+  enabled: true
+  monitor_slot: "12:00"          # слот, чьи данные анализируются (общий для обоих наборов)
+
+  # --- Авто-торговля (TradingEngine, см. src/trader.py) — общие для ОБЕИХ
+  # стратегий параметры. Логика лота/пирамиды/P&L — ТА ЖЕ, что в бэктесте
+  # отчётов (accuracy_report.py): лот начинается с lot_size (см. ниже, по
+  # стратегии), при strategy: "pyramid" после промаха растёт по pyramid_mode
+  # (см. ниже, по стратегии) до loss_limit подряд идущих ставок серии (loss_limit
+  # — тоже в настройках СТРАТЕГИИ ниже; в watched_icaos_*.yaml его задавать
+  # больше не нужно, разве что переопределить для одного города), при "flat"
+  # всегда lot_size. Цена лимитного ордера
+  # — max_price_limit КОНКРЕТНОГО города (или defaults) из watched_icaos_*.yaml
+  # этой же стратегии — отдельного поля цены здесь нет.
+  account_balance: 100          # "счёт" — база для расчёта risk-лимитов ниже (в $, ОДИН и тот же для процента по стратегии и по всем стратегиям)
+  commission_per_share: 0.012   # комиссия Polymarket за акцию/лот — общая для бэктеста и реальной торговли
+  min_order_usd: 1.0            # минимальная СУММА ордера на Polymarket ($): лот пересчитывается вверх так, чтобы лот * цена >= этого значения (для всех стратегий и режимов лота)
+  min_bet_price_cents: 5        # минимальная цена ставки (¢): дешевле — позиция НЕ открывается (уведомление в чат), от неё и выше лот при необходимости поднимается до min_order_usd
+  decided_market_price_cents: 95   # рынок "уже решён": если самый дорогой бакет по Gamma стоит >= этого значения (¢) и это не бакет ставки бота — сигнал и позиция не открываются (ставка заведомо проигрышная, ~0.1¢). 0/null — проверка выключена
+  max_signal_delay_min: 15      # максимальная задержка сигнала от начала слота monitor_slot (мин): проверка на проходе цикла позже (перезапуск бота, сбой сети) НЕ открывает позицию, в Telegram -- уведомление "Сигнал пропущен". 0/null -- без ограничения (окно весь час)
+  fill_check_wait_sec: 20       # сколько ждать после размещения лимитного ордера перед первой проверкой исполнения (если не успела — остаётся висеть, GTC, не отменяется)
+  status_check_attempts: 3      # сколько раз подряд читать статус ордера после отправки (при ошибке); затем запасная проверка позиции в list_positions
+  status_check_delay_sec: 2     # пауза между этими попытками, сек
+  daily_summary_enabled: true   # ежедневная сводка по авто-торговле в Telegram (баланс, P&L за сутки и по городам) — отправляется раз в сутки, сразу после разрешения позиций дневного пайплайна
+
+  # Общий (по ВСЕМ стратегиям сразу) risk-лимит — см. также
+  # strategy_max_loss_pct у каждой стратегии ниже. Если накопленный
+  # РЕАЛИЗОВАННЫЙ (только по уже закрытым фактом позициям, открытые в расчёт
+  # не входят) убыток по ВСЕМ стратегиям вместе достигает total_max_loss_pct
+  # % от account_balance — вся авто-торговля (обе стратегии) останавливается,
+  # уведомление в Telegram отправляется всегда, звонок — если call_alert_enabled.
+  risk:
+    total_max_loss_pct: 30
+    call_alert_enabled: true
+    call_user: "@alexander_butakov_ds"
+    call_max_attempts: 3
+    call_retry_delay_sec: 3
+
+  # Набор 1: таргет = прогноз погоды (+ поправка города). Список городов,
+  # источник прогноза, поправка (в "ставках"/бакетах) и порог цены для
+  # сигнала — ПО КАЖДОМУ ГОРОДУ ОТДЕЛЬНО в watched_icaos_file (не здесь):
+  # сигнал шлётся, когда цена ставки на таргет (прогноз + поправка) попадает
+  # в [min_price_limit, max_price_limit] ЭТОГО города.
+  weather_forecast:
+    watched_icaos_file: "watched_icaos_weather_forecast.yaml"  # путь относительно этого файла (config/)
+    auto_trading: true
+    # Сколько городов из watched_icaos_file (по порядку в файле, сверху вниз)
+    # РЕАЛЬНО торгуются ботом при auto_trading: true — остальные по-прежнему
+    # получают сигнал в Telegram, но без реальной сделки. Ограничивал риск на
+    # время обкатки; null — торгуются ВСЕ города файла без ограничения
+    # (list(...)[:None] в trader.py возвращает список целиком).
+    test_cities_limit: null
+    lot_size: 5.0                  # размер лота (акций) — стартовый для pyramid, единственный для flat
+    loss_limit: 2                  # пирамида: сколько ставок подряд в серии (после стольких промахов подряд серия сбрасывается, убыток списывается). Единое для всех городов стратегии (раньше было в watched_icaos_*.yaml у каждого города)
+    # Как считается лот ПОСЛЕ промаха (только для городов со strategy: "pyramid"; первая
+    # ставка серии всегда lot_size):
+    #   "double"       — лот = lot_size * множитель по прогрессии pyramid_progression (см. ниже: power / cumulative / custom);
+    #   "recover"      — лот под отыгрыш накопленного убытка серии + целевую прибыль
+    #                    (lot_size * pyramid_target_profit_price), по цене сигнала и с комиссией:
+    #                    лот = (убыток серии + цель) / (1 - цена - комиссия);
+    #   "recover_min_multiplier" — то же, но лот не меньше предыдущего лота серии x pyramid_multiplier.
+    # Любой режим: лот не меньше min_order_usd / цена; ставка дешевле min_bet_price_cents не открывается (см. выше).
+    pyramid_mode: "double"
+    # Прогрессия лота для режима "double" (в отчётах бэктест берёт те же значения), k = число промахов подряд:
+    #   "power"      — m^k:               при m=2 → 1, 2, 4, 8;   при m=3 → 1, 3, 9, 27
+    #   "cumulative" — 1 + m + … + m^k:   при m=2 → 1, 3, 7, 15;  при m=3 → 1, 4, 13, 40  (лот = предыдущий * m + 1)
+    #   "custom"     — явный список pyramid_custom_steps (за его пределами — последний элемент)
+    # Сколько ставок подряд реально будет в серии, ограничивает loss_limit (loss_limit: 2 → только 1 и 3).
+    pyramid_progression: "cumulative"
+    pyramid_multiplier: 2               # m для power/cumulative; для recover_min_multiplier — минимум роста лота к предыдущему
+    pyramid_custom_steps: [1, 3, 7, 15] # только для pyramid_progression: custom
+    pyramid_target_profit_price: 0.50   # цель серии = lot_size * это (5 * 0.5 = 2.5$) — для recover/recover_min_multiplier
+    pyramid_max_lot: null               # потолок лота (акций) для recover/recover_min_multiplier; null — без потолка
+    strategy_max_loss_pct: 15      # % от account_balance — при превышении ЭТА стратегия останавливается
+    risk_call_alert_enabled: true  # звонок (через call_user/call_max_attempts/call_retry_delay_sec ниже) при остановке ЭТОЙ стратегии
+    strategies_list: ["flat", "pyramid"]
+    call_alert_enabled: false      # звонок в Telegram через CallMeBot при срабатывании
+    call_user: "@alexander_butakov_ds"  # получатель звонка (как в poly_setup_screener.py)
+    call_max_attempts: 3           # повторных попыток звонка при ошибке (например, таймаут CallMeBot)
+    call_retry_delay_sec: 3        # пауза между попытками звонка
+
+  # Набор 2: таргет = бакет самой дорогой ставки Polymarket (прогноза погоды
+  # тут нет вовсе — ни источника, ни поправки). Список городов и порог цены —
+  # в watched_icaos_file (там же — build_market_target_report).
+  max_bet:
+    watched_icaos_file: "watched_icaos_max_bet.yaml"  # путь относительно этого файла (config/)
+    auto_trading: true
+    test_cities_limit: null  # null — торгуются ВСЕ города файла (см. пояснение у weather_forecast выше)
+    lot_size: 5.0
+    loss_limit: 2                       # см. пояснение у weather_forecast выше
+    pyramid_mode: "double"              # double | recover | recover_min_multiplier — см. пояснение у weather_forecast выше
+    pyramid_progression: "cumulative"   # power | cumulative | custom — см. пояснение у weather_forecast выше
+    pyramid_multiplier: 2
+    pyramid_custom_steps: [1, 3, 7, 15]
+    pyramid_target_profit_price: 0.50
+    pyramid_max_lot: null
+    strategy_max_loss_pct: 15
+    risk_call_alert_enabled: true
+    strategies_list: ["flat", "pyramid"]
+    call_alert_enabled: false      # звонки для этого набора выключены
+    call_user: "@alexander_butakov_ds"
+    call_max_attempts: 3
+    call_retry_delay_sec: 3

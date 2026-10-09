@@ -1,0 +1,89 @@
+# config/watched_icaos_max_bet.yaml
+#
+# Список городов, за которыми следит PriceMonitor (src/price_monitor.py), и
+# отдельный отчёт по самой дорогой ставке (AccuracyReportBuilder.build_market_target_report,
+# см. reports/accuracy_report_max_bet.html) — таргет тут НЕ прогноз погоды, а
+# бакет самой дорогой ставки Polymarket (см. build_market_target_dataframe) —
+# поэтому у этого файла, в отличие от watched_icaos_weather_forecast.yaml, нет
+# полей weather_source/weather_corr — им неоткуда взяться.
+#
+# defaults — общие параметры по умолчанию для ВСЕХ городов ниже. Любое поле
+# конкретного города, оставленное пустым, наследует значение отсюда; заданное
+# явно — переопределяет defaults ТОЛЬКО для этого города.
+#
+# По каждому городу в watched_icaos:
+#   city             — имя для отображения (справочно, должно совпадать с cities.py)
+#   strategy         — "flat" или "pyramid" (должна входить в
+#                       price_monitor.max_bet.strategies_list в config.yaml)
+#   loss_limit       — (необязательно) сколько промахов подряд допускает пирамида. По умолчанию
+#                       единое для всей стратегии — price_monitor.max_bet.loss_limit в
+#                       config.yaml; задай здесь только чтобы переопределить для ОДНОГО города.
+#   min_price_limit  — НИЖНИЙ порог цены ставки (в центах) НА ЭТОТ ТАРГЕТ: сигнал
+#                       шлётся, только если цена >= этого порога. Пусто/не задано
+#                       (в т.ч. и в defaults) = ограничения снизу НЕТ — на сигнал
+#                       это никак не влияет, проверяется только max_price_limit.
+#   max_price_limit  — ВЕРХНИЙ потолок цены (в центах): сигнал шлётся, только
+#                       если цена <= этого потолка. Пусто/не задано = наследует
+#                       defaults (там 66 по умолчанию).
+#   comment          — произвольный текст, добавляется отдельной строкой в
+#                       уведомление в Telegram, если не пустой. Пусто/не
+#                       задано = наследует defaults.
+
+defaults:
+  min_price_limit:
+  max_price_limit: 66
+  comment: ""
+
+watched_icaos:
+  # --- ASIA ---
+  RKPK:
+    city: "Busan"
+    strategy: "pyramid"
+    comment: "До 3 промахов!"
+  VILK:
+    city: "Lucknow"
+    strategy: "pyramid"
+    comment: ""
+  # ZSQD:
+  #   city: "Qingdao"
+  #   strategy: "pyramid"
+  #   comment: ""
+  # --- EUROPE ---
+  EFHK:
+    city: "Helsinki"
+    strategy: "pyramid"
+    comment: ""
+  # EPWA:
+  #   city: "Warsaw"
+  #   strategy: "flat"
+  #   comment: "До 4 промахов!"
+  EDDM:
+    city: "Munich"
+    strategy: "pyramid"
+    comment: ""
+  # --- AMERICA ---
+  KAUS:
+    city: "Austin"
+    strategy: "pyramid"
+    comment: ""
+  # KDAL:
+  #   city: "Dallas"
+  #   strategy: "pyramid"
+  #   comment: ""
+  CYYZ:
+    city: "Toronto"
+    strategy: "pyramid"
+    min_price_limit: 33
+    comment: ""
+  KLAX:
+    city: "Los Angeles"
+    strategy: "pyramid"
+    comment: ""
+  MPMG:
+    city: "Panama City"
+    strategy: "pyramid"
+    comment: "До 3 промахов!"
+  KSEA:
+    city: "Seattle"
+    strategy: "pyramid"
+    comment: "До 5 промахов!"
