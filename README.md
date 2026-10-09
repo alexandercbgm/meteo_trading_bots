@@ -180,7 +180,7 @@ above the rating chart) or when the backtest parameters themselves change.
 - **Main report** (`accuracy_report.html`) — the full set of settings:
   Strategy (Forecast/Maximum — which dataset counts as the target), Type
   (Flat/Pyramid), Number of steps (Pyramid only), Lot size (≥5.0), Fee per
-  contract ($0.012 by default), Balance ($100 by default).
+  contract (0.012 USD by default), Balance (100 USD by default).
 - **`accuracy_report_watched.html`/`accuracy_report_max_bet.html`** — the same
   Lot size/Fee/Balance, but WITHOUT Strategy/Type/Number of steps: these are
   taken from the config of EACH city (`strategy` in `watched_icaos_*.yaml`;
@@ -199,7 +199,7 @@ size and doubles CUMULATIVELY (5→10→20→...) with each consecutive miss, up
 including "Number of steps" consecutive misses, then (or earlier, on a hit)
 resets to the initial size. The trade price is the real bucket price for that
 day (the same one already used for the marker/price in the detail panel);
-payout is $1/share on a hit, $0 on a miss, minus the fee per share at entry.
+payout is 1 USD per share on a hit, 0 on a miss, minus the fee per share at entry.
 
 
 ### Miss streaks and skipped days
@@ -426,7 +426,7 @@ at the signal price and including fees; `recover_min_multiplier` — the same,
 but no less than the previous lot times `pyramid_multiplier`. `loss_limit`
 (how many bets in a row per streak) is set in the same place, in the strategy
 settings. In any mode the lot is no less than `price_monitor.min_order_usd / price`
-(Polymarket's minimum order size, $1), and if the signal price is below
+(Polymarket's minimum order size, 1 USD), and if the signal price is below
 `price_monitor.min_bet_price_cents` (default 5¢), no position is opened at all
 and a "Position not opened" notification is sent to Telegram. The lot is rounded
 up to 0.01 share; `pyramid_max_lot` (default `null`) is an optional cap. The
@@ -453,7 +453,7 @@ under the key `<set>|<icao>|series`.
    `watched_icaos_*.yaml` (top to bottom), even if `auto_trading: true` and the
    file has more cities. The rest still get a Telegram signal, just without a
    real trade — a way to limit risk until the logic has been proven in practice.
-3. **`price_monitor.account_balance`** — the account size in $, the base for
+3. **`price_monitor.account_balance`** — the account size in USD, the base for
    both risk limits below AND for the % in the daily summary (see below). Set it
    according to your real deposit.
 
@@ -536,8 +536,8 @@ outcome). Format:
 The "Balance" line shows the current balance, total P&L and % since the journal
 began (across all strategies and cities). The "N cities" line shows how many
 cities were resolved during the DAY and their combined P&L/% for the day. Each
-city line (values separated by `|`) shows P&L for the day in $, P&L for ALL time
-in $, and P&L for all time in % (no emoji; the city name is a hashtag
+city line (values separated by `|`) shows P&L for the day in USD, P&L for ALL time
+in USD, and P&L for all time in % (no emoji; the city name is a hashtag
 (#Los_Angeles); the percentage is in parentheses after the all-time amount).
 Telegram bot messages do not support text color (only `<b>`/`<i>`/code/links),
 so instead of literally "colored numbers", profit/loss is marked with 🟢/🔴
