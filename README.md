@@ -107,6 +107,7 @@ weather_bot/
     orchestrator.py             — Orchestrator: wires everything together, main loop with daily pause
     trader.py                   — TradingEngine: auto-trading (see "Auto-trading" below)
     pyramid.py                  — pyramid lot formula (shared by the bot and the report backtest)
+  report_examples/         — sample copies of the three HTML reports (see "Example reports")
   data_mining/             — not tracked in git (only .gitkeep)
     wunderground_forcast/    — Wunderground forecast, one file per day
     windy_forcast/           — Windy forecast, one file per day
@@ -132,6 +133,15 @@ real credentials: `YOUR_TELEGRAM_BOT_TOKEN`, `YOUR_TELEGRAM_CHAT_ID` (section
 on the machine the bot runs on and do not commit the filled-in file. The Polymarket
 wallet address and private key are never stored in `config.yaml`; they come from
 environment variables (see "Auto-trading").
+
+## Example reports
+
+`weather_bot/report_examples/` holds copies of the three reports from a real run
+(October 8, 2026): `accuracy_report.html`, `accuracy_report_watched.html` and
+`accuracy_report_max_bet.html`. GitHub shows HTML files as source code, so
+download a file (the "Download raw file" button) and open it in a browser. These
+are static samples: the bot writes its live reports to `data_mining/reports/`,
+which is not tracked in git.
 
 ## watched_icaos_weather_forecast.yaml / watched_icaos_max_bet.yaml
 
