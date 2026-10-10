@@ -295,7 +295,9 @@ the daily pipeline:
      a forecast that does not exist;
    - `data_mining/reports/accuracy_report_max.html` — the same (target = the
      most expensive bet), but for ALL cities and in the full interactive view,
-     like `accuracy_report_forecast.html`.
+     like `accuracy_report_forecast.html`. The ACTUAL line (the bot's real
+     trades) is not drawn on its backtest chart: the report covers all cities,
+     while the bot only trades cities from `watched_icaos_max_bet.yaml`.
 
    On the "Forecast accuracy distribution" chart, bars with |error| >
    `accuracy_report.hist_max_abs_error` (default 5) are not drawn, since a rare
@@ -314,13 +316,14 @@ price_monitor.monitor_slot` (shared by both sets) it checks TWO INDEPENDENT city
 sets and sends separate signals for each:
 
 - **weather_forecast** (`watched_icaos_weather_forecast.yaml`) — target = the
-  city's weather forecast (+ its correction). Notification header: "On
-  forecast[+N]", with a link to the forecast source (Wunderground/Windy) +
+  city's weather forecast (+ its correction). Notification header:
+  "Forecast[+N]", with a link to the forecast source (Wunderground/Windy) +
   Polymarket. Call settings: `price_monitor.weather_forecast.*`.
 - **max_bet** (`watched_icaos_max_bet.yaml`) — target = the bucket of the most
   expensive bet in this snapshot (no weather forecast at all, Polymarket only).
-  Notification header: "On the most expensive bet", with a link to Polymarket
-  only (Wunderground plays no role here). Call settings:
+  Notification: "Max bet #City", then "Ставка <bucket> по <price>¢ | Polymarket"
+  ("Bet <bucket> at <price>¢"; the link goes to Polymarket only, Wunderground
+  plays no role here). Call settings:
   `price_monitor.max_bet.*` (calls are off by default).
 
 In both cases the signal (+ optionally a phone call via CallMeBot) is sent when

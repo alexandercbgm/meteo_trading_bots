@@ -3,3 +3,4 @@ logs/*
 !logs/.gitkeep
 data_mining/*
 !data_mining/.gitkeep
+__pycache__/

@@ -39,7 +39,7 @@ watched_icaos:
   RKPK:
     city: "Busan"
     strategy: "pyramid"
-    comment: "До 3 промахов!"
+    comment: ""
   VILK:
     city: "Lucknow"
     strategy: "pyramid"
@@ -56,7 +56,7 @@ watched_icaos:
   # EPWA:
   #   city: "Warsaw"
   #   strategy: "flat"
-  #   comment: "До 4 промахов!"
+  #   comment: ""
   EDDM:
     city: "Munich"
     strategy: "pyramid"
@@ -82,8 +82,8 @@ watched_icaos:
   MPMG:
     city: "Panama City"
     strategy: "pyramid"
-    comment: "До 3 промахов!"
+    comment: ""
   KSEA:
     city: "Seattle"
     strategy: "pyramid"
-    comment: "До 5 промахов!"
+    comment: ""

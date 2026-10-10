@@ -576,7 +576,7 @@ class PriceMonitor:
         city_tag = f"#{info['name'].replace(' ', '_').replace('-', '_')}"
 
         msg = (
-            f"🎯<b>На прогноз{corr_suffix}</b> {city_tag}\n"
+            f"🎯 <b>Forecast{corr_suffix}</b> {city_tag}\n"
             f"Ставка <b>{bet_label}</b>, цена <b>{price}¢</b>.\n"
             f"{source_link} <b>{self.monitor_slot}</b> | {poly_link}"
         )
@@ -708,9 +708,8 @@ class PriceMonitor:
 
         # Ссылки на Wunderground тут нет — прогноза погоды нет вовсе.
         msg = (
-            f"🎯<b>На самую дорогую ставку</b> {city_tag}\n"
-            f"Ставка <b>{bet_label}</b>, цена <b>{price}¢</b>.\n"
-            f"{poly_link} <b>{self.monitor_slot}</b>"
+            f"🎯 <b>Max bet</b> {city_tag}\n"
+            f"Ставка <b>{bet_label}</b> по <b>{price}¢</b> | {poly_link}"
         )
         comment = watch_cfg.get("comment")
         if comment:

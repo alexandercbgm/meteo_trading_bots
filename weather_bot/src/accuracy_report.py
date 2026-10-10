@@ -755,6 +755,9 @@ class AccuracyReportBuilder:
         Как build_market_target_report (таргет = бакет самой дорогой ставки, без прогноза погоды), но по ВСЕМ
         городам (без фильтра watched_icaos_max_bet.yaml) и в ПОЛНОМ интерактивном виде основного отчёта
         (бегунки поправки/цены, фильтры городов) -- аналог accuracy_report_forecast.html для стратегии max.
+        Линия ФАКТА (реальные сделки бота) на графике бэктеста НЕ рисуется (show_live_trades=False):
+        отчёт по всем городам, а бот торгует только городами из watched_icaos_max_bet.yaml.
+        Параметры пирамиды бэктеста берутся из набора max_bet.
         Возвращает HTML-строку; None, если нет данных.
         """
         df_market = self.build_market_target_dataframe(target_slot)
@@ -762,7 +765,7 @@ class AccuracyReportBuilder:
             return None
         return self.build_html_report(
             {"raw": df_market, "effective": df_market}, show_effective_max=False,
-            live_strategy_set="max_bet",
+            live_strategy_set="max_bet", show_live_trades=False,
         )
 
     def save_market_target_all_report(self, target_slot, out_path=None):
@@ -1034,7 +1037,7 @@ class AccuracyReportBuilder:
         return result
 
     def build_rating_html(self, dfs, watched=None, bucket_price_map=None, show_effective_max=True,
-                           embed_maxbet_backtest=False, live_strategy_set=None):
+                           embed_maxbet_backtest=False, live_strategy_set=None, show_live_trades=True):
         """
         dfs: {"raw": df_raw, "effective": df_effective} — см. build_traces.
 
@@ -1045,6 +1048,9 @@ class AccuracyReportBuilder:
         легендой (см. renderBacktestChart/gatherLiveTrades в JS ниже). None
         (по умолчанию, в т.ч. в основном неограниченном отчёте) — реальная
         линия не строится вовсе, LIVE_TRADES остаётся пустым {}.
+        show_live_trades=False — то же для случая, когда live_strategy_set нужен ТОЛЬКО для
+        параметров пирамиды бэктеста (см. _pyramid_params), а линию факта рисовать не надо
+        (общий отчёт по стратегии max, build_market_target_all_report).
         Строит ОДИН блок рейтингов с данными ОБОИХ режимов сразу
         (DAILY_ROWS с префиксом режима) — переключение галочки "1 час с
         максимумом не учитывается" в JS просто меняет, из какого среза
@@ -1088,7 +1094,7 @@ class AccuracyReportBuilder:
         slot_options = [(str(v), f"Слот {v}") for v in raw_slot_values]
 
         maxbet_daily_rows = self._build_maxbet_daily_rows(slot_keys) if embed_maxbet_backtest else {}
-        live_trades_map = self._build_live_trades_map(live_strategy_set)
+        live_trades_map = self._build_live_trades_map(live_strategy_set) if show_live_trades else {}
 
         daily_by_slot_by_mode = {
             mode: {str(v): cm.build_daily(df, v) for v in raw_slot_values}
@@ -2336,7 +2342,7 @@ class AccuracyReportBuilder:
 
         return "<h2></h2>" + controls + detail_panel + backtest_panel + charts_skeleton + rating_script
     def build_html_report(self, dfs, watched=None, show_effective_max=True, embed_maxbet_backtest=False,
-                           live_strategy_set=None):
+                           live_strategy_set=None, show_live_trades=True):
         """dfs: {"raw": df_raw, "effective": df_effective} — см. build_traces/build_rating_html.
         show_effective_max=False — скрывает галочку "1 час с максимумом не
         учитывается" (см. build_rating_html/build_market_target_report).
@@ -2373,13 +2379,14 @@ class AccuracyReportBuilder:
             hidden_snapshots = int((dfs["raw"]["error"].abs() > self.hist_max_abs_error).sum())
             if hidden_snapshots:
                 hist_note_html = (
-                    f'<p id="histNote">На графике скрыты столбцы с |ошибкой| &gt; {self.hist_max_abs_error} '
-                    f'(выбросов за всё время: {hidden_snapshots}); в рейтингах, панели ✓/✗ и бэктесте '
+                    f'<p id="histNote">На графике скрыты столбцы с |ошибкой| &gt; {self.hist_max_abs_error}. '
+                    f'Выбросов за всё время: {hidden_snapshots}. В рейтингах, панели ✓/✗ и бэктесте '
                     f'они учитываются.</p>'
                 )
         rating_html = self.build_rating_html(
             dfs, watched=watched, bucket_price_map=bucket_price_map, show_effective_max=show_effective_max,
             embed_maxbet_backtest=embed_maxbet_backtest, live_strategy_set=live_strategy_set,
+            show_live_trades=show_live_trades,
         )
 
         page = f"""<!DOCTYPE html>
