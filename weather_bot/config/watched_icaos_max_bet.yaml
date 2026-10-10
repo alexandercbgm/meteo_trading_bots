@@ -62,10 +62,10 @@ watched_icaos:
     strategy: "pyramid"
     comment: ""
   # --- AMERICA ---
-  KAUS:
-    city: "Austin"
-    strategy: "pyramid"
-    comment: ""
+  # KAUS:
+  #   city: "Austin"
+  #   strategy: "pyramid"
+  #   comment: ""
   # KDAL:
   #   city: "Dallas"
   #   strategy: "pyramid"
