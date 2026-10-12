@@ -1577,6 +1577,13 @@ class TradingEngine:
                 prev = self.store.get_series(strategy_set, icao)
                 prev_loss = float(prev.get("loss", 0.0)) if prev else 0.0
                 self.store.set_series(strategy_set, icao, prev_loss + max(0.0, -pnl_net), lot)
+        elif self.store.get_misses(strategy_set, icao) or self.store.get_series(strategy_set, icao) is not None:
+            # Сделка не-пирамиды (flat) по городу обрывает его прежнюю серию пирамиды:
+            # иначе после смены стратегии города flat -> pyramid счётчик промахов
+            # остаётся от старой серии и первая ставка новой идёт увеличенным лотом
+            # (кейс Варшавы: промах 29.09, flat-хит 11.10, 12.10 лот 15 вместо 5).
+            self.store.set_misses(strategy_set, icao, 0)
+            self.store.clear_series(strategy_set, icao)
 
         self.store.append_or_update_day_record(date_str, record)
 
