@@ -58,6 +58,10 @@ WINDY_UNIT = "F"
 
 SOURCE_LABELS = {"wunderground": "Wunderground", "windy": "Windy"}
 SOURCE_COLORS = {"wunderground": "#e74c3c", "windy": "#3498db"}
+# Отчёты по стратегии Max: прогноза погоды нет, единственный "источник" -- рынок Polymarket
+# (технический ключ остаётся "wunderground"); Windy не показывается.
+MARKET_SOURCE_LABELS = {"wunderground": "Polymarket"}
+MARKET_SOURCE_COLORS = {"wunderground": "#9b59b6"}
 
 RANGE_LABEL_RE = re.compile(r"^(-?\d+)-(-?\d+)°[CF]")
 SINGLE_LABEL_RE = re.compile(r"^(-?\d+)°[CF]")
@@ -732,10 +736,14 @@ class AccuracyReportBuilder:
         corrected = self._build_corrected_df(df_market, watched_max_bet)
         if corrected.empty:
             return None
-        return self.build_html_report(
-            {"raw": corrected, "effective": corrected}, watched=watched_max_bet, show_effective_max=False,
-            live_strategy_set="max_bet",
-        )
+        self._market_mode = True
+        try:
+            return self.build_html_report(
+                {"raw": corrected, "effective": corrected}, watched=watched_max_bet, show_effective_max=False,
+                live_strategy_set="max_bet",
+            )
+        finally:
+            self._market_mode = False
 
     def save_market_target_report(self, watched_max_bet, target_slot, out_path=None):
         """Как save_watched_report, но для build_market_target_report — см.
@@ -763,10 +771,14 @@ class AccuracyReportBuilder:
         df_market = self.build_market_target_dataframe(target_slot)
         if df_market.empty:
             return None
-        return self.build_html_report(
-            {"raw": df_market, "effective": df_market}, show_effective_max=False,
-            live_strategy_set="max_bet", show_live_trades=False,
-        )
+        self._market_mode = True
+        try:
+            return self.build_html_report(
+                {"raw": df_market, "effective": df_market}, show_effective_max=False,
+                live_strategy_set="max_bet", show_live_trades=False,
+            )
+        finally:
+            self._market_mode = False
 
     def save_market_target_all_report(self, target_slot, out_path=None):
         """Как save_market_target_report, но для build_market_target_all_report -- см.
@@ -901,7 +913,7 @@ class AccuracyReportBuilder:
                     for city in all_cities:
                         subset = slot_df[slot_df["city"] == city]
                         idxs = []
-                        for source in ("wunderground", "windy"):
+                        for source in self._sources():
                             source_df = subset[subset["source"] == source]
                             y, customdata = [], []
                             for ev in error_values:
@@ -922,7 +934,7 @@ class AccuracyReportBuilder:
                             fig.add_trace(
                                 go.Bar(
                                     x=error_values, y=y, customdata=customdata,
-                                    name=SOURCE_LABELS[source], marker_color=SOURCE_COLORS[source],
+                                    name=self._src_labels()[source], marker_color=self._src_colors()[source],
                                     opacity=0.9, visible=False, legendgroup=source, showlegend=False,
                                     hovertemplate=hover_template,
                                 )
@@ -934,11 +946,11 @@ class AccuracyReportBuilder:
         # JS наполняет их суммой по умолчанию ("Все города", режим raw) сразу
         # при загрузке страницы, тем же кодом, что и при любом изменении фильтров.
         display_idxs = []
-        for source in ("wunderground", "windy"):
+        for source in self._sources():
             fig.add_trace(
                 go.Bar(
                     x=[], y=[], customdata=[],
-                    name=SOURCE_LABELS[source], marker_color=SOURCE_COLORS[source],
+                    name=self._src_labels()[source], marker_color=self._src_colors()[source],
                     opacity=0.9, visible=True, legendgroup=source, showlegend=True,
                     hovertemplate=hover_template,
                 )
@@ -1035,6 +1047,17 @@ class AccuracyReportBuilder:
                 "weather_source": cfg.get("weather_source", "wunderground"),
             }
         return result
+
+    _market_mode = False
+
+    def _sources(self):
+        return ("wunderground",) if self._market_mode else ("wunderground", "windy")
+
+    def _src_labels(self):
+        return MARKET_SOURCE_LABELS if self._market_mode else SOURCE_LABELS
+
+    def _src_colors(self):
+        return MARKET_SOURCE_COLORS if self._market_mode else SOURCE_COLORS
 
     def build_rating_html(self, dfs, watched=None, bucket_price_map=None, show_effective_max=True,
                            embed_maxbet_backtest=False, live_strategy_set=None, show_live_trades=True):
@@ -1239,11 +1262,6 @@ class AccuracyReportBuilder:
         # может быть и не выбран (бэктест "по всем городам сразу").
         backtest_full_controls = """
   <span class="backtest-group">
-    <span class="backtest-group-label">Стратегия:</span>
-    <label class="radio-inline"><input type="radio" name="backtestTarget" value="forecast" checked> Прогноз погоды</label>
-    <label class="radio-inline"><input type="radio" name="backtestTarget" value="maxbet"> Самая дорогая ставка</label>
-  </span>
-  <span class="backtest-group">
     <span class="backtest-group-label">Тип:</span>
     <span class="backtest-toggle-label">Плоская</span>
     <label class="toggle-switch"><input type="checkbox" id="backtestTypeToggle"><span class="toggle-slider"></span></label>
@@ -1320,8 +1338,10 @@ class AccuracyReportBuilder:
   }}
   const CITY_CORRECTIONS = {city_corrections_json};
   const WATCHED_MODE = {json.dumps(is_watched)};
-  const SOURCE_LABELS_LOCAL = {json.dumps(SOURCE_LABELS, ensure_ascii=False)};
-  const SOURCE_COLORS_LOCAL = {json.dumps(SOURCE_COLORS, ensure_ascii=False)};
+  const SOURCE_LABELS_LOCAL = {json.dumps(self._src_labels(), ensure_ascii=False)};
+  const SOURCE_COLORS_LOCAL = {json.dumps(self._src_colors(), ensure_ascii=False)};
+  const SOURCES_LOCAL = {json.dumps(list(self._sources()))};
+  const MARKET_MODE = {json.dumps(self._market_mode)};
   const DATA_ERA_CUTOFF_DATE = {json.dumps(self.data_era_cutoff_date)};
   const PRICE_DEFAULT_MIN = {price_min_str};
   const PRICE_DEFAULT_MAX = {price_max_str};
@@ -1433,6 +1453,7 @@ class AccuracyReportBuilder:
   // price_monitor.decided_market_price_cents). Если ставка именно на самый дорогой бакет -- не блокируем.
   function marketDecidedElsewhere(icao, date, slotKey, targetBucket) {{
     if (!DECIDED_PRICE_CENTS) return false;
+    if (MARKET_MODE) return false; // таргет max -- сам самый дорогой бакет, "решён на другом" невозможно
     const bySlot = (((BUCKET_PRICES[icao] || {{}})[date]) || {{}})[slotKey];
     if (!bySlot || !bySlot.length) return false;
     let top = null;
@@ -1527,7 +1548,7 @@ class AccuracyReportBuilder:
     const selectedEras = getSelectedEras();
     const window = (PERIOD_WINDOWS[slotKey] || {{}})[periodKey];
     const metricsByCity = {{}};
-    const allStreakLengths = {{ wunderground: [], windy: [] }};
+    const allStreakLengths = {{ wunderground: [], windy: [] }}; // windy в market-режиме просто пуст
     if (!window) return {{ metricsByCity, allStreakLengths, window: null }};
     const [wStart, wEnd] = window;
     const startTs = Date.parse(wStart + "T00:00:00Z");
@@ -1538,7 +1559,7 @@ class AccuracyReportBuilder:
       const {{ correction, priceActive, priceMin, priceMax }} = getCityFilter(city);
       const cityRows = ((DAILY_ROWS[mode] || {{}})[slotKey] || {{}})[city] || {{}};
       const cityMetrics = {{}};
-      ["wunderground", "windy"].forEach(source => {{
+      SOURCES_LOCAL.forEach(source => {{
         // "Старые"/"Новые" — чистая календарная граница (см. getSelectedEras),
         // не "прозрачный пропуск" как у цены: снятая эра УБИРАЕТ строки
         // целиком, до расчёта серии — сама граница месяца/эры НЕ порождает
@@ -1560,21 +1581,21 @@ class AccuracyReportBuilder:
   }}
 
   function renderRankChart(divId, order, metricsByCity, key, title, ytitle) {{
-    const traces = ["wunderground", "windy"].map(source => ({{
+    const traces = SOURCES_LOCAL.map(source => ({{
       x: order,
       y: order.map(c => {{ const m = (metricsByCity[c] || {{}})[source]; return m ? m[key] : null; }}),
       type: "bar", name: SOURCE_LABELS_LOCAL[source], marker: {{ color: SOURCE_COLORS_LOCAL[source] }},
     }}));
     Plotly.react(divId, traces, {{
       title: {{ text: `<b>${{title}}</b>`, x: 0.02, xanchor: "left" }}, barmode: "group", template: "plotly_white",
-      yaxis: {{ title: ytitle }}, xaxis: {{ tickangle: -45 }}, legend: {{ title: {{ text: "Источник" }} }},
+      yaxis: {{ title: ytitle }}, xaxis: {{ tickangle: -45 }}, showlegend: true, legend: {{ title: {{ text: "Источник" }} }},
     }});
   }}
 
   function renderDistChart(divId, allStreakLengths, title) {{
     let maxLen = 1;
-    ["wunderground", "windy"].forEach(s => {{ allStreakLengths[s].forEach(v => {{ if (v > maxLen) maxLen = v; }}); }});
-    const traces = ["wunderground", "windy"].map(source => ({{
+    SOURCES_LOCAL.forEach(s => {{ allStreakLengths[s].forEach(v => {{ if (v > maxLen) maxLen = v; }}); }});
+    const traces = SOURCES_LOCAL.map(source => ({{
       x: allStreakLengths[source], type: "histogram", name: SOURCE_LABELS_LOCAL[source],
       marker: {{ color: SOURCE_COLORS_LOCAL[source] }}, opacity: 0.9,
       xbins: {{ start: 0.5, end: maxLen + 0.5, size: 1 }},
@@ -1582,7 +1603,7 @@ class AccuracyReportBuilder:
     Plotly.react(divId, traces, {{
       title: {{ text: `<b>${{title}}</b>`, x: 0.02, xanchor: "left" }}, barmode: "overlay", bargap: 0.05, template: "plotly_white",
       xaxis: {{ title: "Длина череды промахов в днях", dtick: 1 }}, yaxis: {{ title: "Количество таких серий" }},
-      legend: {{ title: {{ text: "Источник" }} }},
+      showlegend: true, legend: {{ title: {{ text: "Источник" }} }},
     }});
   }}
 
@@ -1607,11 +1628,11 @@ class AccuracyReportBuilder:
         const maxPriceText = (cfg.max_price === null || cfg.max_price === undefined) ? "—" : `${{cfg.max_price}}¢`;
         extraCells = `<td>${{corrText}}</td><td>${{minPriceText}}</td><td>${{maxPriceText}}</td>`;
       }}
-      return `<tr><td>${{city}}</td><td>${{wuCell}}</td><td>${{wiCell}}</td><td>${{polyCell}}</td>${{extraCells}}</tr>`;
+      return `<tr><td>${{city}}</td><td>${{wuCell}}</td>${{MARKET_MODE ? "" : `<td>${{wiCell}}</td>`}}<td>${{polyCell}}</td>${{extraCells}}</tr>`;
     }}).join("");
     document.getElementById(divId).innerHTML =
-      "<table class='rank-table'><thead><tr><th>Город</th><th>Wunderground</th>" +
-      "<th>Windy</th><th>Polymarket</th>" + extraHeader + "</tr></thead><tbody>" + rows + "</tbody></table>";
+      "<table class='rank-table'><thead><tr><th>Город</th><th>" + SOURCE_LABELS_LOCAL.wunderground + "</th>" +
+      (MARKET_MODE ? "" : "<th>Windy</th>") + "<th>Event</th>" + extraHeader + "</tr></thead><tbody>" + rows + "</tbody></table>";
   }}
 
   function dayMarkClass(v) {{
@@ -1666,7 +1687,7 @@ class AccuracyReportBuilder:
       <span class="streak-era-label streak-era-label-new">новые</span>
     </div>`;
 
-    const rows = ["wunderground", "windy"].map(source => {{
+    const rows = SOURCES_LOCAL.map(source => {{
       const byDate = {{}};
       (cityRows[source] || []).forEach(r => {{ byDate[r[0]] = r; }});
       let days = "";
@@ -1720,6 +1741,8 @@ class AccuracyReportBuilder:
   // городу (город = своя независимая последовательность ставок), даже если
   // бэктест агрегирует несколько городов в одну кривую баланса.
 
+  let BACKTEST_DIAG = null;
+
   function getBacktestTargetType() {{
     if (WATCHED_MODE) return null; // не используется -- таргет уже зафиксирован самим отчётом
     const radio = document.querySelector('input[name="backtestTarget"]:checked');
@@ -1754,6 +1777,8 @@ class AccuracyReportBuilder:
     const mode = currentMode();
 
     const rows = [];
+    const diag = {{ total: 0, inPeriod: 0, era: 0, noPrice: 0, priceFilter: 0, blocked: 0 }};
+    BACKTEST_DIAG = diag;
     cities.forEach(city => {{
       const icao = (CITY_LINKS[city] || {{}}).icao;
       const {{ correction: globalCorrection, priceActive, priceMin, priceMax }} = getCityFilter(city);
@@ -1780,16 +1805,18 @@ class AccuracyReportBuilder:
 
       citySeries.forEach(r => {{
         const [dateStr, error, forecastBucket, era] = r;
+        diag.total++;
         const ts = Date.parse(dateStr + "T00:00:00Z");
         if (ts < startTs || ts > endTs) return;
-        if (!selectedEras.includes(era)) return;
+        diag.inPeriod++;
+        if (!selectedEras.includes(era)) {{ diag.era++; return; }}
 
         const price = lookupPrice(icao, dateStr, slotKey, forecastBucket + correction);
-        if (price === null) return; // нет цены на этот бакет -- нечего покупать, не сигнал
-        if (priceActive && (price < priceMin || price > priceMax)) return; // вне диапазона фильтра -- не сигнал
+        if (price === null) {{ diag.noPrice++; return; }} // нет цены на этот бакет -- нечего покупать, не сигнал
+        if (priceActive && (price < priceMin || price > priceMax)) {{ diag.priceFilter++; return; }} // вне диапазона фильтра -- не сигнал
         // Правила бота: цена < min_bet_price_cents или рынок уже решён на другом бакете -- позиции нет
         // (и счётчик промахов пирамиды не меняется, как у реального бота).
-        if (betBlockReason(icao, dateStr, slotKey, forecastBucket + correction, price) !== null) return;
+        if (betBlockReason(icao, dateStr, slotKey, forecastBucket + correction, price) !== null) {{ diag.blocked++; return; }}
 
         rows.push({{
           date: dateStr, city, hit: (error + correction) === 0,
@@ -2056,7 +2083,22 @@ class AccuracyReportBuilder:
     if (!hasBacktest && !hasLive) {{
       Plotly.purge("backtestChart");
       document.getElementById("backtestChart").innerHTML = "";
-      statsDiv.innerHTML = "<p style='color:#888;'>Нет сигналов за выбранный период с текущими настройками.</p>";
+      let why = "";
+      const d = BACKTEST_DIAG;
+      if (d) {{
+        if (d.total === 0) why = "по выбранным городам вообще нет записей";
+        else if (d.inPeriod === 0) why = `все ${{d.total}} записей вне выбранного периода`;
+        else {{
+          const parts = [];
+          if (d.era) parts.push(`отключено фильтром «Старые/Новые»: ${{d.era}}`);
+          if (d.noPrice) parts.push(`нет цены на бакет: ${{d.noPrice}}`);
+          if (d.priceFilter) parts.push(`вне диапазона цены: ${{d.priceFilter}}`);
+          if (d.blocked) parts.push(`отсечено правилами бота (цена &lt; мин. / рынок решён): ${{d.blocked}}`);
+          why = `записей в периоде: ${{d.inPeriod}}` + (parts.length ? "; " + parts.join("; ") : "");
+        }}
+      }}
+      statsDiv.innerHTML = "<p style='color:#888;'>Нет сигналов за выбранный период с текущими настройками." +
+        (why ? `<br><small>${{why}}</small>` : "") + "</p>";
       statsDiv.appendChild(resetBtn);
       return;
     }}
@@ -2700,7 +2742,7 @@ function applyCorrectionAndPriceFilter() {{
   // Ноль по центру: симметричный диапазон оси X по самому дальнему
   // столбцу с ненулевой высотой (минимум ±1).
   let half = 1;
-  ["wunderground", "windy"].forEach((source, i) => {{
+  SOURCES_JS.forEach((source, i) => {{
     const {{ x, y, customdata }} = computeCombinedSource(source, correction, priceActive, priceMin, priceMax);
     x.forEach((v, k) => {{ if (y[k] > 0) half = Math.max(half, Math.abs(v)); }});
     Plotly.restyle(chartDiv, {{ x: [x], y: [y], customdata: [customdata] }}, [DISPLAY_IDXS[i]]);
@@ -2892,7 +2934,7 @@ function renderPriceDistForSelection(idxs) {{
       x: 0.02, xanchor: "left",
     }},
     xaxis: {{ title: "Цена в ¢" }}, yaxis: {{ title: "Количество снапшотов" }},
-    barmode: "overlay", bargap: 0.05, legend: {{ title: {{ text: "Источник" }} }},
+    barmode: "overlay", bargap: 0.05, showlegend: true, legend: {{ title: {{ text: "Источник" }} }},
     template: "plotly_white", height: 320,
   }}, {{ displayModeBar: false }});
 }}
@@ -2935,8 +2977,9 @@ if (!WATCHED_MODE) {{
   priceMaxInput.addEventListener("change", updateVisibility);
 }}
 
-const SOURCE_LABELS_JS = {json.dumps(SOURCE_LABELS, ensure_ascii=False)};
-const SOURCE_COLORS_JS = {json.dumps(SOURCE_COLORS, ensure_ascii=False)};
+const SOURCE_LABELS_JS = {json.dumps(self._src_labels(), ensure_ascii=False)};
+const SOURCE_COLORS_JS = {json.dumps(self._src_colors(), ensure_ascii=False)};
+const SOURCES_JS = {json.dumps(list(self._sources()))};
 
 chartDiv.on("plotly_click", function(data) {{
   if (!data.points || !data.points.length) return;
@@ -3003,7 +3046,7 @@ updateVisibility();
         dfs: {"raw": df_raw, "effective": df_effective} — см. build_traces.
         """
         out_path = out_path or os.path.join(self.report_dir, self.report_filename)
-        page = self.build_html_report(dfs, embed_maxbet_backtest=True)
+        page = self.build_html_report(dfs, embed_maxbet_backtest=False)
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(page)

@@ -1,34 +1,5 @@
-# config/watched_icaos_weather_forecast.yaml
-#
-# Список городов, за которыми следит PriceMonitor (src/price_monitor.py), и
-# отдельный "скорректированный" отчёт (AccuracyReportBuilder.build_watched_report,
-# см. reports/accuracy_report_forecast_bot.html).
-#
-# defaults — общие параметры по умолчанию для ВСЕХ городов ниже. Любое поле
-# конкретного города, оставленное пустым, наследует значение отсюда; заданное
-# явно — переопределяет defaults ТОЛЬКО для этого города.
-#
-# По каждому городу в watched_icaos:
-#   city             — имя для отображения (справочно, должно совпадать с cities.py)
-#   strategy         — "flat" или "pyramid" (должна входить в
-#                       price_monitor.weather_forecast.strategies_list в config.yaml)
-#   loss_limit       — (необязательно) сколько промахов подряд допускает пирамида. По умолчанию
-#                       единое для всей стратегии — price_monitor.weather_forecast.loss_limit в
-#                       config.yaml; задай здесь только чтобы переопределить для ОДНОГО города.
-#   weather_source   — какой прогноз использовать: "" (по умолчанию Wunderground)
-#                       или "Windy"
-#   weather_corr     — поправка к прогнозу в БАКЕТАХ/"ставках" (не в градусах):
-#                       таргет = прогноз + поправка. Пусто/не задано = наследует defaults.
-#   min_price_limit  — НИЖНИЙ порог цены ставки (в центах) НА ЭТОТ ТАРГЕТ: сигнал
-#                       шлётся, только если цена >= этого порога. Пусто/не задано
-#                       (в т.ч. и в defaults) = ограничения снизу НЕТ — на сигнал
-#                       это никак не влияет, проверяется только max_price_limit.
-#   max_price_limit  — ВЕРХНИЙ потолок цены (в центах): сигнал шлётся, только
-#                       если цена <= этого потолка. Пусто/не задано = наследует
-#                       defaults (там 66 по умолчанию).
-#   comment          — произвольный текст, добавляется отдельной строкой в
-#                       уведомление в Telegram, если не пустой. Пусто/не
-#                       задано = наследует defaults.
+# watched_icaos_weather_forecast.yaml -- сгенерировано adhoc (комбинированный общий бэктест (1/2 flat, 1/6 пирамида 3, 1/3 пирамида 2)), 2026-10-11 23:22
+# фильтры: Не отдаёт набранное: просадка от пика в конце не более 50% прироста; Просадка не больше ср. профита за 30 дней; Нет 7 дней подряд без сделок; Серия промахов не больше 5; Доходность не отрицательная
 
 defaults:
   weather_source: ""
@@ -38,132 +9,221 @@ defaults:
   comment: ""
 
 watched_icaos:
-  # --- ASIA ---
-  # ZSPD:
-  #   city: "Shanghai"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr:
-  #   min_price_limit: 30
-  #   comment: ""
-  # WMKK:
-  #   city: "Kuala Lumpur"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr:
-  #   min_price_limit: 30
-  #   comment: ""
+  LFPG:
+    city: "Paris"
+    strategy: "pyramid"
+    loss_limit: 2
+    weather_source: ""
+    weather_corr: 1
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $50.30, балл 88.2
   OEJN:
     city: "Jeddah"
     strategy: "pyramid"
+    loss_limit: 2
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $45.73, балл 79.3
+  EPWA:
+    city: "Warsaw"
+    strategy: "pyramid"
+    loss_limit: 2
     weather_source: ""
     weather_corr:
     min_price_limit: 20
-    comment: ""
-  # ZSQD:
-  #   city: "Qingdao"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr:
-  #   min_price_limit: 30
-  #   comment: ""
-  # RKSI:
-  #   city: "Seoul"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr: 1
-  #   min_price_limit: 30
-  #   comment: ""
-  # RJTT:
-  #   city: "Tokyo"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr:
-  #   min_price_limit: 20
-  #   comment: ""
-  # RKPK:
-  #   city: "Busan"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr:
-  #   min_price_limit: 40
-  #   comment: ""
-  # ZHHH:
-  #   city: "Wuhan"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr:
-  #   min_price_limit: 20
-  #   comment: ""
-  # --- EUROPE ---
-  # EPWA:
-  #   city: "Warsaw"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr:
-  #   min_price_limit: 20
-  #   comment: ""
-  # LIMC:
-  #   city: "Milan"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr:
-  #   min_price_limit: 30
-  #   comment: ""
-  # UUWW:
-  #   city: "Moscow"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr: 1
-  #   min_price_limit: 25
-  #   comment: ""
-  # EDDM:
-  #   city: "Munich"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr: 1
-  #   min_price_limit: 30
-  #   comment: ""
-  # LFPG:
-  #   city: "Paris"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr: 1
-  #   min_price_limit: 30
-  #   comment: ""
-  # --- AMERICA ---
-  # KBKF:
-  #   city: "Denver"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr: 1
-  #   min_price_limit: 20
-  #   comment: ""
-  # KLGA:
-  #   city: "NYC"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr:
-  #   min_price_limit: 20
-  #   comment: ""
-  # KMIA:
-  #   city: "Miami"
-  #   strategy: "pyramid"
-  #   weather_source: "Windy"
-  #   weather_corr: 1
-  #   min_price_limit: 30
-  #   comment: ""
-  # KSFO:
-  #   city: "San Francisco"
-  #   strategy: "pyramid"
-  #   weather_source: ""
-  #   weather_corr: 1
-  #   min_price_limit: 30
-  #   comment: ""
-  # KSEA:
-  #   city: "Seattle"
-  #   strategy: "pyramid"
-  #   weather_source: "Windy"
-  #   weather_corr: 1
-  #   min_price_limit: 30
-  #   comment: ""
+    comment: ""  # ср. профит за 30 дн. $40.02, балл 78.6
+  KDAL:
+    city: "Dallas"
+    strategy: "pyramid"
+    loss_limit: 3
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 35
+    comment: ""  # ср. профит за 30 дн. $36.80, балл 77.5
+  NZWN:
+    city: "Wellington"
+    strategy: "pyramid"
+    loss_limit: 3
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 30
+    comment: ""  # ср. профит за 30 дн. $33.73, балл 66.0
+  KHOU:
+    city: "Houston"
+    strategy: "pyramid"
+    loss_limit: 2
+    weather_source: ""
+    weather_corr: 1
+    min_price_limit: 30
+    comment: ""  # ср. профит за 30 дн. $31.13, балл 69.5
+  RKSI:
+    city: "Seoul"
+    strategy: "pyramid"
+    loss_limit: 3
+    weather_source: ""
+    weather_corr: 1
+    min_price_limit: 35
+    comment: ""  # ср. профит за 30 дн. $29.65, балл 70.9
+  KSFO:
+    city: "San Francisco"
+    strategy: "pyramid"
+    loss_limit: 2
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $29.09, балл 74.6
+  ZHHH:
+    city: "Wuhan"
+    strategy: "pyramid"
+    loss_limit: 3
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 30
+    comment: ""  # ср. профит за 30 дн. $27.22, балл 67.6
+  KORD:
+    city: "Chicago"
+    strategy: "pyramid"
+    loss_limit: 3
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 40
+    comment: ""  # ср. профит за 30 дн. $26.62, балл 69.8
+  EGLC:
+    city: "London"
+    strategy: "pyramid"
+    loss_limit: 2
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 35
+    comment: ""  # ср. профит за 30 дн. $25.84, балл 78.8
+  EFHK:
+    city: "Helsinki"
+    strategy: "pyramid"
+    loss_limit: 2
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 40
+    comment: ""  # ср. профит за 30 дн. $25.65, балл 76.6
+  SAEZ:
+    city: "Buenos Aires"
+    strategy: "pyramid"
+    loss_limit: 2
+    weather_source: ""
+    weather_corr: 1
+    min_price_limit: 30
+    comment: ""  # ср. профит за 30 дн. $25.63, балл 69.4
+  RPLL:
+    city: "Manila"
+    strategy: "pyramid"
+    loss_limit: 2
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 30
+    comment: ""  # ср. профит за 30 дн. $25.33, балл 69.8
+  KAUS:
+    city: "Austin"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 30
+    comment: ""  # ср. профит за 30 дн. $19.99, балл 80.7
+  LIMC:
+    city: "Milan"
+    strategy: "pyramid"
+    loss_limit: 2
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 20
+    comment: ""  # ср. профит за 30 дн. $17.91, балл 61.2
+  KMIA:
+    city: "Miami"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $17.40, балл 87.7
+  VILK:
+    city: "Lucknow"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $14.91, балл 77.0
+  RJTT:
+    city: "Tokyo"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 20
+    comment: ""  # ср. профит за 30 дн. $11.67, балл 67.5
+  ZSQD:
+    city: "Qingdao"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr: -1
+    min_price_limit: 40
+    comment: ""  # ср. профит за 30 дн. $11.66, балл 74.5
+  WMKK:
+    city: "Kuala Lumpur"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr: 1
+    min_price_limit: 30
+    comment: ""  # ср. профит за 30 дн. $11.58, балл 80.2
+  MMMX:
+    city: "Mexico City"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $10.36, балл 84.3
+  UUWW:
+    city: "Moscow"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr: 1
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $10.07, балл 72.6
+  KATL:
+    city: "Atlanta"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 20
+    comment: ""  # ср. профит за 30 дн. $9.85, балл 88.9
+  OPKC:
+    city: "Karachi"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr: 1
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $9.66, балл 69.3
+  MPMG:
+    city: "Panama City"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 20
+    comment: ""  # ср. профит за 30 дн. $9.10, балл 77.6
+  RCSS:
+    city: "Taipei"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr: 1
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $9.03, балл 66.2
+  SBGR:
+    city: "Sao Paulo"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr: 1
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $5.75, балл 63.3
+  ZUCK:
+    city: "Chongqing"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr: 1
+    min_price_limit: 30
+    comment: ""  # ср. профит за 30 дн. $5.27, балл 67.9

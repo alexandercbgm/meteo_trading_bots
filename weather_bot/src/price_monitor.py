@@ -562,23 +562,13 @@ class PriceMonitor:
     ):
         poly_url, _poly_label = polymarket_today(icao, self.cities)
 
-        if source_label == "Windy":
-            windy_url = info.get("windy_url")
-            source_link = f"<a href='{windy_url}'>Windy</a>" if windy_url else "Windy"
-        else:
-            wu_url = info.get("weather_url")
-            has_wu = bool(wu_url) and "wunderground.com" in wu_url
-            wu_date_url = f"{wu_url}/date/{date_str}" if has_wu else None
-            source_link = f"<a href='{wu_date_url}'>Wunderground</a>" if wu_date_url else "Wunderground"
-
         poly_link = f"<a href='{poly_url}'>Polymarket</a>" if poly_url else "Polymarket"
         corr_suffix = self._corr_suffix(correction)
         city_tag = f"#{info['name'].replace(' ', '_').replace('-', '_')}"
 
         msg = (
             f"🎯 <b>Forecast{corr_suffix}</b> {city_tag}\n"
-            f"Ставка <b>{bet_label}</b>, цена <b>{price}¢</b>.\n"
-            f"{source_link} <b>{self.monitor_slot}</b> | {poly_link}"
+            f"Ставка <b>{bet_label}</b> по <b>{price}¢</b> | {poly_link}"
         )
         comment = watch_cfg.get("comment")
         if comment:

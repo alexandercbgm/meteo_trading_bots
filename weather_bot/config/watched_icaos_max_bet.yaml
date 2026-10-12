@@ -1,33 +1,5 @@
-# config/watched_icaos_max_bet.yaml
-#
-# Список городов, за которыми следит PriceMonitor (src/price_monitor.py), и
-# отдельный отчёт по самой дорогой ставке (AccuracyReportBuilder.build_market_target_report,
-# см. reports/accuracy_report_max_bet_bot.html) — таргет тут НЕ прогноз погоды, а
-# бакет самой дорогой ставки Polymarket (см. build_market_target_dataframe) —
-# поэтому у этого файла, в отличие от watched_icaos_weather_forecast.yaml, нет
-# полей weather_source/weather_corr — им неоткуда взяться.
-#
-# defaults — общие параметры по умолчанию для ВСЕХ городов ниже. Любое поле
-# конкретного города, оставленное пустым, наследует значение отсюда; заданное
-# явно — переопределяет defaults ТОЛЬКО для этого города.
-#
-# По каждому городу в watched_icaos:
-#   city             — имя для отображения (справочно, должно совпадать с cities.py)
-#   strategy         — "flat" или "pyramid" (должна входить в
-#                       price_monitor.max_bet.strategies_list в config.yaml)
-#   loss_limit       — (необязательно) сколько промахов подряд допускает пирамида. По умолчанию
-#                       единое для всей стратегии — price_monitor.max_bet.loss_limit в
-#                       config.yaml; задай здесь только чтобы переопределить для ОДНОГО города.
-#   min_price_limit  — НИЖНИЙ порог цены ставки (в центах) НА ЭТОТ ТАРГЕТ: сигнал
-#                       шлётся, только если цена >= этого порога. Пусто/не задано
-#                       (в т.ч. и в defaults) = ограничения снизу НЕТ — на сигнал
-#                       это никак не влияет, проверяется только max_price_limit.
-#   max_price_limit  — ВЕРХНИЙ потолок цены (в центах): сигнал шлётся, только
-#                       если цена <= этого потолка. Пусто/не задано = наследует
-#                       defaults (там 66 по умолчанию).
-#   comment          — произвольный текст, добавляется отдельной строкой в
-#                       уведомление в Telegram, если не пустой. Пусто/не
-#                       задано = наследует defaults.
+# watched_icaos_max_bet.yaml -- сгенерировано adhoc (комбинированный общий бэктест (1/2 flat, 1/6 пирамида 3, 1/3 пирамида 2)), 2026-10-11 23:22
+# фильтры: Не отдаёт набранное: просадка от пика в конце не более 50% прироста; Просадка не больше ср. профита за 30 дней; Нет 7 дней подряд без сделок; Серия промахов не больше 5; Доходность не отрицательная
 
 defaults:
   min_price_limit:
@@ -35,55 +7,24 @@ defaults:
   comment: ""
 
 watched_icaos:
-  # --- ASIA ---
-  RKPK:
-    city: "Busan"
-    strategy: "pyramid"
-    comment: ""
-  VILK:
-    city: "Lucknow"
-    strategy: "pyramid"
-    comment: ""
-  # ZSQD:
-  #   city: "Qingdao"
-  #   strategy: "pyramid"
-  #   comment: ""
-  # --- EUROPE ---
-  EFHK:
-    city: "Helsinki"
-    strategy: "pyramid"
-    comment: ""
-  # EPWA:
-  #   city: "Warsaw"
-  #   strategy: "flat"
-  #   comment: ""
   EDDM:
     city: "Munich"
     strategy: "pyramid"
-    comment: ""
-  # --- AMERICA ---
-  # KAUS:
-  #   city: "Austin"
-  #   strategy: "pyramid"
-  #   comment: ""
-  # KDAL:
-  #   city: "Dallas"
-  #   strategy: "pyramid"
-  #   comment: ""
+    loss_limit: 2
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $39.93, балл 88.0
+  RKPK:
+    city: "Busan"
+    strategy: "flat"
+    min_price_limit: 10
+    comment: ""  # ср. профит за 30 дн. $24.08, балл 90.0
   CYYZ:
     city: "Toronto"
-    strategy: "pyramid"
-    min_price_limit: 33
-    comment: ""
-  KLAX:
-    city: "Los Angeles"
-    strategy: "pyramid"
-    comment: ""
-  MPMG:
-    city: "Panama City"
-    strategy: "pyramid"
-    comment: ""
+    strategy: "flat"
+    min_price_limit: 35
+    comment: ""  # ср. профит за 30 дн. $16.86, балл 89.2
   KSEA:
     city: "Seattle"
-    strategy: "pyramid"
-    comment: ""
+    strategy: "flat"
+    min_price_limit: 30
+    comment: ""  # ср. профит за 30 дн. $15.57, балл 92.1

@@ -69,6 +69,7 @@ detail in the sections below.
 
 ```
 README.md
+adhoc/                     — city rating by backtest: adhoc.py + a sample city_rating.html
 report_examples/           — sample copies of the HTML reports (see "Example reports")
 vps_setup/                 — VPS deployment (see "Deploying to a VPS" below)
   setup_vps.sh               — one-shot server setup (venv, systemd service, swap)
@@ -191,9 +192,13 @@ the hit/miss panel, which is now shown ABOVE the backtest rather than directly
 above the rating chart) or when the backtest parameters themselves change.
 
 - **Main report** (`accuracy_report_forecast.html`) — the full set of settings:
-  Strategy (Forecast/Maximum — which dataset counts as the target), Type
-  (Flat/Pyramid), Number of steps (Pyramid only), Lot size (≥5.0), Fee per
-  contract (0.012 USD by default), Balance (100 USD by default).
+  Type (Flat/Pyramid), Number of steps (Pyramid only), Lot size (≥5.0), Fee per
+  contract (0.012 USD by default), Balance (100 USD by default). There is no
+  strategy choice: the overall forecast report only covers the forecast, and
+  `accuracy_report_max.html` only covers the max strategy (its source is named
+  Polymarket, there is no Windy column/legend, and the link column is "Event").
+  If the backtest is empty, a breakdown of the reasons is shown under the
+  "Нет сигналов…" ("No signals…") message.
 - **`accuracy_report_forecast_bot.html`/`accuracy_report_max_bet_bot.html`** — the same
   Lot size/Fee/Balance, but WITHOUT Strategy/Type/Number of steps: these are
   taken from the config of EACH city (`strategy` in `watched_icaos_*.yaml`;
@@ -317,8 +322,8 @@ sets and sends separate signals for each:
 
 - **weather_forecast** (`watched_icaos_weather_forecast.yaml`) — target = the
   city's weather forecast (+ its correction). Notification header:
-  "Forecast[+N]", with a link to the forecast source (Wunderground/Windy) +
-  Polymarket. Call settings: `price_monitor.weather_forecast.*`.
+  "Forecast[+N]", then "Ставка X по N¢ | Polymarket" ("Bet X at N¢"; no link
+  to the forecast source). Call settings: `price_monitor.weather_forecast.*`.
 - **max_bet** (`watched_icaos_max_bet.yaml`) — target = the bucket of the most
   expensive bet in this snapshot (no weather forecast at all, Polymarket only).
   Notification: "Max bet #City", then "Ставка <bucket> по <price>¢ | Polymarket"
