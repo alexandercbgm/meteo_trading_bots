@@ -121,7 +121,7 @@ GAMMA_BASE = "https://gamma-api.polymarket.com"
 TEMP_LABEL_RE = re.compile(r"\d+-\d+°[CF]|\d+°[CF](?:\s+or\s+(?:below|above|higher|lower))?")
 
 STRATEGY_SETS = ("weather_forecast", "max_bet")
-STRATEGY_LABELS = {"weather_forecast": "Weather forecast", "max_bet": "Max bet"}
+STRATEGY_LABELS = {"weather_forecast": "Forecast", "max_bet": "Max bet"}
 
 
 def _city_tag(name):
