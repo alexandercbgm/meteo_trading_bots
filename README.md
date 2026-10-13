@@ -316,7 +316,7 @@ the daily pipeline:
    journal on disk is not trimmed; null means the whole history. The chart
    tooltip lists cities one per line for up to 10 cities a day, two per line for
    11–20, and shows only the summary line above 20. Amounts are written with the
-   sign before the dollar: +$1.24 / -$1.24.
+   sign before the dollar: `+$1.24` / `-$1.24`.
 3. `CityCriteriaSelector.select(df)` selects cities by three criteria
    (thresholds are in the `criteria` section of `config/config.yaml`), always
    based on the raw weather forecast, unrelated to the max_bet set.
