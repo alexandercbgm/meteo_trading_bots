@@ -228,6 +228,9 @@ class AccuracyReportBuilder:
         # _build_live_trades_map/build_rating_html) -- сам отчёт по
         # прогнозам/ценам это не использует ни для чего другого.
         self.trading_dir = getattr(config.paths, "trading_dir", os.path.join(config.paths.data_dir, "trading"))
+        # Нижняя граница (включительно, YYYY-MM-DD) для линии ФАКТА в отчётах по стратегиям: более ранние
+        # сделки из журнала в отчёт не попадают (история на диске не удаляется). null/пусто -- вся история.
+        self.live_trades_from_date = str(getattr(config.accuracy_report, "live_trades_from_date", "") or "").strip() or None
         # Правила реальной торговли (TradingEngine/PriceMonitor), которые повторяют бэктест и панель
         # галочек/крестиков, чтобы отчёт совпадал с фактом: ставка дешевле min_bet_price_cents не
         # открывается; рынок "уже решён" (самый дорогой бакет >= decided_market_price_cents, и это не
@@ -715,6 +718,8 @@ class AccuracyReportBuilder:
                     date_str = rec.get("opened_date")
                     pnl = rec.get("pnl_net")
                     if city is None or date_str is None or pnl is None:
+                        continue
+                    if self.live_trades_from_date and str(date_str) < self.live_trades_from_date:
                         continue
                     result[city].append([date_str, round(float(pnl), 4)])
         for city in result:
@@ -2002,6 +2007,9 @@ class AccuracyReportBuilder:
     return segments;
   }}
 
+  // Максимум городов в дне, при котором подсказка точки графика перечисляет их построчно.
+  const HOVER_MAX_CITIES = 20;
+
   function buildBacktestHoverText(point) {{
     if (point.date === null) {{
       return `Старт<br>Баланс: $${{point.balance.toFixed(2)}}`;
@@ -2012,10 +2020,11 @@ class AccuracyReportBuilder:
       const sign = totalPnl >= 0 ? "+" : "";
       const summaryLine = `${{point.entries.length}} ${{pluralCities(point.entries.length)}}: ${{sign}}$${{totalPnl.toFixed(2)}}`;
       lines.push(summaryLine);
-      if (WATCHED_MODE) {{
-        // Отчёты по стратегиям (watched/max_bet) -- городов немного, список
-        // читаем целиком: сверху сводная строка (под датой и балансом), ниже
-        // -- построчно по каждому городу.
+      if (WATCHED_MODE && point.entries.length <= HOVER_MAX_CITIES) {{
+        // Отчёты по стратегиям (watched/max_bet) -- если городов в дне не больше
+        // HOVER_MAX_CITIES, список читаем целиком: сверху сводная строка (под датой
+        // и балансом), ниже -- построчно по каждому городу. Больше -- только сводка
+        // (длинная подсказка Plotly не помещается и на части точек не показывается).
         point.entries.forEach(e => {{
           const eSign = e.pnl >= 0 ? "+" : "";
           lines.push(`${{e.city}}: ${{eSign}}$${{e.pnl.toFixed(2)}}`);
@@ -2056,9 +2065,9 @@ class AccuracyReportBuilder:
       const sign = totalPnl >= 0 ? "+" : "";
       const summaryLine = `${{point.entries.length}} ${{pluralCities(point.entries.length)}}: ${{sign}}$${{totalPnl.toFixed(2)}}`;
       lines.push(summaryLine);
-      if (WATCHED_MODE) {{
-        // Как и у бэктеста -- построчный список по городу читаем только в
-        // watched/max_bet отчётах (немного городов); в основном отчёте
+      if (WATCHED_MODE && point.entries.length <= HOVER_MAX_CITIES) {{
+        // Как и у бэктеста -- построчный список по городам только в watched/max_bet
+        // отчётах и только когда городов в дне не больше HOVER_MAX_CITIES; иначе
         // остаётся только сводная строка выше.
         point.entries.forEach(e => {{
           const eSign = e.pnl >= 0 ? "+" : "";

@@ -309,6 +309,13 @@ the daily pipeline:
    outlier would stretch the axis; the number of hidden snapshots is shown
    below the chart. Ratings, the ✓/✗ panel and the backtest are computed on ALL
    data. Zero on the X axis is always centered.
+
+   The ACTUAL line (the bot's real trades) in the strategy reports starts at
+   `accuracy_report.live_trades_from_date` (YYYY-MM-DD, default 2026-10-11, by
+   position open date): earlier trades are left out of the report, while the
+   journal on disk is not trimmed; null means the whole history. When a day has
+   more than 20 cities, the chart tooltip shows only the summary line instead of
+   listing every city.
 3. `CityCriteriaSelector.select(df)` selects cities by three criteria
    (thresholds are in the `criteria` section of `config/config.yaml`), always
    based on the raw weather forecast, unrelated to the max_bet set.
