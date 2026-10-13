@@ -2008,7 +2008,7 @@ class AccuracyReportBuilder:
   }}
 
   // Максимум городов в дне, при котором подсказка точки графика перечисляет их построчно.
-  const HOVER_MAX_CITIES = 20;
+  const HOVER_MAX_CITIES = 50;
 
   function buildBacktestHoverText(point) {{
     if (point.date === null) {{
@@ -2043,13 +2043,15 @@ class AccuracyReportBuilder:
     return (r >= 0 ? "+" : "-") + "$" + Math.abs(r).toFixed(2);
   }}
 
-  // Строки по городам для подсказки: до 10 городов -- по одному на строку, больше -- по 2 в строке
-  // через " | " (20 строк не помещаются в график высотой 340 px и Plotly не показывает подсказку).
+  // Строки по городам для подсказки: до 10 городов -- по одному на строку, до 20 -- по 2, до 30 -- по 3,
+  // до 40 -- по 4, до 50 -- по 5 (число в строке = ceil(N / 10), всегда не больше 10 строк): иначе подсказка
+  // не помещается в график высотой 340 px и Plotly её не показывает. Больше HOVER_MAX_CITIES -- только сводка.
   function cityHoverLines(entries) {{
     const items = entries.map(e => `${{e.city}}: ${{fmtPnl(e.pnl)}}`);
-    if (items.length <= 10) return items;
+    const perLine = Math.max(1, Math.ceil(items.length / 10));
+    if (perLine === 1) return items;
     const out = [];
-    for (let i = 0; i < items.length; i += 2) out.push(items.slice(i, i + 2).join("  |  "));
+    for (let i = 0; i < items.length; i += perLine) out.push(items.slice(i, i + perLine).join("  |  "));
     return out;
   }}
 

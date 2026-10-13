@@ -314,8 +314,9 @@ the daily pipeline:
    `accuracy_report.live_trades_from_date` (YYYY-MM-DD, default 2026-10-11, by
    position open date): earlier trades are left out of the report, while the
    journal on disk is not trimmed; null means the whole history. The chart
-   tooltip lists cities one per line for up to 10 cities a day, two per line for
-   11–20, and shows only the summary line above 20. Amounts are written with the
+   tooltip lists cities one per line for up to 10 cities a day; above that it
+   puts several per line (ceil(N / 10), so never more than 10 lines), and above
+   50 cities it shows only the summary line. Amounts are written with the
    sign before the dollar: `+$1.24` / `-$1.24`.
 3. `CityCriteriaSelector.select(df)` selects cities by three criteria
    (thresholds are in the `criteria` section of `config/config.yaml`), always
