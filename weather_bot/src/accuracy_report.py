@@ -2017,29 +2017,40 @@ class AccuracyReportBuilder:
     const lines = [point.date, `Баланс: $${{point.balance.toFixed(2)}}`];
     if (point.entries.length > 1) {{
       const totalPnl = point.entries.reduce((sum, e) => sum + e.pnl, 0);
-      const sign = totalPnl >= 0 ? "+" : "";
-      const summaryLine = `${{point.entries.length}} ${{pluralCities(point.entries.length)}}: ${{sign}}$${{totalPnl.toFixed(2)}}`;
+      const summaryLine = `${{point.entries.length}} ${{pluralCities(point.entries.length)}}: ${{fmtPnl(totalPnl)}}`;
       lines.push(summaryLine);
       if (WATCHED_MODE && point.entries.length <= HOVER_MAX_CITIES) {{
         // Отчёты по стратегиям (watched/max_bet) -- если городов в дне не больше
         // HOVER_MAX_CITIES, список читаем целиком: сверху сводная строка (под датой
         // и балансом), ниже -- построчно по каждому городу. Больше -- только сводка
         // (длинная подсказка Plotly не помещается и на части точек не показывается).
-        point.entries.forEach(e => {{
-          const eSign = e.pnl >= 0 ? "+" : "";
-          lines.push(`${{e.city}}: ${{eSign}}$${{e.pnl.toFixed(2)}}`);
-        }});
+        cityHoverLines(point.entries).forEach(l => lines.push(l));
       }}
       // Основной отчёт -- городов десятки, построчный список нечитаем (и,
       // судя по всему, вообще ломает показ подсказки у Plotly) -- там
       // остаётся только сводная строка выше.
     }} else {{
       point.entries.forEach(e => {{
-        const sign = e.pnl >= 0 ? "+" : "";
-        lines.push(`${{e.city}}: ${{sign}}$${{e.pnl.toFixed(2)}}`);
+        lines.push(`${{e.city}}: ${{fmtPnl(e.pnl)}}`);
       }});
     }}
     return lines.join("<br>");
+  }}
+
+  // Деньги со знаком перед $: +$1.24 / -$1.24 (а не $-1.24).
+  function fmtPnl(v) {{
+    const r = Math.round(v * 100) / 100;
+    return (r >= 0 ? "+" : "-") + "$" + Math.abs(r).toFixed(2);
+  }}
+
+  // Строки по городам для подсказки: до 10 городов -- по одному на строку, больше -- по 2 в строке
+  // через " | " (20 строк не помещаются в график высотой 340 px и Plotly не показывает подсказку).
+  function cityHoverLines(entries) {{
+    const items = entries.map(e => `${{e.city}}: ${{fmtPnl(e.pnl)}}`);
+    if (items.length <= 10) return items;
+    const out = [];
+    for (let i = 0; i < items.length; i += 2) out.push(items.slice(i, i + 2).join("  |  "));
+    return out;
   }}
 
   function pluralCities(n) {{
@@ -2062,22 +2073,17 @@ class AccuracyReportBuilder:
     const lines = [`${{point.date}} (факт)`, `Баланс: $${{point.balance.toFixed(2)}}`];
     if (point.entries.length > 1) {{
       const totalPnl = point.entries.reduce((sum, e) => sum + e.pnl, 0);
-      const sign = totalPnl >= 0 ? "+" : "";
-      const summaryLine = `${{point.entries.length}} ${{pluralCities(point.entries.length)}}: ${{sign}}$${{totalPnl.toFixed(2)}}`;
+      const summaryLine = `${{point.entries.length}} ${{pluralCities(point.entries.length)}}: ${{fmtPnl(totalPnl)}}`;
       lines.push(summaryLine);
       if (WATCHED_MODE && point.entries.length <= HOVER_MAX_CITIES) {{
         // Как и у бэктеста -- построчный список по городам только в watched/max_bet
         // отчётах и только когда городов в дне не больше HOVER_MAX_CITIES; иначе
         // остаётся только сводная строка выше.
-        point.entries.forEach(e => {{
-          const eSign = e.pnl >= 0 ? "+" : "";
-          lines.push(`${{e.city}}: ${{eSign}}$${{e.pnl.toFixed(2)}}`);
-        }});
+        cityHoverLines(point.entries).forEach(l => lines.push(l));
       }}
     }} else {{
       point.entries.forEach(e => {{
-        const sign = e.pnl >= 0 ? "+" : "";
-        lines.push(`${{e.city}}: ${{sign}}$${{e.pnl.toFixed(2)}}`);
+        lines.push(`${{e.city}}: ${{fmtPnl(e.pnl)}}`);
       }});
     }}
     return lines.join("<br>");
@@ -2121,7 +2127,7 @@ class AccuracyReportBuilder:
           <span class="backtest-stats-label">Бэктест:</span>
           <span>Сделок: <b>${{result.tradeCount}}</b></span>
           <span>Баланс: <b>$${{result.finalBalance.toFixed(2)}}</b></span>
-          <span>P&amp;L: <b class="${{pnlClass}}">${{pnlSign}}$${{result.finalPnl.toFixed(2)}} (${{pnlSign}}${{result.finalPnlPct.toFixed(1)}}%)</b></span>
+          <span>P&amp;L: <b class="${{pnlClass}}">${{fmtPnl(result.finalPnl)}} (${{pnlSign}}${{result.finalPnlPct.toFixed(1)}}%)</b></span>
           <span>Макс. просадка: <b>$${{result.maxDrawdown.toFixed(2)}} (${{result.maxDrawdownPct.toFixed(1)}}%)</b></span>
         </div>`;
     }}
@@ -2133,7 +2139,7 @@ class AccuracyReportBuilder:
           <span class="backtest-stats-label">Факт:</span>
           <span>Сделок: <b>${{liveResult.tradeCount}}</b></span>
           <span>Баланс: <b>$${{liveResult.finalBalance.toFixed(2)}}</b></span>
-          <span>P&amp;L: <b class="${{pnlClass}}">${{pnlSign}}$${{liveResult.finalPnl.toFixed(2)}} (${{pnlSign}}${{liveResult.finalPnlPct.toFixed(1)}}%)</b></span>
+          <span>P&amp;L: <b class="${{pnlClass}}">${{fmtPnl(liveResult.finalPnl)}} (${{pnlSign}}${{liveResult.finalPnlPct.toFixed(1)}}%)</b></span>
         </div>`;
     }}
     statsDiv.innerHTML = statsHtml;
