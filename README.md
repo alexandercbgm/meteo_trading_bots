@@ -145,10 +145,9 @@ environment variables (see "Auto-trading").
 
 ## Example reports
 
-`report_examples/` holds copies of reports from real runs (October 2026):
-`accuracy_report_forecast.html`, `accuracy_report_forecast_bot.html` and
-`accuracy_report_max_bet_bot.html` (there is no sample of the fourth report,
-`accuracy_report_max.html`, yet). GitHub shows HTML files as source code, so
+`report_examples/` holds copies of all four reports from a real run (October 2026):
+`accuracy_report_forecast.html`, `accuracy_report_forecast_bot.html`,
+`accuracy_report_max_bet_bot.html` and `accuracy_report_max.html`. GitHub shows HTML files as source code, so
 download a file (the "Download raw file" button) and open it in a browser. These
 are static samples: the bot writes its live reports to `data_mining/reports/`,
 which is not tracked in git.
