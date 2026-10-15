@@ -1,10 +1,10 @@
 # ===== Рейтинг городов по бэктесту: перебор параметров на каждый город =====
-# Запуск: python backtest.py (скрипт лежит в корне проекта рядом с config/ и src/).
+# Запуск: python backtest.py (скрипт лежит в adhoc/, работает с папкой бота ../weather_bot; результат пишется туда же).
 import os, sys, math
 import numpy as np, pandas as pd
 import plotly.graph_objects as go
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "weather_bot")   # папка бота: config/, src/, data_mining/
 os.chdir(ROOT)
 sys.path.insert(0, ROOT)
 from src.config import Config

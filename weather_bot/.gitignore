@@ -4,7 +4,8 @@ logs/*
 data_mining/*
 !data_mining/.gitkeep
 __pycache__/
-# Output of the analysis scripts (backtest_v2.py, walk_forward_check.py)
+# Output of the analysis scripts in ../adhoc (backtest.py, backtest_v2.py, walk_forward_check.py)
+city_rating.html
 city_rating_v2.html
 walk_forward_check.html
 yaml_v2/

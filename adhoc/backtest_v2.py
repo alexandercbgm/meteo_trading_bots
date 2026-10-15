@@ -1,5 +1,5 @@
 # ===== backtest_v2: простое правило вместо подбора гиперпараметров по городам =====
-# Запуск: python backtest_v2.py [окно_дней] [мин_цена] [исключать_в_минусе: 0|1]   (скрипт лежит в корне проекта рядом с config/ и src/).
+# Запуск: python backtest_v2.py [окно_дней] [мин_цена] [исключать_в_минусе: 0|1]   (скрипт лежит в adhoc/, работает с папкой бота ../weather_bot; результат пишется туда же).
 #
 # Что делает. Для каждого города выбирается ТОЛЬКО стратегия: "Прогноз" (weather_forecast) или "Макс" (max_bet) --
 # по профиту за последние WINDOW_DAYS дней. Всё остальное одинаково для всех городов:
@@ -13,7 +13,7 @@
 import os, sys, math, json
 import numpy as np, pandas as pd
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "weather_bot")   # папка бота: config/, src/, data_mining/
 os.chdir(ROOT)
 sys.path.insert(0, ROOT)
 from src.config import Config

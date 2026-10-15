@@ -69,7 +69,12 @@ detail in the sections below.
 
 ```
 README.md
-adhoc/                     — city rating by backtest: backtest.py + a sample city_rating.html
+adhoc/                     — analysis scripts; they work on ../weather_bot and write their output there
+  backtest.py                — city rating: tries parameters per city, writes city_rating.html
+  backtest_v2.py             — picks forecast or max per city by recent profit, writes watched_icaos_*.yaml
+                               (pyramid 2 and one min. price for all cities); output: city_rating_v2.html, yaml_v2/
+  walk_forward_check.py      — walk-forward check of per-city parameter fitting; output: walk_forward_check.html
+  city_rating.html           — sample output of backtest.py
 report_examples/           — sample copies of the HTML reports (see "Example reports")
 vps_setup/                 — VPS deployment (see "Deploying to a VPS" below)
   setup_vps.sh               — one-shot server setup (venv, systemd service, swap)
@@ -91,9 +96,6 @@ weather_bot/
                                             price_monitor.max_bet.watched_icaos_file)
   run_project.ipynb        — run the project in Jupyter (interactive debugging)
   run_project.py           — standalone run outside Jupyter (for long runs)
-  backtest_v2.py           — picks forecast or max per city by recent profit, writes watched_icaos_*.yaml
-                             (pyramid 2 and one min. price for all cities); output: city_rating_v2.html, yaml_v2/
-  walk_forward_check.py    — walk-forward check of per-city parameter fitting; output: walk_forward_check.html
   src/
     config.py              — loads config/config.yaml (dot access: config.paths.data_dir etc.)
     watched_icaos.py        — loads either of the two watched_icaos_*.yaml (shared format/loader)

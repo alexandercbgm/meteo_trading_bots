@@ -1,5 +1,5 @@
 # ===== Проверка подбора гиперпараметров скользящим форвардом (walk-forward) =====
-# Запуск: python walk_forward_check.py (скрипт лежит в корне проекта рядом с config/ и src/).
+# Запуск: python walk_forward_check.py (скрипт лежит в adhoc/, работает с папкой бота ../weather_bot; результат пишется туда же).
 #
 # Идея. Для каждой даты d ("якоря") делаем подбор так же, как в adhoc.py: окно 45 дней, заканчивающееся в d
 # (бек 30 дней + форвард 15 дней). Потом смотрим, как выбранные варианты торговали на следующих EVAL_DAYS днях,
@@ -10,7 +10,7 @@
 import os, sys, math, json
 import numpy as np, pandas as pd
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "weather_bot")   # папка бота: config/, src/, data_mining/
 os.chdir(ROOT)
 sys.path.insert(0, ROOT)
 from src.config import Config
