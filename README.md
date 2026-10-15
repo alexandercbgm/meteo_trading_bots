@@ -69,7 +69,7 @@ detail in the sections below.
 
 ```
 README.md
-adhoc/                     — city rating by backtest: adhoc.py + a sample city_rating.html
+adhoc/                     — city rating by backtest: backtest.py + a sample city_rating.html
 report_examples/           — sample copies of the HTML reports (see "Example reports")
 vps_setup/                 — VPS deployment (see "Deploying to a VPS" below)
   setup_vps.sh               — one-shot server setup (venv, systemd service, swap)
@@ -91,6 +91,9 @@ weather_bot/
                                             price_monitor.max_bet.watched_icaos_file)
   run_project.ipynb        — run the project in Jupyter (interactive debugging)
   run_project.py           — standalone run outside Jupyter (for long runs)
+  backtest_v2.py           — picks forecast or max per city by recent profit, writes watched_icaos_*.yaml
+                             (pyramid 2 and one min. price for all cities); output: city_rating_v2.html, yaml_v2/
+  walk_forward_check.py    — walk-forward check of per-city parameter fitting; output: walk_forward_check.html
   src/
     config.py              — loads config/config.yaml (dot access: config.paths.data_dir etc.)
     watched_icaos.py        — loads either of the two watched_icaos_*.yaml (shared format/loader)
@@ -499,9 +502,9 @@ under the key `<set>|<icao>|series`.
 **Risk management** is based on REALIZED P&L (as in the backtest: the balance
 moves only when a position is closed by the actual outcome; open positions do
 not count toward the limit):
-- `price_monitor.<set>.strategy_max_loss_pct` (default **15%**) — when exceeded,
+- `price_monitor.<set>.strategy_max_loss_pct` (**40%** in the current config) — when exceeded,
   ONLY that set (`weather_forecast` or `max_bet`) stops.
-- `price_monitor.risk.total_max_loss_pct` (default **30%**) — when the combined
+- `price_monitor.risk.total_max_loss_pct` (**40%** in the current config) — when the combined
   loss of BOTH sets exceeds it, ALL auto-trading stops.
 - In both cases a Telegram notification is always sent; a CallMeBot call is made
   if `risk_call_alert_enabled: true` is set for the set (using its own

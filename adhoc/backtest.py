@@ -1,5 +1,5 @@
 # ===== Рейтинг городов по бэктесту: перебор параметров на каждый город =====
-# Запуск: python adhoc.py (скрипт лежит в корне проекта рядом с config/ и src/).
+# Запуск: python backtest.py (скрипт лежит в корне проекта рядом с config/ и src/).
 import os, sys, math
 import numpy as np, pandas as pd
 import plotly.graph_objects as go
