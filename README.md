@@ -76,7 +76,7 @@ adhoc/                     — analysis scripts; they work on ../weather_bot and
   walk_forward_check.py      — walk-forward check of per-city parameter fitting; output: walk_forward_check.html
   city_rating.html           — sample output of backtest.py
   city_rating_v2.html        — sample output of backtest_v2.py
-  wf_check.html              — sample output of walk_forward_check.py
+  walk_forward_check.html    — sample output of walk_forward_check.py
 report_examples/           — sample copies of the HTML reports (see "Example reports")
 vps_setup/                 — VPS deployment (see "Deploying to a VPS" below)
   setup_vps.sh               — one-shot server setup (venv, systemd service, swap)
