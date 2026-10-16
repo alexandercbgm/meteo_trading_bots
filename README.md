@@ -317,7 +317,7 @@ the daily pipeline:
    data. Zero on the X axis is always centered.
 
    The ACTUAL line (the bot's real trades) in the strategy reports starts at
-   `accuracy_report.live_trades_from_date` (YYYY-MM-DD, default 2026-10-11, by
+   `accuracy_report.live_trades_from_date` (YYYY-MM-DD, 2026-10-15 in the current config, by
    position open date): earlier trades are left out of the report, while the
    journal on disk is not trimmed; null means the whole history. The chart
    tooltip lists cities one per line for up to 10 cities a day; above that it
