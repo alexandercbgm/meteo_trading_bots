@@ -30,7 +30,7 @@ SOURCE        = "wunderground"
 FWD_DAYS      = 10               # форвард -- N дней перед тестом (фильтры можно применять и на нём)
 TEST_DAYS     = 10               # тест -- последние N дней истории, фильтры и выбор его не видят; бек -- всё, что раньше (0 -- без теста)
 WATCH_CITIES = ["Jeddah", "Warsaw", "Munich", "Milan", "Paris", "Taipei", "Seattle", "Toronto", "Helsinki", "Busan", "Lucknow"]   # города отчёта (пусто -- все города)
-FIXED = None   # {город: (стратегия, шагов пирамиды, мин. цена, поправка)}: заданный конфиг вместо подбора (см. backtest_config.py)
+FIXED = None   # {город: (стратегия, шагов пирамиды, мин. цена, поправка)}: заданный конфиг вместо подбора (см. backtest_v2_config.py)
 MIN_PRICES    = [10, 20, 30, 35, 40]   # перебор минимальной цены, ¢
 TYPES         = [("flat", 0), ("pyramid", 2), ("pyramid", 3)]   # перебор типа ставки: (тип, шагов); pyramid N = loss_limit N
 MAX_PRICE     = 66

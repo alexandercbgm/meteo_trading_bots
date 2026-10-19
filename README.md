@@ -73,12 +73,12 @@ adhoc/                     — analysis scripts; they work on ../weather_bot and
   backtest.py                — city rating: tries parameters per city, writes city_rating.html
   backtest_v2.py             — picks forecast or max per city on the back period, checks it on forward and test
                                periods it did not see, writes watched_icaos_*.yaml; output: city_rating_v2.html
-  backtest_config.py         — the same report for a given city config instead of a fitted one;
+  backtest_v2_config.py      — the same report for a given city config instead of a fitted one;
                                output: city_rating_v2_config.html
   walk_forward_check.py      — walk-forward check of per-city parameter fitting; output: walk_forward_check.html
   city_rating.html           — sample output of backtest.py
   city_rating_v2.html        — sample output of backtest_v2.py
-  city_rating_v2_config.html — sample output of backtest_config.py
+  city_rating_v2_config.html — sample output of backtest_v2_config.py
   walk_forward_check.html    — sample output of walk_forward_check.py
 report_examples/           — sample copies of the HTML reports (see "Example reports")
 vps_setup/                 — VPS deployment (see "Deploying to a VPS" below)
