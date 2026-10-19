@@ -7,5 +7,6 @@ __pycache__/
 # Output of the analysis scripts in ../adhoc (backtest.py, backtest_v2.py, walk_forward_check.py)
 city_rating.html
 city_rating_v2.html
+city_rating_v2_config.html
 walk_forward_check.html
 yaml_v2/

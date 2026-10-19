@@ -1,5 +1,5 @@
-# watched_icaos_weather_forecast.yaml -- сгенерировано adhoc_v2, 2026-10-14 16:33
-# правило adhoc_v2: стратегия по городу -- по профиту за 45 дн.; пирамида 2, мин. цена 40¢ для всех; поправка прогноза по моде ошибок за всю историю; города с убытком на обеих стратегиях исключены
+# config/watched_icaos_weather_forecast.yaml
+# Сгенерировано по backtest_v2 (бек / форвард 10 / тест 10). Поля -- как в предыдущей версии файла.
 
 defaults:
   weather_source: ""
@@ -9,139 +9,27 @@ defaults:
   comment: ""
 
 watched_icaos:
-  ZSQD:
-    city: "Qingdao"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr: -1
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $28.83 (другая стратегия: $16.79), сделок 24
-  EGLC:
-    city: "London"
+  OEJN:
+    city: "Jeddah"
     strategy: "pyramid"
     loss_limit: 2
     weather_source: ""
     weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $24.72 (другая стратегия: -$24.85), сделок 24
-  KAUS:
-    city: "Austin"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $24.51 (другая стратегия: -$6.38), сделок 23
+    min_price_limit: 10
+    comment: ""
   EPWA:
     city: "Warsaw"
     strategy: "pyramid"
     loss_limit: 2
     weather_source: ""
     weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $20.00 (другая стратегия: -$11.44), сделок 21
+    min_price_limit: 20
+    comment: ""
   LFPG:
     city: "Paris"
     strategy: "pyramid"
     loss_limit: 2
     weather_source: ""
     weather_corr: 1
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $19.86 (другая стратегия: -$23.73), сделок 26
-  WSSS:
-    city: "Singapore"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr: 1
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $19.26 (другая стратегия: -$0.56), сделок 14
-  MMMX:
-    city: "Mexico City"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $18.76 (другая стратегия: $8.53), сделок 24
-  EFHK:
-    city: "Helsinki"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $18.65 (другая стратегия: $15.55), сделок 20
-  ZUCK:
-    city: "Chongqing"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $14.52 (другая стратегия: $14.39), сделок 14
-  KATL:
-    city: "Atlanta"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $14.15 (другая стратегия: $0.57), сделок 19
-  RPLL:
-    city: "Manila"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $13.77 (другая стратегия: -$1.66), сделок 25
-  KMIA:
-    city: "Miami"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $11.64 (другая стратегия: -$16.49), сделок 16
-  RJTT:
-    city: "Tokyo"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $10.77 (другая стратегия: -$20.12), сделок 16
-  ZHHH:
-    city: "Wuhan"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $9.76 (другая стратегия: $2.38), сделок 17
-  LTAC:
-    city: "Ankara"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr: 1
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $6.73 (другая стратегия: -$3.37), сделок 20
-  KDAL:
-    city: "Dallas"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $4.11 (другая стратегия: -$8.51), сделок 28
-  UUWW:
-    city: "Moscow"
-    strategy: "pyramid"
-    loss_limit: 2
-    weather_source: ""
-    weather_corr: 1
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $1.70 (другая стратегия: -$18.56), сделок 15
+    min_price_limit: 10
+    comment: ""

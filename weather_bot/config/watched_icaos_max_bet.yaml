@@ -1,5 +1,6 @@
-# watched_icaos_max_bet.yaml -- сгенерировано adhoc_v2, 2026-10-14 16:33
-# правило adhoc_v2: стратегия по городу -- по профиту за 45 дн.; пирамида 2, мин. цена 40¢ для всех; поправка прогноза по моде ошибок за всю историю; города с убытком на обеих стратегиях исключены
+# config/watched_icaos_max_bet.yaml
+# Сгенерировано по backtest_v2 (бек / форвард 10 / тест 10). Для Макса нижний порог цены 10 не ставится
+# (пусто = ограничения снизу нет); у Toronto порог 35 оставлен.
 
 defaults:
   min_price_limit:
@@ -7,117 +8,29 @@ defaults:
   comment: ""
 
 watched_icaos:
+  EFHK:
+    city: "Helsinki"
+    strategy: "pyramid"
+    loss_limit: 2
+    comment: ""
   EDDM:
     city: "Munich"
     strategy: "pyramid"
     loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $34.94 (другая стратегия: $0.31), сделок 30
-  ZGSZ:
-    city: "Shenzhen"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $28.97 (другая стратегия: $11.04), сделок 31
-  CYYZ:
-    city: "Toronto"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $27.94 (другая стратегия: $9.47), сделок 32
-  VILK:
-    city: "Lucknow"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $23.43 (другая стратегия: $16.77), сделок 32
-  RKPK:
-    city: "Busan"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $22.54 (другая стратегия: $7.65), сделок 32
-  OEJN:
-    city: "Jeddah"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $20.47 (другая стратегия: $16.51), сделок 28
+    comment: ""
   KSEA:
     city: "Seattle"
     strategy: "pyramid"
     loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $20.19 (другая стратегия: $5.84), сделок 37
-  KLAX:
-    city: "Los Angeles"
+    comment: ""
+  CYYZ:
+    city: "Toronto"
     strategy: "pyramid"
     loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $12.71 (другая стратегия: $2.51), сделок 17
-  ZGGG:
-    city: "Guangzhou"
+    min_price_limit: 35
+    comment: ""
+  VILK:
+    city: "Lucknow"
     strategy: "pyramid"
     loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $11.11 (другая стратегия: $1.15), сделок 33
-  KORD:
-    city: "Chicago"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $10.37 (другая стратегия: -$6.29), сделок 32
-  KSFO:
-    city: "San Francisco"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $10.31 (другая стратегия: -$8.25), сделок 26
-  LIMC:
-    city: "Milan"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $8.89 (другая стратегия: $4.44), сделок 28
-  ZUUU:
-    city: "Chengdu"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $8.52 (другая стратегия: -$7.99), сделок 29
-  MPMG:
-    city: "Panama City"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $7.18 (другая стратегия: $6.04), сделок 28
-  KHOU:
-    city: "Houston"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $6.31 (другая стратегия: -$4.45), сделок 36
-  ZBAA:
-    city: "Beijing"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $3.91 (другая стратегия: -$16.32), сделок 38
-  OPKC:
-    city: "Karachi"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $3.46 (другая стратегия: -$0.74), сделок 26
-  LEMD:
-    city: "Madrid"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $1.98 (другая стратегия: -$5.93), сделок 24
-  RCSS:
-    city: "Taipei"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 40
-    comment: ""  # профит за 30 дн. $1.95 (другая стратегия: -$5.20), сделок 18
+    comment: ""
