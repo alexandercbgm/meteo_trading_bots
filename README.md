@@ -71,11 +71,14 @@ detail in the sections below.
 README.md
 adhoc/                     — analysis scripts; they work on ../weather_bot and write their output there
   backtest.py                — city rating: tries parameters per city, writes city_rating.html
-  backtest_v2.py             — picks forecast or max per city by recent profit, writes watched_icaos_*.yaml
-                               (pyramid 2 and one min. price for all cities); output: city_rating_v2.html, yaml_v2/
+  backtest_v2.py             — picks forecast or max per city on the back period, checks it on forward and test
+                               periods it did not see, writes watched_icaos_*.yaml; output: city_rating_v2.html
+  backtest_config.py         — the same report for a given city config instead of a fitted one;
+                               output: city_rating_v2_config.html
   walk_forward_check.py      — walk-forward check of per-city parameter fitting; output: walk_forward_check.html
   city_rating.html           — sample output of backtest.py
   city_rating_v2.html        — sample output of backtest_v2.py
+  city_rating_v2_config.html — sample output of backtest_config.py
   walk_forward_check.html    — sample output of walk_forward_check.py
 report_examples/           — sample copies of the HTML reports (see "Example reports")
 vps_setup/                 — VPS deployment (see "Deploying to a VPS" below)
@@ -317,7 +320,7 @@ the daily pipeline:
    data. Zero on the X axis is always centered.
 
    The ACTUAL line (the bot's real trades) in the strategy reports starts at
-   `accuracy_report.live_trades_from_date` (YYYY-MM-DD, 2026-10-15 in the current config, by
+   `accuracy_report.live_trades_from_date` (YYYY-MM-DD, 2026-10-18 in the current config, by
    position open date): earlier trades are left out of the report, while the
    journal on disk is not trimmed; null means the whole history. The chart
    tooltip lists cities one per line for up to 10 cities a day; above that it
@@ -505,9 +508,9 @@ under the key `<set>|<icao>|series`.
 **Risk management** is based on REALIZED P&L (as in the backtest: the balance
 moves only when a position is closed by the actual outcome; open positions do
 not count toward the limit):
-- `price_monitor.<set>.strategy_max_loss_pct` (**40%** in the current config) — when exceeded,
+- `price_monitor.<set>.strategy_max_loss_pct` (**15%** in the current config) — when exceeded,
   ONLY that set (`weather_forecast` or `max_bet`) stops.
-- `price_monitor.risk.total_max_loss_pct` (**40%** in the current config) — when the combined
+- `price_monitor.risk.total_max_loss_pct` (**30%** in the current config) — when the combined
   loss of BOTH sets exceeds it, ALL auto-trading stops.
 - In both cases a Telegram notification is always sent; a CallMeBot call is made
   if `risk_call_alert_enabled: true` is set for the set (using its own
