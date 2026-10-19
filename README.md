@@ -573,7 +573,10 @@ fresh response replaces it.
 "Running locally" below), computed from the journal files
 `data_mining/trading/trades_*.jsonl` (so it is not reset by bot restarts; it
 only includes positions that were actually filled and resolved by the
-outcome). Format:
+outcome). The running totals (balance, all-time P&L per city) count only journal
+files from `price_monitor.daily_summary_from_date` on (YYYY-MM-DD, 2026-10-18 in
+the current config; empty means the whole history); older files stay on disk.
+Format:
 ```
 📊 Сводка ставок на Polymarket за 2026-09-20
 Баланс: 115.50$ | 🟢+15.50$ | 🟢+15.5%

@@ -635,6 +635,9 @@ class TradingEngine:
         self.account_balance = getattr(pm, "account_balance", 100.0)
         self.fill_check_wait_sec = getattr(pm, "fill_check_wait_sec", 20)
         self.daily_summary_enabled = getattr(pm, "daily_summary_enabled", True)
+        # Дата (YYYY-MM-DD), с которой считается накопленный итог в дневной сводке (баланс, "всего" по городам):
+        # журнальные файлы trades_* раньше неё в итог не входят (сами файлы не удаляются). Пусто -- вся история.
+        self.daily_summary_from_date = str(getattr(pm, "daily_summary_from_date", "") or "").strip() or None
         # Сколько раз ПОДРЯД (на разных вызовах resolve_positions -- т.е. дней) можно
         # не суметь подтвердить исполнение ордера (get_order_status падает с ошибкой),
         # прежде чем сдаться и закрыть позицию без данных, а не откладывать разрешение
@@ -1765,6 +1768,8 @@ class TradingEngine:
             if not (fname.startswith("trades_") and fname.endswith(".jsonl")):
                 continue
             is_today = (fname == target_file)
+            if self.daily_summary_from_date and fname[len("trades_"):-len(".jsonl")].replace("_", "-") < self.daily_summary_from_date:
+                continue  # накопленный итог считается только с daily_summary_from_date
             path = os.path.join(trading_dir, fname)
             try:
                 with open(path, "r", encoding="utf-8") as f:
