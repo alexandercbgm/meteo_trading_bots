@@ -603,11 +603,12 @@ before each amount — the closest practical equivalent within the Bot API.
   state (open positions, pyramid miss counter per city, accumulated P&L/halted
   flags). Re-read on EVERY start, so restarting the bot does not lose open
   positions or break the pyramid chain.
-- `deferred_notifications.json` — a queue of "Position closed" messages for
-  positions resolved before the nightly resolution (synchronously before a new
-  signal for the same city): to avoid cluttering the chat on every signal, they
-  are sent at the next nightly resolution (Seattle time) together with the rest;
-  stored on disk, so a bot restart does not lose them.
+- `deferred_notifications.json` — a queue of postponed "Position closed"
+  messages, sent at the next nightly resolution (Seattle time); stored on disk,
+  so a bot restart does not lose them. A position resolved right before a new
+  signal for the same city (because the market was not resolved yet at night) is
+  reported at once, before the "Position opened" message, so the new lot size is
+  explained by the result of the previous bet.
 - `checked_today.json` — PriceMonitor's "city/set already checked today" dedup
   (see `PriceMonitor._checked_today`), also re-read on start. Without this file,
   restarting the bot during the day would resend a signal already sent today to

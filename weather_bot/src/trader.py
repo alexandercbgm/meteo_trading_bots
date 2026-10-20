@@ -1602,10 +1602,10 @@ class TradingEngine:
         # таргет (record["bet_label"]), и факт (fact_label) выделены жирным --
         # это главное, что нужно сравнить глазами в этом сообщении.
         fact_part = f", факт <b>{fact_label}</b>" if not hit else ""
-        # notify_on_close=True (ночной резолв по Сиэтлу) -- сразу в чат; False (синхронный
-        # резолв перед новым сигналом) -- не засоряем чат на каждый сигнал, а откладываем
-        # и отправляем при ближайшем ночном резолве (см. _flush_deferred_notifications),
-        # иначе такая позиция так и осталась бы вообще без сообщения о закрытии.
+        # notify_on_close=True -- сразу в чат (ночной резолв по Сиэтлу и синхронный резолв
+        # перед новым сигналом, см. _try_resolve_now: "Позиция закрыта" идёт ДО "Позиция
+        # открыта", чтобы было видно, почему лот новой позиции такой). False -- отложить до
+        # ближайшего ночного резолва (см. _flush_deferred_notifications).
         self._notify_or_defer(
             record["position_id"],
             f"{'✅' if hit else '❌'} <b>Позиция закрыта</b> {_city_tag(record['city'])}\n"
@@ -1697,7 +1697,8 @@ class TradingEngine:
             return
 
         position_id = open_record["position_id"]
-        if self._resolve_one_open_position(open_record, fact, notify_on_close=False):
+        # Сообщение о закрытии -- сразу, до сообщения об открытии новой позиции.
+        if self._resolve_one_open_position(open_record, fact, notify_on_close=True):
             self.store.open_positions.pop(position_id, None)
             self.store.save_open_positions()
 
