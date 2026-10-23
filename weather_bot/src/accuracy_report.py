@@ -1590,7 +1590,10 @@ class AccuracyReportBuilder:
       x: order,
       y: order.map(c => {{ const m = (metricsByCity[c] || {{}})[source]; return m ? m[key] : null; }}),
       type: "bar", name: SOURCE_LABELS_LOCAL[source], marker: {{ color: SOURCE_COLORS_LOCAL[source] }},
-    }}));
+    }}))
+      // Источник без единого значения (например, Windy при windy_enabled=false) не рисуем:
+      // в barmode "group" он занимает пустое место рядом со столбцом, и подпись города съезжает.
+      .filter(t => t.y.some(v => v !== null && v !== undefined));
     Plotly.react(divId, traces, {{
       title: {{ text: `<b>${{title}}</b>`, x: 0.02, xanchor: "left" }}, barmode: "group", template: "plotly_white",
       yaxis: {{ title: ytitle }}, xaxis: {{ tickangle: -45 }}, showlegend: true, legend: {{ title: {{ text: "Источник" }} }},
