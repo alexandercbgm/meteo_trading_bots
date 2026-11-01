@@ -76,6 +76,8 @@ adhoc/                     — analysis scripts; they work on ../weather_bot and
   backtest_v2_config.py      — the same report for a given city config instead of a fitted one;
                                output: city_rating_v2_config.html
   walk_forward_check.py      — walk-forward check of per-city parameter fitting; output: walk_forward_check.html
+  bot_reports_pyr20.py       — the two bot reports, but with pyramid lots 5 → 15 → 20 instead of 5 → 15 → 35;
+                               output: accuracy_report_*_bot_pyr20.html
   city_rating.html           — sample output of backtest.py
   city_rating_v2.html        — sample output of backtest_v2.py
   city_rating_v2_config.html — sample output of backtest_v2_config.py
