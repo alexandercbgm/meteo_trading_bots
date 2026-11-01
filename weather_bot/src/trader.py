@@ -1799,8 +1799,14 @@ class TradingEngine:
 
         balance = self.account_balance + total_all_time
         total_pct = (total_all_time / self.account_balance * 100.0) if self.account_balance else 0.0
+        # Строка "за сутки" -- только по городам из текущего конфига (как и список
+        # городов ниже): город, убранный из watched_icaos_*.yaml, но по которому
+        # сегодня разрешилась старая позиция, не попадает ни в число городов, ни в
+        # P&L за сутки. Баланс/итог в строке выше остаются честными, по ВСЕЙ истории.
+        watched_today = {icao: e for icao, e in today_by_city.items() if icao in self.all_watched_icaos}
+        total_today = sum(e["pnl"] for e in watched_today.values())
         today_pct = (total_today / self.account_balance * 100.0) if self.account_balance else 0.0
-        n_cities_today = len(today_by_city)
+        n_cities_today = len(watched_today)
 
         lines = [f"📊 <b>Сводка ставок на Polymarket за {date_str}</b> #Bet_Summary"]
         lines.append(f"Баланс: {balance:.2f}$ | {self._colored_money(total_all_time)} | {self._colored_pct(total_pct)}")
