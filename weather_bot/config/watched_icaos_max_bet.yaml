@@ -11,13 +11,15 @@ watched_icaos:
   EFHK:
     city: "Helsinki"
     strategy: "pyramid"
-    loss_limit: 2
+    loss_limit: 3
+    min_price_limit: 33
+    max_price_limit: 66
     comment: ""
-  EDDM:
-    city: "Munich"
-    strategy: "pyramid"
-    loss_limit: 2
-    comment: ""
+#  EDDM:
+#    city: "Munich"
+#    strategy: "pyramid"
+#    loss_limit: 2
+#    comment: ""
   KSEA:
     city: "Seattle"
     strategy: "pyramid"
@@ -26,11 +28,19 @@ watched_icaos:
   CYYZ:
     city: "Toronto"
     strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 35
+    loss_limit: 3
+    min_price_limit: 33
+    max_price_limit: 66
     comment: ""
-  VILK:
-    city: "Lucknow"
+#  VILK:
+#    city: "Lucknow"
+#    strategy: "pyramid"
+#    loss_limit: 2
+#    comment: ""
+  ZUCK:
+    city: "Chongqing"
     strategy: "pyramid"
     loss_limit: 2
+    min_price_limit: 33
+    max_price_limit: 66
     comment: ""
