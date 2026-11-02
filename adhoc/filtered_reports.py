@@ -3,8 +3,8 @@
 #
 # Отчёты строятся так же, как ночные accuracy_report_forecast.html / accuracy_report_max.html и adhoc/match_report.py, но датафрейм
 # каждого отчёта урезается до городов из его списка ниже, поэтому и сводные графики, и рейтинг, и бэктест считаются только по ним.
-# Списки на 02.11.2026: города, где плоская ставка в бэктесте отчёта за "Последние 6 месяцев" (слот 12:00, бегунки по умолчанию)
-# в плюсе. На новых данных состав может измениться -- тогда списки нужно пересчитать.
+# Списки на 02.11.2026: из городов, где плоская ставка в бэктесте отчёта за "Последние 6 месяцев" (слот 12:00, бегунки по умолчанию)
+# в плюсе, оставлены выбранные вручную. На новых данных состав может измениться -- тогда списки нужно пересчитать.
 import os, sys
 
 ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "weather_bot")   # папка бота: config/, src/, data_mining/
@@ -16,12 +16,9 @@ from src.accuracy_report import AccuracyReportBuilder
 
 # ---------------- настройки ----------------
 SOURCE = "wunderground"   # источник прогноза для отчёта "совпадение"
-CITIES_FORECAST = ["Amsterdam", "Atlanta", "Austin", "Cape Town", "Chicago", "Chongqing", "Dallas", "Jeddah", "London", "Lucknow",
-                   "Mexico City", "Miami", "Munich", "NYC", "Panama City", "Seoul", "Shanghai", "Tel Aviv", "Tokyo", "Toronto", "Warsaw"]
-CITIES_MAX = ["Ankara", "Austin", "Busan", "Chicago", "Chongqing", "Dallas", "Helsinki", "Jeddah", "Los Angeles", "Lucknow",
-              "Miami", "Munich", "Panama City", "Qingdao", "Seattle", "Seoul", "Toronto", "Warsaw"]
-CITIES_MATCH = ["Ankara", "Atlanta", "Austin", "Busan", "Cape Town", "Chongqing", "Dallas", "Jeddah", "Jinan", "Los Angeles", "Lucknow",
-                "Mexico City", "Miami", "Munich", "NYC", "Panama City", "Qingdao", "Seattle", "Seoul", "Shanghai", "Toronto", "Warsaw"]
+CITIES_FORECAST = ["Atlanta", "Jeddah", "Lucknow", "Mexico City", "NYC", "Panama City", "Tokyo", "Warsaw"]
+CITIES_MAX = ["Ankara", "Austin", "Helsinki", "Jeddah", "Los Angeles", "Munich", "Toronto"]
+CITIES_MATCH = ["Chongqing", "Jeddah", "Lucknow", "NYC", "Panama City", "Seoul"]
 OUT_FORECAST = "accuracy_report_forecast_flat6m.html"
 OUT_MAX      = "accuracy_report_max_flat6m.html"
 OUT_MATCH    = "accuracy_report_match_flat6m.html"
