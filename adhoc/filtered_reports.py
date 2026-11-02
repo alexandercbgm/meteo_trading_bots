@@ -1,5 +1,5 @@
 # ===== filtered_reports: три общих отчёта (прогноз, макс, совпадение), но только с городами из заданных списков =====
-# Запуск: python filtered_reports.py [match_full]   (match_full -- только отчёт "совпадение" по полному списку CITIES_MATCH_FULL; скрипт лежит в adhoc/, работает с папкой бота ../weather_bot; результат пишется туда же).
+# Запуск: python filtered_reports.py [match | match_full]   (match -- только отчёт "совпадение" по CITIES_MATCH, match_full -- он же по полному списку CITIES_MATCH_FULL; скрипт лежит в adhoc/, работает с папкой бота ../weather_bot; результат пишется туда же).
 #
 # Отчёты строятся так же, как ночные accuracy_report_forecast.html / accuracy_report_max.html и adhoc/match_report.py, но датафрейм
 # каждого отчёта урезается до городов из его списка ниже, поэтому и сводные графики, и рейтинг, и бэктест считаются только по ним.
@@ -18,7 +18,7 @@ from src.accuracy_report import AccuracyReportBuilder
 SOURCE = "wunderground"   # источник прогноза для отчёта "совпадение"
 CITIES_FORECAST = ["Atlanta", "Jeddah", "Lucknow", "Mexico City", "NYC", "Panama City", "Tokyo", "Warsaw"]
 CITIES_MAX = ["Ankara", "Austin", "Helsinki", "Jeddah", "Los Angeles", "Munich", "Toronto"]
-CITIES_MATCH = ["Chongqing", "Jeddah", "Lucknow", "NYC", "Panama City", "Seoul"]
+CITIES_MATCH = ["Ankara", "Atlanta", "Austin", "Jeddah", "Los Angeles", "Lucknow", "Munich", "Panama City", "Warsaw"]
 # все города "совпадения" с плоской ставкой в плюсе за 6 месяцев (до ручного отбора) -- для режима match_full
 CITIES_MATCH_FULL = ["Ankara", "Atlanta", "Austin", "Busan", "Cape Town", "Chongqing", "Dallas", "Jeddah", "Jinan", "Los Angeles", "Lucknow",
                      "Mexico City", "Miami", "Munich", "NYC", "Panama City", "Qingdao", "Seattle", "Seoul", "Shanghai", "Toronto", "Warsaw"]
@@ -27,6 +27,7 @@ OUT_MAX      = "accuracy_report_max_flat6m.html"
 OUT_MATCH    = "accuracy_report_match_flat6m.html"
 OUT_MATCH_FULL = "accuracy_report_match_flat6m_full.html"
 MATCH_FULL = sys.argv[1:2] == ["match_full"]
+MATCH_ONLY = MATCH_FULL or sys.argv[1:2] == ["match"]
 
 # ---------------- отчёты ----------------
 cfg = Config("config/config.yaml")
@@ -40,7 +41,7 @@ def only(df, cities):
 
 # прогноз
 df_raw, _ = b.build_dataframe()
-if not MATCH_FULL:
+if not MATCH_ONLY:
     df_effective, _ = b.build_dataframe(effective_max=True)
     path = b.save_report({"raw": only(df_raw, CITIES_FORECAST), "effective": only(df_effective, CITIES_FORECAST)}, out_path=os.path.join(ROOT, OUT_FORECAST))
     print(f"Прогноз: {path}")
@@ -54,7 +55,7 @@ fc_bucket = (df_raw[(df_raw["source"] == SOURCE) & (df_raw["snapshot_slot"].asty
 df_match_all = df_mx_all.merge(fc_bucket, on=["icao", "date"], how="inner")
 df_match_all = df_match_all[df_match_all["forecast_bucket"].astype(int) == df_match_all["fc_bucket"].astype(int)].drop(columns=["fc_bucket"])
 
-if not MATCH_FULL:
+if not MATCH_ONLY:
     b.build_market_target_dataframe = lambda target_slot: only(df_mx_all, CITIES_MAX)
     path = b.save_market_target_all_report(slot, out_path=os.path.join(ROOT, OUT_MAX))
     print(f"Макс: {path}")
