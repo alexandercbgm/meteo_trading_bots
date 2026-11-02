@@ -76,8 +76,8 @@ adhoc/                     — analysis scripts; they work on ../weather_bot and
   backtest_v2_config.py      — the same report for a given city config instead of a fitted one;
                                output: city_rating_v2_config.html
   walk_forward_check.py      — walk-forward check of per-city parameter fitting; output: walk_forward_check.html
-  backtest_match.py          — like backtest_v2.py for all cities, but the forecast strategy only bets when the forecast bucket
-                               matches the most expensive bucket; output: city_rating_match.html
+  match_report.py            — the standard all-cities max report, but a trade opens only when the most expensive bucket
+                               matches the forecast bucket; output: accuracy_report_match.html
   bot_reports_pyr20.py       — the two bot reports, but with pyramid lots 5 → 15 → 20 instead of 5 → 15 → 35;
                                output: accuracy_report_*_bot_pyr20.html
   city_rating.html           — sample output of backtest.py
