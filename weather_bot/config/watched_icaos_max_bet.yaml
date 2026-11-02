@@ -20,13 +20,13 @@ watched_icaos:
 #    strategy: "pyramid"
 #    loss_limit: 2
 #    comment: ""
-  KSEA:
-    city: "Seattle"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 33
-    max_price_limit: 66
-    comment: ""
+#  KSEA:
+#    city: "Seattle"
+#    strategy: "pyramid"
+#    loss_limit: 2
+#    min_price_limit: 33
+#    max_price_limit: 66
+#    comment: ""
   CYYZ:
     city: "Toronto"
     strategy: "pyramid"
@@ -39,10 +39,10 @@ watched_icaos:
 #    strategy: "pyramid"
 #    loss_limit: 2
 #    comment: ""
-  ZUCK:
-    city: "Chongqing"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 33
-    max_price_limit: 66
-    comment: ""
+#  ZUCK:
+#    city: "Chongqing"
+#    strategy: "pyramid"
+#    loss_limit: 2
+#    min_price_limit: 33
+#    max_price_limit: 66
+#    comment: ""
