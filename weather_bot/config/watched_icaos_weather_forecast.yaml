@@ -33,21 +33,21 @@ watched_icaos:
 #    weather_corr: 1
 #    min_price_limit: 10
 #    comment: ""
-  MMMX:
-    city: "Mexico City"
-    strategy: "pyramid"
-    loss_limit: 3
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 33
-    max_price_limit: 66
-    comment: ""
-  KDAL:
-    city: "Dallas"
-    strategy: "pyramid"
-    loss_limit: 3
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 33
-    max_price_limit: 66
-    comment: ""
+#  MMMX:
+#    city: "Mexico City"
+#    strategy: "pyramid"
+#    loss_limit: 3
+#    weather_source: ""
+#    weather_corr:
+#    min_price_limit: 33
+#    max_price_limit: 66
+#    comment: ""
+#  KDAL:
+#    city: "Dallas"
+#    strategy: "pyramid"
+#    loss_limit: 3
+#    weather_source: ""
+#    weather_corr:
+#    min_price_limit: 33
+#    max_price_limit: 66
+#    comment: ""

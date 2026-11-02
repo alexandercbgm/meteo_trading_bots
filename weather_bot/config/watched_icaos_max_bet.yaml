@@ -11,7 +11,7 @@ watched_icaos:
   EFHK:
     city: "Helsinki"
     strategy: "pyramid"
-    loss_limit: 3
+    loss_limit: 2
     min_price_limit: 33
     max_price_limit: 66
     comment: ""
@@ -30,7 +30,7 @@ watched_icaos:
   CYYZ:
     city: "Toronto"
     strategy: "pyramid"
-    loss_limit: 3
+    loss_limit: 2
     min_price_limit: 33
     max_price_limit: 66
     comment: ""
