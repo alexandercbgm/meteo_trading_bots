@@ -49,6 +49,15 @@ class TelegramClient:
             try:
                 resp = requests.post(url, json=payload, timeout=15)
             except Exception as e:
+                # Сетевой сбой (обрыв соединения, таймаут) обычно разовый -- повторяем
+                # через паузу, как и 429, а не теряем сообщение с первой же попытки.
+                if attempt <= max_retries:
+                    self.logger.warning(
+                        f"⚠️ Сетевая ошибка при отправке в Telegram: {e} -- повторяю через 5 сек "
+                        f"(попытка {attempt}/{max_retries})"
+                    )
+                    time.sleep(5)
+                    continue
                 self.logger.error(f"❌ Не удалось отправить сообщение в Telegram (сетевая ошибка): {e}")
                 return False
 

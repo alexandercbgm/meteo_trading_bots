@@ -294,13 +294,17 @@ class _OrderClient:
         """
         client = self._ensure_client(timeout)
         wallet = os.environ.get("POLYMARKET_WALLET_ADDRESS")
+        seen = {"count": 0, "fields": None}   # для диагностики, если позиция так и не нашлась
 
         async def _find_once():
             async for page in client.list_positions(user=wallet, page_size=100):
                 for item in page.items:
-                    item_token = _order_field(item, "token_id") or _order_field(item, "asset_id")
-                    if item_token == token_id:
-                        raw = _order_field(item, "avg_price")
+                    seen["count"] += 1
+                    if seen["fields"] is None:
+                        seen["fields"] = _fields_of(item)
+                    item_token = _position_token(item)
+                    if item_token == str(token_id):
+                        raw = _position_avg_price(item)
                         try:
                             price = float(raw) if raw not in (None, "") else None
                         except (TypeError, ValueError):
@@ -324,10 +328,16 @@ class _OrderClient:
             return None
 
         try:
-            return self._submit(_get_with_retries(), timeout + retries * retry_delay_sec)
+            price = self._submit(_get_with_retries(), timeout + retries * retry_delay_sec)
         except Exception as e:
             self.logger.warning(f"⚠️ [Trader] Не удалось получить реальную цену открытия из list_positions -- {e}")
             return None
+        if price is None:
+            self.logger.info(
+                f"🔎 [Trader] list_positions: позиция с token_id {str(token_id)[:12]}... не найдена "
+                f"(просмотрено позиций: {seen['count']}, поля первой: {seen['fields']})"
+            )
+        return price
 
     def get_position_info(self, token_id, timeout=20, retries=1, retry_delay_sec=2):
         """
@@ -356,12 +366,14 @@ class _OrderClient:
         async def _find_once():
             async for page in client.list_positions(user=wallet, page_size=100):
                 for item in page.items:
-                    item_token = _order_field(item, "token_id") or _order_field(item, "asset_id")
-                    if item_token == token_id:
+                    item_token = _position_token(item)
+                    if item_token == str(token_id):
                         size = _order_field(item, "current_size")
                         if size is None:
                             size = _order_field(item, "total_size")
-                        return size, _order_field(item, "avg_price")
+                        if size is None:
+                            size = _order_field(item, "size")
+                        return size, _position_avg_price(item)
             return None, None
 
         async def _get_with_retries():
@@ -391,6 +403,31 @@ class _OrderClient:
 
 def _order_field(order, key):
     return order.get(key) if isinstance(order, dict) else getattr(order, key, None)
+
+
+def _position_token(item):
+    """token_id позиции из list_positions: имя поля зависит от источника (пакет / Data API)."""
+    for key in ("token_id", "asset_id", "asset"):
+        value = _order_field(item, key)
+        if value:
+            return str(value)
+    return None
+
+
+def _position_avg_price(item):
+    """Средняя цена входа позиции: avg_price (пакет) или avgPrice (Data API)."""
+    value = _order_field(item, "avg_price")
+    return value if value not in (None, "") else _order_field(item, "avgPrice")
+
+
+def _fields_of(item):
+    """Список полей объекта -- для диагностики, когда позиция не находится по token_id."""
+    if isinstance(item, dict):
+        return sorted(item.keys())
+    try:
+        return sorted(vars(item).keys())
+    except TypeError:
+        return sorted(k for k in dir(item) if not k.startswith("_"))
 
 
 def _cents_str(price_dollars):
@@ -1318,6 +1355,20 @@ class TradingEngine:
             цикла, чтобы не насчитать P&L по неподтверждённым данным.
         """
         if record.get("order_status") == "filled":
+            # Цена исполнения при открытии могла не найтись (позиция ещё не успела появиться в
+            # list_positions) -- пробуем ещё раз перед расчётом P&L, иначе он посчитается по цене лимитки.
+            if record.get("fill_price") is None and record.get("token_id"):
+                try:
+                    fill_price = self._get_order_client().get_fill_price(record["token_id"], retries=2)
+                except Exception as e:
+                    fill_price = None
+                    self.logger.warning(f"⚠️ [Trader] Не удалось уточнить цену исполнения при разрешении -- {e}")
+                if fill_price is not None:
+                    record["fill_price"] = fill_price
+                    self.logger.info(
+                        f"💲 [Trader] {record['icao']} {record['opened_date']}: реальная цена исполнения "
+                        f"{_cents_str(fill_price)} (вместо цены лимитки {_cents_str(record['order_price'])})"
+                    )
             return record["lot"], "filled"
         order_id = record.get("order_id")
         if not order_id:
