@@ -80,6 +80,7 @@ adhoc/                     — analysis scripts; they work on ../weather_bot and
                                matches the forecast bucket; output: accuracy_report_match.html
   filtered_reports.py        — the forecast, max and match all-cities reports limited to a fixed list of cities per report;
                                output: accuracy_report_*_flat6m.html
+  bot_reports.py             — builds the two bot reports right now (the same files the nightly run writes to data_mining/reports/)
   bot_reports_pyr20.py       — the two bot reports, but with pyramid lots 5 → 15 → 20 instead of 5 → 15 → 35;
                                output: accuracy_report_*_bot_pyr20.html
   city_rating.html           — sample output of backtest.py

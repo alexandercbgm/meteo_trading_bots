@@ -1,48 +1,46 @@
 # config/watched_icaos_max_bet.yaml
-# Сгенерировано по backtest_v2 (бек / форвард 10 / тест 10). Для Макса нижний порог цены 10 не ставится
-# (пусто = ограничения снизу нет); у Toronto порог 35 оставлен.
+# Отбор 07.11.2026: города, где плоская ставка на самую дорогую корзину за последние 6 месяцев (слот 12:00) в плюсе,
+# отобраны вручную; Jeddah -- только в прогнозе. Все -- флет, цена от 10 до 90 центов.
 
 defaults:
-  min_price_limit:
-  max_price_limit: 66
+  min_price_limit: 10
+  max_price_limit: 90
   comment: ""
 
 watched_icaos:
+  LTAC:
+    city: "Ankara"
+    strategy: "flat"
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
+  KAUS:
+    city: "Austin"
+    strategy: "flat"
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
   EFHK:
     city: "Helsinki"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 33
-    max_price_limit: 66
+    strategy: "flat"
+    min_price_limit: 10
+    max_price_limit: 90
     comment: ""
-#  EDDM:
-#    city: "Munich"
-#    strategy: "pyramid"
-#    loss_limit: 2
-#    comment: ""
-#  KSEA:
-#    city: "Seattle"
-#    strategy: "pyramid"
-#    loss_limit: 2
-#    min_price_limit: 33
-#    max_price_limit: 66
-#    comment: ""
+  KLAX:
+    city: "Los Angeles"
+    strategy: "flat"
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
+  EDDM:
+    city: "Munich"
+    strategy: "flat"
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
   CYYZ:
     city: "Toronto"
-    strategy: "pyramid"
-    loss_limit: 2
-    min_price_limit: 33
-    max_price_limit: 66
+    strategy: "flat"
+    min_price_limit: 10
+    max_price_limit: 90
     comment: ""
-#  VILK:
-#    city: "Lucknow"
-#    strategy: "pyramid"
-#    loss_limit: 2
-#    comment: ""
-#  ZUCK:
-#    city: "Chongqing"
-#    strategy: "pyramid"
-#    loss_limit: 2
-#    min_price_limit: 33
-#    max_price_limit: 66
-#    comment: ""

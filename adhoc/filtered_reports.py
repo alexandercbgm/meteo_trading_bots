@@ -17,7 +17,7 @@ from src.accuracy_report import AccuracyReportBuilder
 # ---------------- настройки ----------------
 SOURCE = "wunderground"   # источник прогноза для отчёта "совпадение"
 CITIES_FORECAST = ["Atlanta", "Jeddah", "Lucknow", "Mexico City", "NYC", "Panama City", "Tokyo", "Warsaw"]
-CITIES_MAX = ["Ankara", "Austin", "Helsinki", "Jeddah", "Los Angeles", "Munich", "Toronto"]
+CITIES_MAX = ["Ankara", "Austin", "Helsinki", "Los Angeles", "Munich", "Toronto"]   # Jeddah -- только в прогнозе
 CITIES_MATCH = ["Atlanta", "Lucknow", "Panama City", "Warsaw"]   # без городов, которые уже есть в CITIES_MAX
 # все города "совпадения" с плоской ставкой в плюсе за 6 месяцев (до ручного отбора) -- для режима match_full
 CITIES_MATCH_FULL = ["Ankara", "Atlanta", "Austin", "Busan", "Cape Town", "Chongqing", "Dallas", "Jeddah", "Jinan", "Los Angeles", "Lucknow",

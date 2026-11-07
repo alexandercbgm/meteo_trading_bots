@@ -1,53 +1,76 @@
 # config/watched_icaos_weather_forecast.yaml
-# Сгенерировано по backtest_v2 (бек / форвард 10 / тест 10). Поля -- как в предыдущей версии файла.
+# Отбор 07.11.2026: города, где плоская ставка по прогнозу за последние 6 месяцев (слот 12:00) в плюсе, отобраны вручную.
+# Все -- флет, цена от 10 до 90 центов.
 
 defaults:
   weather_source: ""
   weather_corr:
-  min_price_limit:
-  max_price_limit: 66
+  min_price_limit: 10
+  max_price_limit: 90
   comment: ""
 
 watched_icaos:
-#  OEJN:
-#    city: "Jeddah"
-#    strategy: "pyramid"
-#    loss_limit: 2
-#    weather_source: ""
-#    weather_corr:
-#    min_price_limit: 10
-#    comment: ""
-#  EPWA:
-#    city: "Warsaw"
-#    strategy: "pyramid"
-#    loss_limit: 2
-#    weather_source: ""
-#    weather_corr:
-#    min_price_limit: 20
-#    comment: ""
-#  LFPG:
-#    city: "Paris"
-#    strategy: "pyramid"
-#    loss_limit: 2
-#    weather_source: ""
-#    weather_corr: 1
-#    min_price_limit: 10
-#    comment: ""
-#  MMMX:
-#    city: "Mexico City"
-#    strategy: "pyramid"
-#    loss_limit: 3
-#    weather_source: ""
-#    weather_corr:
-#    min_price_limit: 33
-#    max_price_limit: 66
-#    comment: ""
-#  KDAL:
-#    city: "Dallas"
-#    strategy: "pyramid"
-#    loss_limit: 3
-#    weather_source: ""
-#    weather_corr:
-#    min_price_limit: 33
-#    max_price_limit: 66
-#    comment: ""
+  KATL:
+    city: "Atlanta"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
+  OEJN:
+    city: "Jeddah"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
+  VILK:
+    city: "Lucknow"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
+  MMMX:
+    city: "Mexico City"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
+  KLGA:
+    city: "NYC"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
+  MPMG:
+    city: "Panama City"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
+  RJTT:
+    city: "Tokyo"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
+  EPWA:
+    city: "Warsaw"
+    strategy: "flat"
+    weather_source: ""
+    weather_corr:
+    min_price_limit: 10
+    max_price_limit: 90
+    comment: ""
