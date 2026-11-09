@@ -8,12 +8,12 @@ defaults:
   comment: ""
 
 watched_icaos:
-  LTAC:
-    city: "Ankara"
-    strategy: "flat"
-    min_price_limit: 10
-    max_price_limit: 90
-    comment: ""
+#  LTAC:
+#    city: "Ankara"
+#    strategy: "flat"
+#    min_price_limit: 10
+#    max_price_limit: 90
+#    comment: ""
   KAUS:
     city: "Austin"
     strategy: "flat"
@@ -32,12 +32,12 @@ watched_icaos:
     min_price_limit: 10
     max_price_limit: 90
     comment: ""
-  EDDM:
-    city: "Munich"
-    strategy: "flat"
-    min_price_limit: 10
-    max_price_limit: 90
-    comment: ""
+#  EDDM:
+#    city: "Munich"
+#    strategy: "flat"
+#    min_price_limit: 10
+#    max_price_limit: 90
+#    comment: ""
   CYYZ:
     city: "Toronto"
     strategy: "flat"

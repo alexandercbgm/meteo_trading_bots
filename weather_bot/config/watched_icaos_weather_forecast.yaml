@@ -34,14 +34,14 @@ watched_icaos:
     min_price_limit: 10
     max_price_limit: 90
     comment: ""
-  MMMX:
-    city: "Mexico City"
-    strategy: "flat"
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 10
-    max_price_limit: 90
-    comment: ""
+#  MMMX:
+#    city: "Mexico City"
+#    strategy: "flat"
+#    weather_source: ""
+#    weather_corr:
+#    min_price_limit: 10
+#    max_price_limit: 90
+#    comment: ""
   KLGA:
     city: "NYC"
     strategy: "flat"
@@ -66,11 +66,11 @@ watched_icaos:
     min_price_limit: 10
     max_price_limit: 90
     comment: ""
-  EPWA:
-    city: "Warsaw"
-    strategy: "flat"
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 10
-    max_price_limit: 90
-    comment: ""
+#  EPWA:
+#    city: "Warsaw"
+#    strategy: "flat"
+#    weather_source: ""
+#    weather_corr:
+#    min_price_limit: 10
+#    max_price_limit: 90
+#    comment: ""
