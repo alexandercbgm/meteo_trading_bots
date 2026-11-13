@@ -10,14 +10,14 @@ defaults:
   comment: ""
 
 watched_icaos:
-  KATL:
-    city: "Atlanta"
-    strategy: "flat"
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 10
-    max_price_limit: 90
-    comment: ""
+#  KATL:
+#    city: "Atlanta"
+#    strategy: "flat"
+#    weather_source: ""
+#    weather_corr:
+#    min_price_limit: 10
+#    max_price_limit: 90
+#    comment: ""
   OEJN:
     city: "Jeddah"
     strategy: "flat"
@@ -58,14 +58,14 @@ watched_icaos:
     min_price_limit: 10
     max_price_limit: 90
     comment: ""
-  RJTT:
-    city: "Tokyo"
-    strategy: "flat"
-    weather_source: ""
-    weather_corr:
-    min_price_limit: 10
-    max_price_limit: 90
-    comment: ""
+#  RJTT:
+#    city: "Tokyo"
+#    strategy: "flat"
+#    weather_source: ""
+#    weather_corr:
+#    min_price_limit: 10
+#    max_price_limit: 90
+#    comment: ""
 #  EPWA:
 #    city: "Warsaw"
 #    strategy: "flat"
